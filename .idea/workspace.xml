@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="projet" targetName="projet" />
+      <config projectName="projet" targetName="OperatingVectors" />
+      <config projectName="projet" targetName="InputCreator" />
+      <config projectName="projet" targetName="LeastSquares" />
+      <config projectName="projet" targetName="InputReader" />
+      <config projectName="projet" targetName="Input" />
+      <config projectName="projet" targetName="OperatingMatrices" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0b28300b-e41a-4426-8b7e-298cd276497b" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="ProjectId" id="1U69ODeADhuQfk2JpGcNlbo5zHO" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\Vector_Operations" />
+      <recent name="C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\Data_Fitting" />
+      <recent name="C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\Input\InputCreator" />
+      <recent name="C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\Input\InputReader" />
+      <recent name="C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\Input" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="CMake Application.projet">
+    <configuration name="Input" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="projet" TARGET_NAME="Input" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="projet" RUN_TARGET_NAME="Input">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InputCreator" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="projet" TARGET_NAME="InputCreator" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="projet" RUN_TARGET_NAME="InputCreator">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InputReader" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="projet" TARGET_NAME="InputReader" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="projet" RUN_TARGET_NAME="InputReader">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LeastSquares" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="projet" TARGET_NAME="LeastSquares" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="projet" RUN_TARGET_NAME="LeastSquares">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OperatingMatrices" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="projet" TARGET_NAME="OperatingMatrices" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="projet" RUN_TARGET_NAME="OperatingMatrices">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OperatingVectors" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="projet" TARGET_NAME="OperatingVectors" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="projet" RUN_TARGET_NAME="OperatingVectors">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="projet" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="projet" TARGET_NAME="projet" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="projet" RUN_TARGET_NAME="projet">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.projet" />
+      <item itemvalue="CMake Application.LeastSquares" />
+      <item itemvalue="CMake Application.Input" />
+      <item itemvalue="CMake Application.InputCreator" />
+      <item itemvalue="CMake Application.InputReader" />
+      <item itemvalue="CMake Application.OperatingMatrices" />
+      <item itemvalue="CMake Application.OperatingVectors" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0b28300b-e41a-4426-8b7e-298cd276497b" name="Default Changelist" comment="" />
+      <created>1574666143703</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1574666143703</updated>
+      <workItem from="1574666145237" duration="6016000" />
+      <workItem from="1575011508821" duration="1865000" />
+      <workItem from="1575014149695" duration="737000" />
+      <workItem from="1575018817672" duration="7958000" />
+      <workItem from="1575033716065" duration="12819000" />
+      <workItem from="1575107752413" duration="5665000" />
+      <workItem from="1575122531269" duration="2905000" />
+      <workItem from="1575125595918" duration="7433000" />
+      <workItem from="1575202992399" duration="9890000" />
+      <workItem from="1575274624344" duration="346000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>

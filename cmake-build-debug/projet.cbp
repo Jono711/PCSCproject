@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="projet"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="msvc8"/>
+		<Option virtualFolders="CMake Files\;CMake Files\Input\;CMake Files\Input\InputCreator\;CMake Files\Input\InputReader\;CMake Files\Data_Fitting\;CMake Files\Operations\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/morin/OneDrive/Documents/EPFL/PCSC/projet/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Makefile VERBOSE=1 all"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="projet">
+				<Option output="C:/Users/morin/OneDrive/Documents/EPFL/PCSC/projet/cmake-build-debug/projet.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/morin/OneDrive/Documents/EPFL/PCSC/projet/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Makefile VERBOSE=1 projet"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="projet/fast">
+				<Option output="C:/Users/morin/OneDrive/Documents/EPFL/PCSC/projet/cmake-build-debug/projet.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/morin/OneDrive/Documents/EPFL/PCSC/projet/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Makefile VERBOSE=1 projet/fast"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/morin/OneDrive/Documents/EPFL/PCSC/projet/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Makefile VERBOSE=1 edit_cache"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/morin/OneDrive/Documents/EPFL/PCSC/projet/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Makefile VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Input">
+				<Option output="C:/Users/morin/OneDrive/Documents/EPFL/PCSC/projet/cmake-build-debug/Input/Input.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/morin/OneDrive/Documents/EPFL/PCSC/projet/cmake-build-debug/Input"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Input\Makefile VERBOSE=1 Input"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Input\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Input\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Input\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Input/fast">
+				<Option output="C:/Users/morin/OneDrive/Documents/EPFL/PCSC/projet/cmake-build-debug/Input/Input.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/morin/OneDrive/Documents/EPFL/PCSC/projet/cmake-build-debug/Input"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Input\Makefile VERBOSE=1 Input/fast"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Input\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Input\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Input\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="InputCreator">
+				<Option output="C:/Users/morin/OneDrive/Documents/EPFL/PCSC/projet/cmake-build-debug/Input/InputCreator/InputCreator.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/morin/OneDrive/Documents/EPFL/PCSC/projet/cmake-build-debug/Input/InputCreator"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Input\InputCreator\Makefile VERBOSE=1 InputCreator"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Input\InputCreator\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Input\InputCreator\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Input\InputCreator\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="InputCreator/fast">
+				<Option output="C:/Users/morin/OneDrive/Documents/EPFL/PCSC/projet/cmake-build-debug/Input/InputCreator/InputCreator.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/morin/OneDrive/Documents/EPFL/PCSC/projet/cmake-build-debug/Input/InputCreator"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Input\InputCreator\Makefile VERBOSE=1 InputCreator/fast"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Input\InputCreator\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Input\InputCreator\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Input\InputCreator\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="InputReader">
+				<Option output="C:/Users/morin/OneDrive/Documents/EPFL/PCSC/projet/cmake-build-debug/Input/InputReader/InputReader.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/morin/OneDrive/Documents/EPFL/PCSC/projet/cmake-build-debug/Input/InputReader"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Input\InputReader\Makefile VERBOSE=1 InputReader"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Input\InputReader\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Input\InputReader\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Input\InputReader\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="InputReader/fast">
+				<Option output="C:/Users/morin/OneDrive/Documents/EPFL/PCSC/projet/cmake-build-debug/Input/InputReader/InputReader.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/morin/OneDrive/Documents/EPFL/PCSC/projet/cmake-build-debug/Input/InputReader"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Input\InputReader\Makefile VERBOSE=1 InputReader/fast"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Input\InputReader\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Input\InputReader\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Input\InputReader\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="LeastSquares">
+				<Option output="C:/Users/morin/OneDrive/Documents/EPFL/PCSC/projet/cmake-build-debug/Data_Fitting/LeastSquares.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/morin/OneDrive/Documents/EPFL/PCSC/projet/cmake-build-debug/Data_Fitting"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Data_Fitting\Makefile VERBOSE=1 LeastSquares"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Data_Fitting\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Data_Fitting\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Data_Fitting\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="LeastSquares/fast">
+				<Option output="C:/Users/morin/OneDrive/Documents/EPFL/PCSC/projet/cmake-build-debug/Data_Fitting/LeastSquares.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/morin/OneDrive/Documents/EPFL/PCSC/projet/cmake-build-debug/Data_Fitting"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Data_Fitting\Makefile VERBOSE=1 LeastSquares/fast"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Data_Fitting\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Data_Fitting\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Data_Fitting\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="OperatingMatrices">
+				<Option output="C:/Users/morin/OneDrive/Documents/EPFL/PCSC/projet/cmake-build-debug/Operations/OperatingMatrices.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/morin/OneDrive/Documents/EPFL/PCSC/projet/cmake-build-debug/Operations"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Operations\Makefile VERBOSE=1 OperatingMatrices"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Operations\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Operations\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Operations\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="OperatingMatrices/fast">
+				<Option output="C:/Users/morin/OneDrive/Documents/EPFL/PCSC/projet/cmake-build-debug/Operations/OperatingMatrices.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/morin/OneDrive/Documents/EPFL/PCSC/projet/cmake-build-debug/Operations"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Operations\Makefile VERBOSE=1 OperatingMatrices/fast"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Operations\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Operations\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Operations\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="OperatingVectors">
+				<Option output="C:/Users/morin/OneDrive/Documents/EPFL/PCSC/projet/cmake-build-debug/Operations/OperatingVectors.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/morin/OneDrive/Documents/EPFL/PCSC/projet/cmake-build-debug/Operations"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Operations\Makefile VERBOSE=1 OperatingVectors"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Operations\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Operations\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Operations\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="OperatingVectors/fast">
+				<Option output="C:/Users/morin/OneDrive/Documents/EPFL/PCSC/projet/cmake-build-debug/Operations/OperatingVectors.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/morin/OneDrive/Documents/EPFL/PCSC/projet/cmake-build-debug/Operations"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Operations\Makefile VERBOSE=1 OperatingVectors/fast"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Operations\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Operations\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Operations\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/morin/OneDrive/Documents/EPFL/PCSC/projet/Data_Fitting/LeastSquares.cpp">
+			<Option target="LeastSquares"/>
+		</Unit>
+		<Unit filename="C:/Users/morin/OneDrive/Documents/EPFL/PCSC/projet/Data_Fitting/LeastSquares.h">
+			<Option target="LeastSquares"/>
+		</Unit>
+		<Unit filename="C:/Users/morin/OneDrive/Documents/EPFL/PCSC/projet/Input/Input.cpp">
+			<Option target="Input"/>
+		</Unit>
+		<Unit filename="C:/Users/morin/OneDrive/Documents/EPFL/PCSC/projet/Input/Input.h">
+			<Option target="Input"/>
+		</Unit>
+		<Unit filename="C:/Users/morin/OneDrive/Documents/EPFL/PCSC/projet/Input/InputCreator/InputCreator.cpp">
+			<Option target="InputCreator"/>
+		</Unit>
+		<Unit filename="C:/Users/morin/OneDrive/Documents/EPFL/PCSC/projet/Input/InputCreator/InputCreator.h">
+			<Option target="InputCreator"/>
+		</Unit>
+		<Unit filename="C:/Users/morin/OneDrive/Documents/EPFL/PCSC/projet/Input/InputReader/InputReader.cpp">
+			<Option target="InputReader"/>
+		</Unit>
+		<Unit filename="C:/Users/morin/OneDrive/Documents/EPFL/PCSC/projet/Input/InputReader/InputReader.h">
+			<Option target="InputReader"/>
+		</Unit>
+		<Unit filename="C:/Users/morin/OneDrive/Documents/EPFL/PCSC/projet/Operations/OperatingMatrices.cpp">
+			<Option target="OperatingMatrices"/>
+		</Unit>
+		<Unit filename="C:/Users/morin/OneDrive/Documents/EPFL/PCSC/projet/Operations/OperatingMatrices.h">
+			<Option target="OperatingMatrices"/>
+		</Unit>
+		<Unit filename="C:/Users/morin/OneDrive/Documents/EPFL/PCSC/projet/Operations/OperatingVectors.cpp">
+			<Option target="OperatingVectors"/>
+		</Unit>
+		<Unit filename="C:/Users/morin/OneDrive/Documents/EPFL/PCSC/projet/Operations/OperatingVectors.h">
+			<Option target="OperatingVectors"/>
+		</Unit>
+		<Unit filename="C:/Users/morin/OneDrive/Documents/EPFL/PCSC/projet/main.cpp">
+			<Option target="projet"/>
+		</Unit>
+		<Unit filename="C:/Users/morin/OneDrive/Documents/EPFL/PCSC/projet/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="C:/Users/morin/OneDrive/Documents/EPFL/PCSC/projet/Input/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Input\"/>
+		</Unit>
+		<Unit filename="C:/Users/morin/OneDrive/Documents/EPFL/PCSC/projet/Input/InputCreator/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Input\InputCreator\"/>
+		</Unit>
+		<Unit filename="C:/Users/morin/OneDrive/Documents/EPFL/PCSC/projet/Input/InputReader/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Input\InputReader\"/>
+		</Unit>
+		<Unit filename="C:/Users/morin/OneDrive/Documents/EPFL/PCSC/projet/Data_Fitting/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Data_Fitting\"/>
+		</Unit>
+		<Unit filename="C:/Users/morin/OneDrive/Documents/EPFL/PCSC/projet/Operations/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Operations\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

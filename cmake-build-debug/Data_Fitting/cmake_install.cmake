@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/morin/OneDrive/Documents/EPFL/PCSC/projet/Data_Fitting
+# Install script for directory: C:/Users/morin/OneDrive/Documents/EPFL/PCSC/projet/PCSCproject/Data_Fitting
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

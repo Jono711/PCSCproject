@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/morin/OneDrive/Documents/EPFL/PCSC/projet/PCSCproject/Data_Fitting/LeastSquares.cpp
+LeastSquares.h
+C:/Users/morin/OneDrive/Documents/EPFL/PCSC/projet/PCSCproject/Data_Fitting/LeastSquares.h
+../Operations/OperatingMatrices.h
+C:/Users/morin/OneDrive/Documents/EPFL/PCSC/projet/PCSCproject/Operations/OperatingMatrices.h
+
+C:/Users/morin/OneDrive/Documents/EPFL/PCSC/projet/PCSCproject/Data_Fitting/LeastSquares.h
+vector
+-
+string
+-
+
+C:/Users/morin/OneDrive/Documents/EPFL/PCSC/projet/PCSCproject/Operations/OperatingMatrices.h
+vector
+-
+OperatingVectors.h
+C:/Users/morin/OneDrive/Documents/EPFL/PCSC/projet/PCSCproject/Operations/OperatingVectors.h
+
+C:/Users/morin/OneDrive/Documents/EPFL/PCSC/projet/PCSCproject/Operations/OperatingVectors.h
+vector
+-
+

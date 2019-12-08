@@ -44,10 +44,10 @@ RM = "C:\Program Files\JetBrains\CLion 2019.2.3\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet
+CMAKE_SOURCE_DIR = C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include Input\InputReader\CMakeFiles\InputReader.dir\depend.make
@@ -60,28 +60,28 @@ include Input\InputReader\CMakeFiles\InputReader.dir\flags.make
 
 Input\InputReader\CMakeFiles\InputReader.dir\InputReader.cpp.obj: Input\InputReader\CMakeFiles\InputReader.dir\flags.make
 Input\InputReader\CMakeFiles\InputReader.dir\InputReader.cpp.obj: ..\Input\InputReader\InputReader.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Input/InputReader/CMakeFiles/InputReader.dir/InputReader.cpp.obj"
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Input\InputReader
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Input/InputReader/CMakeFiles/InputReader.dir/InputReader.cpp.obj"
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\Input\InputReader
 	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1423~1.281\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\InputReader.dir\InputReader.cpp.obj /FdCMakeFiles\InputReader.dir\ /FS -c C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\Input\InputReader\InputReader.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\InputReader.dir\InputReader.cpp.obj /FdCMakeFiles\InputReader.dir\ /FS -c C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\Input\InputReader\InputReader.cpp
 <<
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug
 
 Input\InputReader\CMakeFiles\InputReader.dir\InputReader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/InputReader.dir/InputReader.cpp.i"
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Input\InputReader
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\Input\InputReader
 	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1423~1.281\bin\Hostx86\x86\cl.exe > CMakeFiles\InputReader.dir\InputReader.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\Input\InputReader\InputReader.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\Input\InputReader\InputReader.cpp
 <<
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug
 
 Input\InputReader\CMakeFiles\InputReader.dir\InputReader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/InputReader.dir/InputReader.cpp.s"
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Input\InputReader
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\Input\InputReader
 	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1423~1.281\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\InputReader.dir\InputReader.cpp.s /c C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\Input\InputReader\InputReader.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\InputReader.dir\InputReader.cpp.s /c C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\Input\InputReader\InputReader.cpp
 <<
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug
 
 # Object files for target InputReader
 InputReader_OBJECTS = \
@@ -93,12 +93,12 @@ InputReader_EXTERNAL_OBJECTS =
 Input\InputReader\InputReader.exe: Input\InputReader\CMakeFiles\InputReader.dir\InputReader.cpp.obj
 Input\InputReader\InputReader.exe: Input\InputReader\CMakeFiles\InputReader.dir\build.make
 Input\InputReader\InputReader.exe: Input\InputReader\CMakeFiles\InputReader.dir\objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable InputReader.exe"
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Input\InputReader
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable InputReader.exe"
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\Input\InputReader
 	"C:\Program Files\JetBrains\CLion 2019.2.3\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\InputReader.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\mt.exe --manifests  -- C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1423~1.281\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\InputReader.dir\objects1.rsp @<<
- /out:InputReader.exe /implib:InputReader.lib /pdb:C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Input\InputReader\InputReader.pdb /version:0.0  /machine:X86 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
+ /out:InputReader.exe /implib:InputReader.lib /pdb:C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\Input\InputReader\InputReader.pdb /version:0.0  /machine:X86 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
 <<
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug
 
 # Rule to build all files generated by this target.
 Input\InputReader\CMakeFiles\InputReader.dir\build: Input\InputReader\InputReader.exe
@@ -106,12 +106,12 @@ Input\InputReader\CMakeFiles\InputReader.dir\build: Input\InputReader\InputReade
 .PHONY : Input\InputReader\CMakeFiles\InputReader.dir\build
 
 Input\InputReader\CMakeFiles\InputReader.dir\clean:
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Input\InputReader
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\Input\InputReader
 	$(CMAKE_COMMAND) -P CMakeFiles\InputReader.dir\cmake_clean.cmake
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug
 .PHONY : Input\InputReader\CMakeFiles\InputReader.dir\clean
 
 Input\InputReader\CMakeFiles\InputReader.dir\depend:
-	$(CMAKE_COMMAND) -E cmake_depends "NMake Makefiles" C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\Input\InputReader C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Input\InputReader C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Input\InputReader\CMakeFiles\InputReader.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "NMake Makefiles" C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\Input\InputReader C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\Input\InputReader C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\Input\InputReader\CMakeFiles\InputReader.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : Input\InputReader\CMakeFiles\InputReader.dir\depend
 

@@ -45,10 +45,10 @@ RM = "C:\Program Files\JetBrains\CLion 2019.2.3\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet
+CMAKE_SOURCE_DIR = C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -58,6 +58,7 @@ all: CMakeFiles\projet.dir\all
 all: Input\all
 all: Data_Fitting\all
 all: Operations\all
+all: Test_Suites\all
 
 .PHONY : all
 
@@ -66,6 +67,7 @@ clean: CMakeFiles\projet.dir\clean
 clean: Input\clean
 clean: Data_Fitting\clean
 clean: Operations\clean
+clean: Test_Suites\clean
 
 .PHONY : clean
 
@@ -73,6 +75,7 @@ clean: Operations\clean
 preinstall: Input\preinstall
 preinstall: Data_Fitting\preinstall
 preinstall: Operations\preinstall
+preinstall: Test_Suites\preinstall
 
 .PHONY : preinstall
 
@@ -83,14 +86,14 @@ preinstall: Operations\preinstall
 CMakeFiles\projet.dir\all:
 	$(MAKE) -f CMakeFiles\projet.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\projet.dir\depend
 	$(MAKE) -f CMakeFiles\projet.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\projet.dir\build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\CMakeFiles --progress-num=13,14 "Built target projet"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\CMakeFiles --progress-num=24,25,26,27,28,29,30,31,32 "Built target projet"
 .PHONY : CMakeFiles\projet.dir\all
 
 # Build rule for subdir invocation for target.
 CMakeFiles\projet.dir\rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\CMakeFiles 9
 	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) CMakeFiles\projet.dir\all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles\projet.dir\rule
 
 # Convenience name for target.
@@ -133,14 +136,14 @@ Input\preinstall: Input\InputReader\preinstall
 Input\CMakeFiles\Input.dir\all:
 	$(MAKE) -f Input\CMakeFiles\Input.dir\build.make /nologo -$(MAKEFLAGS) Input\CMakeFiles\Input.dir\depend
 	$(MAKE) -f Input\CMakeFiles\Input.dir\build.make /nologo -$(MAKEFLAGS) Input\CMakeFiles\Input.dir\build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target Input"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target Input"
 .PHONY : Input\CMakeFiles\Input.dir\all
 
 # Build rule for subdir invocation for target.
 Input\CMakeFiles\Input.dir\rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\CMakeFiles 2
 	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) Input\CMakeFiles\Input.dir\all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\CMakeFiles 0
 .PHONY : Input\CMakeFiles\Input.dir\rule
 
 # Convenience name for target.
@@ -178,14 +181,14 @@ Input\InputCreator\preinstall:
 Input\InputCreator\CMakeFiles\InputCreator.dir\all:
 	$(MAKE) -f Input\InputCreator\CMakeFiles\InputCreator.dir\build.make /nologo -$(MAKEFLAGS) Input\InputCreator\CMakeFiles\InputCreator.dir\depend
 	$(MAKE) -f Input\InputCreator\CMakeFiles\InputCreator.dir\build.make /nologo -$(MAKEFLAGS) Input\InputCreator\CMakeFiles\InputCreator.dir\build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\CMakeFiles --progress-num=3,4 "Built target InputCreator"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\CMakeFiles --progress-num=3,4 "Built target InputCreator"
 .PHONY : Input\InputCreator\CMakeFiles\InputCreator.dir\all
 
 # Build rule for subdir invocation for target.
 Input\InputCreator\CMakeFiles\InputCreator.dir\rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\CMakeFiles 2
 	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) Input\InputCreator\CMakeFiles\InputCreator.dir\all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\CMakeFiles 0
 .PHONY : Input\InputCreator\CMakeFiles\InputCreator.dir\rule
 
 # Convenience name for target.
@@ -223,14 +226,14 @@ Input\InputReader\preinstall:
 Input\InputReader\CMakeFiles\InputReader.dir\all:
 	$(MAKE) -f Input\InputReader\CMakeFiles\InputReader.dir\build.make /nologo -$(MAKEFLAGS) Input\InputReader\CMakeFiles\InputReader.dir\depend
 	$(MAKE) -f Input\InputReader\CMakeFiles\InputReader.dir\build.make /nologo -$(MAKEFLAGS) Input\InputReader\CMakeFiles\InputReader.dir\build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\CMakeFiles --progress-num=5,6 "Built target InputReader"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\CMakeFiles --progress-num=5,6 "Built target InputReader"
 .PHONY : Input\InputReader\CMakeFiles\InputReader.dir\all
 
 # Build rule for subdir invocation for target.
 Input\InputReader\CMakeFiles\InputReader.dir\rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\CMakeFiles 2
 	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) Input\InputReader\CMakeFiles\InputReader.dir\all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\CMakeFiles 0
 .PHONY : Input\InputReader\CMakeFiles\InputReader.dir\rule
 
 # Convenience name for target.
@@ -268,14 +271,14 @@ Data_Fitting\preinstall:
 Data_Fitting\CMakeFiles\LeastSquares.dir\all:
 	$(MAKE) -f Data_Fitting\CMakeFiles\LeastSquares.dir\build.make /nologo -$(MAKEFLAGS) Data_Fitting\CMakeFiles\LeastSquares.dir\depend
 	$(MAKE) -f Data_Fitting\CMakeFiles\LeastSquares.dir\build.make /nologo -$(MAKEFLAGS) Data_Fitting\CMakeFiles\LeastSquares.dir\build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\CMakeFiles --progress-num=7,8 "Built target LeastSquares"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\CMakeFiles --progress-num=7,8,9,10 "Built target LeastSquares"
 .PHONY : Data_Fitting\CMakeFiles\LeastSquares.dir\all
 
 # Build rule for subdir invocation for target.
 Data_Fitting\CMakeFiles\LeastSquares.dir\rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\CMakeFiles 4
 	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) Data_Fitting\CMakeFiles\LeastSquares.dir\all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\CMakeFiles 0
 .PHONY : Data_Fitting\CMakeFiles\LeastSquares.dir\rule
 
 # Convenience name for target.
@@ -315,14 +318,14 @@ Operations\preinstall:
 Operations\CMakeFiles\OperatingMatrices.dir\all:
 	$(MAKE) -f Operations\CMakeFiles\OperatingMatrices.dir\build.make /nologo -$(MAKEFLAGS) Operations\CMakeFiles\OperatingMatrices.dir\depend
 	$(MAKE) -f Operations\CMakeFiles\OperatingMatrices.dir\build.make /nologo -$(MAKEFLAGS) Operations\CMakeFiles\OperatingMatrices.dir\build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\CMakeFiles --progress-num=9,10 "Built target OperatingMatrices"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\CMakeFiles --progress-num=11,12,13 "Built target OperatingMatrices"
 .PHONY : Operations\CMakeFiles\OperatingMatrices.dir\all
 
 # Build rule for subdir invocation for target.
 Operations\CMakeFiles\OperatingMatrices.dir\rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\CMakeFiles 3
 	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) Operations\CMakeFiles\OperatingMatrices.dir\all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\CMakeFiles 0
 .PHONY : Operations\CMakeFiles\OperatingMatrices.dir\rule
 
 # Convenience name for target.
@@ -342,14 +345,14 @@ Operations\CMakeFiles\OperatingMatrices.dir\clean:
 Operations\CMakeFiles\OperatingVectors.dir\all:
 	$(MAKE) -f Operations\CMakeFiles\OperatingVectors.dir\build.make /nologo -$(MAKEFLAGS) Operations\CMakeFiles\OperatingVectors.dir\depend
 	$(MAKE) -f Operations\CMakeFiles\OperatingVectors.dir\build.make /nologo -$(MAKEFLAGS) Operations\CMakeFiles\OperatingVectors.dir\build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\CMakeFiles --progress-num=11,12 "Built target OperatingVectors"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\CMakeFiles --progress-num=14,15 "Built target OperatingVectors"
 .PHONY : Operations\CMakeFiles\OperatingVectors.dir\all
 
 # Build rule for subdir invocation for target.
 Operations\CMakeFiles\OperatingVectors.dir\rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\CMakeFiles 2
 	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) Operations\CMakeFiles\OperatingVectors.dir\all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\CMakeFiles 0
 .PHONY : Operations\CMakeFiles\OperatingVectors.dir\rule
 
 # Convenience name for target.
@@ -361,6 +364,51 @@ OperatingVectors: Operations\CMakeFiles\OperatingVectors.dir\rule
 Operations\CMakeFiles\OperatingVectors.dir\clean:
 	$(MAKE) -f Operations\CMakeFiles\OperatingVectors.dir\build.make /nologo -$(MAKEFLAGS) Operations\CMakeFiles\OperatingVectors.dir\clean
 .PHONY : Operations\CMakeFiles\OperatingVectors.dir\clean
+
+#=============================================================================
+# Directory level rules for directory Test_Suites
+
+# Recursive "all" directory target.
+Test_Suites\all: Test_Suites\CMakeFiles\TestSuite.dir\all
+
+.PHONY : Test_Suites\all
+
+# Recursive "clean" directory target.
+Test_Suites\clean: Test_Suites\CMakeFiles\TestSuite.dir\clean
+
+.PHONY : Test_Suites\clean
+
+# Recursive "preinstall" directory target.
+Test_Suites\preinstall:
+
+.PHONY : Test_Suites\preinstall
+
+#=============================================================================
+# Target rules for target Test_Suites/CMakeFiles/TestSuite.dir
+
+# All Build rule for target.
+Test_Suites\CMakeFiles\TestSuite.dir\all:
+	$(MAKE) -f Test_Suites\CMakeFiles\TestSuite.dir\build.make /nologo -$(MAKEFLAGS) Test_Suites\CMakeFiles\TestSuite.dir\depend
+	$(MAKE) -f Test_Suites\CMakeFiles\TestSuite.dir\build.make /nologo -$(MAKEFLAGS) Test_Suites\CMakeFiles\TestSuite.dir\build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\CMakeFiles --progress-num=16,17,18,19,20,21,22,23 "Built target TestSuite"
+.PHONY : Test_Suites\CMakeFiles\TestSuite.dir\all
+
+# Build rule for subdir invocation for target.
+Test_Suites\CMakeFiles\TestSuite.dir\rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\CMakeFiles 8
+	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) Test_Suites\CMakeFiles\TestSuite.dir\all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\CMakeFiles 0
+.PHONY : Test_Suites\CMakeFiles\TestSuite.dir\rule
+
+# Convenience name for target.
+TestSuite: Test_Suites\CMakeFiles\TestSuite.dir\rule
+
+.PHONY : TestSuite
+
+# clean rule for target.
+Test_Suites\CMakeFiles\TestSuite.dir\clean:
+	$(MAKE) -f Test_Suites\CMakeFiles\TestSuite.dir\build.make /nologo -$(MAKEFLAGS) Test_Suites\CMakeFiles\TestSuite.dir\clean
+.PHONY : Test_Suites\CMakeFiles\TestSuite.dir\clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

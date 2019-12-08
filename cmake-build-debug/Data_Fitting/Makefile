@@ -49,10 +49,10 @@ RM = "C:\Program Files\JetBrains\CLion 2019.2.3\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet
+CMAKE_SOURCE_DIR = C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -81,18 +81,18 @@ rebuild_cache\fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\CMakeFiles C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Data_Fitting\CMakeFiles\progress.marks
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\CMakeFiles C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\Data_Fitting\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) Data_Fitting\all
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Data_Fitting
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\CMakeFiles 0
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\Data_Fitting
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug
 	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) Data_Fitting\clean
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Data_Fitting
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\Data_Fitting
 .PHONY : clean
 
 # The main clean target
@@ -102,30 +102,30 @@ clean\fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug
 	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) Data_Fitting\preinstall
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Data_Fitting
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\Data_Fitting
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall\fast:
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug
 	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) Data_Fitting\preinstall
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Data_Fitting
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\Data_Fitting
 .PHONY : preinstall\fast
 
 # clear depends
 depend:
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Data_Fitting
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\Data_Fitting
 .PHONY : depend
 
 # Convenience name for target.
 Data_Fitting\CMakeFiles\LeastSquares.dir\rule:
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug
 	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) Data_Fitting\CMakeFiles\LeastSquares.dir\rule
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Data_Fitting
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\Data_Fitting
 .PHONY : Data_Fitting\CMakeFiles\LeastSquares.dir\rule
 
 # Convenience name for target.
@@ -135,9 +135,9 @@ LeastSquares: Data_Fitting\CMakeFiles\LeastSquares.dir\rule
 
 # fast build rule for target.
 LeastSquares\fast:
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug
 	$(MAKE) -f Data_Fitting\CMakeFiles\LeastSquares.dir\build.make /nologo -$(MAKEFLAGS) Data_Fitting\CMakeFiles\LeastSquares.dir\build
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Data_Fitting
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\Data_Fitting
 .PHONY : LeastSquares\fast
 
 LeastSquares.obj: LeastSquares.cpp.obj
@@ -146,9 +146,9 @@ LeastSquares.obj: LeastSquares.cpp.obj
 
 # target to build an object file
 LeastSquares.cpp.obj:
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug
 	$(MAKE) -f Data_Fitting\CMakeFiles\LeastSquares.dir\build.make /nologo -$(MAKEFLAGS) Data_Fitting\CMakeFiles\LeastSquares.dir\LeastSquares.cpp.obj
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Data_Fitting
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\Data_Fitting
 .PHONY : LeastSquares.cpp.obj
 
 LeastSquares.i: LeastSquares.cpp.i
@@ -157,9 +157,9 @@ LeastSquares.i: LeastSquares.cpp.i
 
 # target to preprocess a source file
 LeastSquares.cpp.i:
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug
 	$(MAKE) -f Data_Fitting\CMakeFiles\LeastSquares.dir\build.make /nologo -$(MAKEFLAGS) Data_Fitting\CMakeFiles\LeastSquares.dir\LeastSquares.cpp.i
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Data_Fitting
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\Data_Fitting
 .PHONY : LeastSquares.cpp.i
 
 LeastSquares.s: LeastSquares.cpp.s
@@ -168,10 +168,76 @@ LeastSquares.s: LeastSquares.cpp.s
 
 # target to generate assembly for a file
 LeastSquares.cpp.s:
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug
 	$(MAKE) -f Data_Fitting\CMakeFiles\LeastSquares.dir\build.make /nologo -$(MAKEFLAGS) Data_Fitting\CMakeFiles\LeastSquares.dir\LeastSquares.cpp.s
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Data_Fitting
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\Data_Fitting
 .PHONY : LeastSquares.cpp.s
+
+__\Operations\OperatingMatrices.obj: __\Operations\OperatingMatrices.cpp.obj
+
+.PHONY : __\Operations\OperatingMatrices.obj
+
+# target to build an object file
+__\Operations\OperatingMatrices.cpp.obj:
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug
+	$(MAKE) -f Data_Fitting\CMakeFiles\LeastSquares.dir\build.make /nologo -$(MAKEFLAGS) Data_Fitting\CMakeFiles\LeastSquares.dir\__\Operations\OperatingMatrices.cpp.obj
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\Data_Fitting
+.PHONY : __\Operations\OperatingMatrices.cpp.obj
+
+__\Operations\OperatingMatrices.i: __\Operations\OperatingMatrices.cpp.i
+
+.PHONY : __\Operations\OperatingMatrices.i
+
+# target to preprocess a source file
+__\Operations\OperatingMatrices.cpp.i:
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug
+	$(MAKE) -f Data_Fitting\CMakeFiles\LeastSquares.dir\build.make /nologo -$(MAKEFLAGS) Data_Fitting\CMakeFiles\LeastSquares.dir\__\Operations\OperatingMatrices.cpp.i
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\Data_Fitting
+.PHONY : __\Operations\OperatingMatrices.cpp.i
+
+__\Operations\OperatingMatrices.s: __\Operations\OperatingMatrices.cpp.s
+
+.PHONY : __\Operations\OperatingMatrices.s
+
+# target to generate assembly for a file
+__\Operations\OperatingMatrices.cpp.s:
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug
+	$(MAKE) -f Data_Fitting\CMakeFiles\LeastSquares.dir\build.make /nologo -$(MAKEFLAGS) Data_Fitting\CMakeFiles\LeastSquares.dir\__\Operations\OperatingMatrices.cpp.s
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\Data_Fitting
+.PHONY : __\Operations\OperatingMatrices.cpp.s
+
+__\Operations\OperatingVectors.obj: __\Operations\OperatingVectors.cpp.obj
+
+.PHONY : __\Operations\OperatingVectors.obj
+
+# target to build an object file
+__\Operations\OperatingVectors.cpp.obj:
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug
+	$(MAKE) -f Data_Fitting\CMakeFiles\LeastSquares.dir\build.make /nologo -$(MAKEFLAGS) Data_Fitting\CMakeFiles\LeastSquares.dir\__\Operations\OperatingVectors.cpp.obj
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\Data_Fitting
+.PHONY : __\Operations\OperatingVectors.cpp.obj
+
+__\Operations\OperatingVectors.i: __\Operations\OperatingVectors.cpp.i
+
+.PHONY : __\Operations\OperatingVectors.i
+
+# target to preprocess a source file
+__\Operations\OperatingVectors.cpp.i:
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug
+	$(MAKE) -f Data_Fitting\CMakeFiles\LeastSquares.dir\build.make /nologo -$(MAKEFLAGS) Data_Fitting\CMakeFiles\LeastSquares.dir\__\Operations\OperatingVectors.cpp.i
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\Data_Fitting
+.PHONY : __\Operations\OperatingVectors.cpp.i
+
+__\Operations\OperatingVectors.s: __\Operations\OperatingVectors.cpp.s
+
+.PHONY : __\Operations\OperatingVectors.s
+
+# target to generate assembly for a file
+__\Operations\OperatingVectors.cpp.s:
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug
+	$(MAKE) -f Data_Fitting\CMakeFiles\LeastSquares.dir\build.make /nologo -$(MAKEFLAGS) Data_Fitting\CMakeFiles\LeastSquares.dir\__\Operations\OperatingVectors.cpp.s
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\Data_Fitting
+.PHONY : __\Operations\OperatingVectors.cpp.s
 
 # Help Target
 help:
@@ -185,6 +251,12 @@ help:
 	@echo ... LeastSquares.obj
 	@echo ... LeastSquares.i
 	@echo ... LeastSquares.s
+	@echo ... __/Operations/OperatingMatrices.obj
+	@echo ... __/Operations/OperatingMatrices.i
+	@echo ... __/Operations/OperatingMatrices.s
+	@echo ... __/Operations/OperatingVectors.obj
+	@echo ... __/Operations/OperatingVectors.i
+	@echo ... __/Operations/OperatingVectors.s
 .PHONY : help
 
 
@@ -196,8 +268,8 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Data_Fitting
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\Data_Fitting
 .PHONY : cmake_check_build_system
 

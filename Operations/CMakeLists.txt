@@ -4,4 +4,4 @@ project(projet)
 set(CMAKE_CXX_STANDARD 14)
 
 add_executable(OperatingVectors OperatingVectors.h OperatingVectors.cpp)
-add_executable(OperatingMatrices OperatingMatrices.h OperatingMatrices.cpp)
+add_executable(OperatingMatrices OperatingMatrices.h OperatingMatrices.cpp OperatingVectors.h OperatingVectors.cpp)

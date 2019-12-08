@@ -49,10 +49,10 @@ RM = "C:\Program Files\JetBrains\CLion 2019.2.3\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet
+CMAKE_SOURCE_DIR = C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -81,9 +81,9 @@ rebuild_cache\fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\CMakeFiles C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\CMakeFiles C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -202,6 +202,208 @@ OperatingVectors\fast:
 	$(MAKE) -f Operations\CMakeFiles\OperatingVectors.dir\build.make /nologo -$(MAKEFLAGS) Operations\CMakeFiles\OperatingVectors.dir\build
 .PHONY : OperatingVectors\fast
 
+#=============================================================================
+# Target rules for targets named TestSuite
+
+# Build rule for target.
+TestSuite: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) TestSuite
+.PHONY : TestSuite
+
+# fast build rule for target.
+TestSuite\fast:
+	$(MAKE) -f Test_Suites\CMakeFiles\TestSuite.dir\build.make /nologo -$(MAKEFLAGS) Test_Suites\CMakeFiles\TestSuite.dir\build
+.PHONY : TestSuite\fast
+
+Data_Fitting\LeastSquares.obj: Data_Fitting\LeastSquares.cpp.obj
+
+.PHONY : Data_Fitting\LeastSquares.obj
+
+# target to build an object file
+Data_Fitting\LeastSquares.cpp.obj:
+	$(MAKE) -f CMakeFiles\projet.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\projet.dir\Data_Fitting\LeastSquares.cpp.obj
+.PHONY : Data_Fitting\LeastSquares.cpp.obj
+
+Data_Fitting\LeastSquares.i: Data_Fitting\LeastSquares.cpp.i
+
+.PHONY : Data_Fitting\LeastSquares.i
+
+# target to preprocess a source file
+Data_Fitting\LeastSquares.cpp.i:
+	$(MAKE) -f CMakeFiles\projet.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\projet.dir\Data_Fitting\LeastSquares.cpp.i
+.PHONY : Data_Fitting\LeastSquares.cpp.i
+
+Data_Fitting\LeastSquares.s: Data_Fitting\LeastSquares.cpp.s
+
+.PHONY : Data_Fitting\LeastSquares.s
+
+# target to generate assembly for a file
+Data_Fitting\LeastSquares.cpp.s:
+	$(MAKE) -f CMakeFiles\projet.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\projet.dir\Data_Fitting\LeastSquares.cpp.s
+.PHONY : Data_Fitting\LeastSquares.cpp.s
+
+Input\Input.obj: Input\Input.cpp.obj
+
+.PHONY : Input\Input.obj
+
+# target to build an object file
+Input\Input.cpp.obj:
+	$(MAKE) -f CMakeFiles\projet.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\projet.dir\Input\Input.cpp.obj
+.PHONY : Input\Input.cpp.obj
+
+Input\Input.i: Input\Input.cpp.i
+
+.PHONY : Input\Input.i
+
+# target to preprocess a source file
+Input\Input.cpp.i:
+	$(MAKE) -f CMakeFiles\projet.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\projet.dir\Input\Input.cpp.i
+.PHONY : Input\Input.cpp.i
+
+Input\Input.s: Input\Input.cpp.s
+
+.PHONY : Input\Input.s
+
+# target to generate assembly for a file
+Input\Input.cpp.s:
+	$(MAKE) -f CMakeFiles\projet.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\projet.dir\Input\Input.cpp.s
+.PHONY : Input\Input.cpp.s
+
+Input\InputCreator\InputCreator.obj: Input\InputCreator\InputCreator.cpp.obj
+
+.PHONY : Input\InputCreator\InputCreator.obj
+
+# target to build an object file
+Input\InputCreator\InputCreator.cpp.obj:
+	$(MAKE) -f CMakeFiles\projet.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\projet.dir\Input\InputCreator\InputCreator.cpp.obj
+.PHONY : Input\InputCreator\InputCreator.cpp.obj
+
+Input\InputCreator\InputCreator.i: Input\InputCreator\InputCreator.cpp.i
+
+.PHONY : Input\InputCreator\InputCreator.i
+
+# target to preprocess a source file
+Input\InputCreator\InputCreator.cpp.i:
+	$(MAKE) -f CMakeFiles\projet.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\projet.dir\Input\InputCreator\InputCreator.cpp.i
+.PHONY : Input\InputCreator\InputCreator.cpp.i
+
+Input\InputCreator\InputCreator.s: Input\InputCreator\InputCreator.cpp.s
+
+.PHONY : Input\InputCreator\InputCreator.s
+
+# target to generate assembly for a file
+Input\InputCreator\InputCreator.cpp.s:
+	$(MAKE) -f CMakeFiles\projet.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\projet.dir\Input\InputCreator\InputCreator.cpp.s
+.PHONY : Input\InputCreator\InputCreator.cpp.s
+
+Input\InputReader\InputReader.obj: Input\InputReader\InputReader.cpp.obj
+
+.PHONY : Input\InputReader\InputReader.obj
+
+# target to build an object file
+Input\InputReader\InputReader.cpp.obj:
+	$(MAKE) -f CMakeFiles\projet.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\projet.dir\Input\InputReader\InputReader.cpp.obj
+.PHONY : Input\InputReader\InputReader.cpp.obj
+
+Input\InputReader\InputReader.i: Input\InputReader\InputReader.cpp.i
+
+.PHONY : Input\InputReader\InputReader.i
+
+# target to preprocess a source file
+Input\InputReader\InputReader.cpp.i:
+	$(MAKE) -f CMakeFiles\projet.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\projet.dir\Input\InputReader\InputReader.cpp.i
+.PHONY : Input\InputReader\InputReader.cpp.i
+
+Input\InputReader\InputReader.s: Input\InputReader\InputReader.cpp.s
+
+.PHONY : Input\InputReader\InputReader.s
+
+# target to generate assembly for a file
+Input\InputReader\InputReader.cpp.s:
+	$(MAKE) -f CMakeFiles\projet.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\projet.dir\Input\InputReader\InputReader.cpp.s
+.PHONY : Input\InputReader\InputReader.cpp.s
+
+Operations\OperatingMatrices.obj: Operations\OperatingMatrices.cpp.obj
+
+.PHONY : Operations\OperatingMatrices.obj
+
+# target to build an object file
+Operations\OperatingMatrices.cpp.obj:
+	$(MAKE) -f CMakeFiles\projet.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\projet.dir\Operations\OperatingMatrices.cpp.obj
+.PHONY : Operations\OperatingMatrices.cpp.obj
+
+Operations\OperatingMatrices.i: Operations\OperatingMatrices.cpp.i
+
+.PHONY : Operations\OperatingMatrices.i
+
+# target to preprocess a source file
+Operations\OperatingMatrices.cpp.i:
+	$(MAKE) -f CMakeFiles\projet.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\projet.dir\Operations\OperatingMatrices.cpp.i
+.PHONY : Operations\OperatingMatrices.cpp.i
+
+Operations\OperatingMatrices.s: Operations\OperatingMatrices.cpp.s
+
+.PHONY : Operations\OperatingMatrices.s
+
+# target to generate assembly for a file
+Operations\OperatingMatrices.cpp.s:
+	$(MAKE) -f CMakeFiles\projet.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\projet.dir\Operations\OperatingMatrices.cpp.s
+.PHONY : Operations\OperatingMatrices.cpp.s
+
+Operations\OperatingVectors.obj: Operations\OperatingVectors.cpp.obj
+
+.PHONY : Operations\OperatingVectors.obj
+
+# target to build an object file
+Operations\OperatingVectors.cpp.obj:
+	$(MAKE) -f CMakeFiles\projet.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\projet.dir\Operations\OperatingVectors.cpp.obj
+.PHONY : Operations\OperatingVectors.cpp.obj
+
+Operations\OperatingVectors.i: Operations\OperatingVectors.cpp.i
+
+.PHONY : Operations\OperatingVectors.i
+
+# target to preprocess a source file
+Operations\OperatingVectors.cpp.i:
+	$(MAKE) -f CMakeFiles\projet.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\projet.dir\Operations\OperatingVectors.cpp.i
+.PHONY : Operations\OperatingVectors.cpp.i
+
+Operations\OperatingVectors.s: Operations\OperatingVectors.cpp.s
+
+.PHONY : Operations\OperatingVectors.s
+
+# target to generate assembly for a file
+Operations\OperatingVectors.cpp.s:
+	$(MAKE) -f CMakeFiles\projet.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\projet.dir\Operations\OperatingVectors.cpp.s
+.PHONY : Operations\OperatingVectors.cpp.s
+
+Test_Suites\TestSuite.obj: Test_Suites\TestSuite.cpp.obj
+
+.PHONY : Test_Suites\TestSuite.obj
+
+# target to build an object file
+Test_Suites\TestSuite.cpp.obj:
+	$(MAKE) -f CMakeFiles\projet.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\projet.dir\Test_Suites\TestSuite.cpp.obj
+.PHONY : Test_Suites\TestSuite.cpp.obj
+
+Test_Suites\TestSuite.i: Test_Suites\TestSuite.cpp.i
+
+.PHONY : Test_Suites\TestSuite.i
+
+# target to preprocess a source file
+Test_Suites\TestSuite.cpp.i:
+	$(MAKE) -f CMakeFiles\projet.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\projet.dir\Test_Suites\TestSuite.cpp.i
+.PHONY : Test_Suites\TestSuite.cpp.i
+
+Test_Suites\TestSuite.s: Test_Suites\TestSuite.cpp.s
+
+.PHONY : Test_Suites\TestSuite.s
+
+# target to generate assembly for a file
+Test_Suites\TestSuite.cpp.s:
+	$(MAKE) -f CMakeFiles\projet.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\projet.dir\Test_Suites\TestSuite.cpp.s
+.PHONY : Test_Suites\TestSuite.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -244,6 +446,28 @@ help:
 	@echo ... LeastSquares
 	@echo ... OperatingMatrices
 	@echo ... OperatingVectors
+	@echo ... TestSuite
+	@echo ... Data_Fitting/LeastSquares.obj
+	@echo ... Data_Fitting/LeastSquares.i
+	@echo ... Data_Fitting/LeastSquares.s
+	@echo ... Input/Input.obj
+	@echo ... Input/Input.i
+	@echo ... Input/Input.s
+	@echo ... Input/InputCreator/InputCreator.obj
+	@echo ... Input/InputCreator/InputCreator.i
+	@echo ... Input/InputCreator/InputCreator.s
+	@echo ... Input/InputReader/InputReader.obj
+	@echo ... Input/InputReader/InputReader.i
+	@echo ... Input/InputReader/InputReader.s
+	@echo ... Operations/OperatingMatrices.obj
+	@echo ... Operations/OperatingMatrices.i
+	@echo ... Operations/OperatingMatrices.s
+	@echo ... Operations/OperatingVectors.obj
+	@echo ... Operations/OperatingVectors.i
+	@echo ... Operations/OperatingVectors.s
+	@echo ... Test_Suites/TestSuite.obj
+	@echo ... Test_Suites/TestSuite.i
+	@echo ... Test_Suites/TestSuite.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

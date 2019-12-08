@@ -49,10 +49,10 @@ RM = "C:\Program Files\JetBrains\CLion 2019.2.3\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet
+CMAKE_SOURCE_DIR = C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -81,18 +81,18 @@ rebuild_cache\fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\CMakeFiles C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Operations\CMakeFiles\progress.marks
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\CMakeFiles C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\Operations\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) Operations\all
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Operations
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\CMakeFiles 0
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\Operations
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug
 	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) Operations\clean
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Operations
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\Operations
 .PHONY : clean
 
 # The main clean target
@@ -102,30 +102,30 @@ clean\fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug
 	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) Operations\preinstall
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Operations
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\Operations
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall\fast:
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug
 	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) Operations\preinstall
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Operations
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\Operations
 .PHONY : preinstall\fast
 
 # clear depends
 depend:
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Operations
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\Operations
 .PHONY : depend
 
 # Convenience name for target.
 Operations\CMakeFiles\OperatingMatrices.dir\rule:
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug
 	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) Operations\CMakeFiles\OperatingMatrices.dir\rule
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Operations
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\Operations
 .PHONY : Operations\CMakeFiles\OperatingMatrices.dir\rule
 
 # Convenience name for target.
@@ -135,16 +135,16 @@ OperatingMatrices: Operations\CMakeFiles\OperatingMatrices.dir\rule
 
 # fast build rule for target.
 OperatingMatrices\fast:
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug
 	$(MAKE) -f Operations\CMakeFiles\OperatingMatrices.dir\build.make /nologo -$(MAKEFLAGS) Operations\CMakeFiles\OperatingMatrices.dir\build
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Operations
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\Operations
 .PHONY : OperatingMatrices\fast
 
 # Convenience name for target.
 Operations\CMakeFiles\OperatingVectors.dir\rule:
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug
 	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) Operations\CMakeFiles\OperatingVectors.dir\rule
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Operations
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\Operations
 .PHONY : Operations\CMakeFiles\OperatingVectors.dir\rule
 
 # Convenience name for target.
@@ -154,9 +154,9 @@ OperatingVectors: Operations\CMakeFiles\OperatingVectors.dir\rule
 
 # fast build rule for target.
 OperatingVectors\fast:
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug
 	$(MAKE) -f Operations\CMakeFiles\OperatingVectors.dir\build.make /nologo -$(MAKEFLAGS) Operations\CMakeFiles\OperatingVectors.dir\build
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Operations
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\Operations
 .PHONY : OperatingVectors\fast
 
 OperatingMatrices.obj: OperatingMatrices.cpp.obj
@@ -165,9 +165,9 @@ OperatingMatrices.obj: OperatingMatrices.cpp.obj
 
 # target to build an object file
 OperatingMatrices.cpp.obj:
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug
 	$(MAKE) -f Operations\CMakeFiles\OperatingMatrices.dir\build.make /nologo -$(MAKEFLAGS) Operations\CMakeFiles\OperatingMatrices.dir\OperatingMatrices.cpp.obj
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Operations
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\Operations
 .PHONY : OperatingMatrices.cpp.obj
 
 OperatingMatrices.i: OperatingMatrices.cpp.i
@@ -176,9 +176,9 @@ OperatingMatrices.i: OperatingMatrices.cpp.i
 
 # target to preprocess a source file
 OperatingMatrices.cpp.i:
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug
 	$(MAKE) -f Operations\CMakeFiles\OperatingMatrices.dir\build.make /nologo -$(MAKEFLAGS) Operations\CMakeFiles\OperatingMatrices.dir\OperatingMatrices.cpp.i
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Operations
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\Operations
 .PHONY : OperatingMatrices.cpp.i
 
 OperatingMatrices.s: OperatingMatrices.cpp.s
@@ -187,9 +187,9 @@ OperatingMatrices.s: OperatingMatrices.cpp.s
 
 # target to generate assembly for a file
 OperatingMatrices.cpp.s:
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug
 	$(MAKE) -f Operations\CMakeFiles\OperatingMatrices.dir\build.make /nologo -$(MAKEFLAGS) Operations\CMakeFiles\OperatingMatrices.dir\OperatingMatrices.cpp.s
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Operations
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\Operations
 .PHONY : OperatingMatrices.cpp.s
 
 OperatingVectors.obj: OperatingVectors.cpp.obj
@@ -198,9 +198,10 @@ OperatingVectors.obj: OperatingVectors.cpp.obj
 
 # target to build an object file
 OperatingVectors.cpp.obj:
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug
+	$(MAKE) -f Operations\CMakeFiles\OperatingMatrices.dir\build.make /nologo -$(MAKEFLAGS) Operations\CMakeFiles\OperatingMatrices.dir\OperatingVectors.cpp.obj
 	$(MAKE) -f Operations\CMakeFiles\OperatingVectors.dir\build.make /nologo -$(MAKEFLAGS) Operations\CMakeFiles\OperatingVectors.dir\OperatingVectors.cpp.obj
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Operations
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\Operations
 .PHONY : OperatingVectors.cpp.obj
 
 OperatingVectors.i: OperatingVectors.cpp.i
@@ -209,9 +210,10 @@ OperatingVectors.i: OperatingVectors.cpp.i
 
 # target to preprocess a source file
 OperatingVectors.cpp.i:
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug
+	$(MAKE) -f Operations\CMakeFiles\OperatingMatrices.dir\build.make /nologo -$(MAKEFLAGS) Operations\CMakeFiles\OperatingMatrices.dir\OperatingVectors.cpp.i
 	$(MAKE) -f Operations\CMakeFiles\OperatingVectors.dir\build.make /nologo -$(MAKEFLAGS) Operations\CMakeFiles\OperatingVectors.dir\OperatingVectors.cpp.i
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Operations
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\Operations
 .PHONY : OperatingVectors.cpp.i
 
 OperatingVectors.s: OperatingVectors.cpp.s
@@ -220,9 +222,10 @@ OperatingVectors.s: OperatingVectors.cpp.s
 
 # target to generate assembly for a file
 OperatingVectors.cpp.s:
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug
+	$(MAKE) -f Operations\CMakeFiles\OperatingMatrices.dir\build.make /nologo -$(MAKEFLAGS) Operations\CMakeFiles\OperatingMatrices.dir\OperatingVectors.cpp.s
 	$(MAKE) -f Operations\CMakeFiles\OperatingVectors.dir\build.make /nologo -$(MAKEFLAGS) Operations\CMakeFiles\OperatingVectors.dir\OperatingVectors.cpp.s
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Operations
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\Operations
 .PHONY : OperatingVectors.cpp.s
 
 # Help Target
@@ -252,8 +255,8 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Operations
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\Operations
 .PHONY : cmake_check_build_system
 

@@ -12,12 +12,13 @@ using namespace std;
 
 class InputCreator : public Input {
 public:
-    explicit InputCreator(std::string function_name, bool generate_random_displacement = false, const std::vector<double>& x_coords = {});
+    explicit InputCreator(std::string function_name, const std::vector<double>& x_coords = {}, bool generate_random_displacement = false);
     virtual std::vector<std::vector<double>> generate() override;
 private:
     std::string function_name;
     bool generate_random_displacement;
     std::vector<double> x_coords;
+    struct module;
 };
 
 

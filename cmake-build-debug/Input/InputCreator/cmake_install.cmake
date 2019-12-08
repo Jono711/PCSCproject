@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/morin/OneDrive/Documents/EPFL/PCSC/projet/Input/InputCreator
+# Install script for directory: C:/Users/morin/OneDrive/Documents/EPFL/PCSC/projet/PCSCproject/Input/InputCreator
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

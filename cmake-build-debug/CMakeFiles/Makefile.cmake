@@ -33,6 +33,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../Input/InputCreator/CMakeLists.txt"
   "../Input/InputReader/CMakeLists.txt"
   "../Operations/CMakeLists.txt"
+  "../Test_Suites/CMakeLists.txt"
   "CMakeFiles/3.15.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.15.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.15.3/CMakeRCCompiler.cmake"
@@ -53,6 +54,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "Input/InputReader/CMakeFiles/CMakeDirectoryInformation.cmake"
   "Data_Fitting/CMakeFiles/CMakeDirectoryInformation.cmake"
   "Operations/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "Test_Suites/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -64,4 +66,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "Data_Fitting/CMakeFiles/LeastSquares.dir/DependInfo.cmake"
   "Operations/CMakeFiles/OperatingMatrices.dir/DependInfo.cmake"
   "Operations/CMakeFiles/OperatingVectors.dir/DependInfo.cmake"
+  "Test_Suites/CMakeFiles/TestSuite.dir/DependInfo.cmake"
   )

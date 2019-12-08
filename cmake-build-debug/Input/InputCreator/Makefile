@@ -49,10 +49,10 @@ RM = "C:\Program Files\JetBrains\CLion 2019.2.3\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet
+CMAKE_SOURCE_DIR = C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -81,18 +81,18 @@ rebuild_cache\fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\CMakeFiles C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Input\InputCreator\CMakeFiles\progress.marks
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\CMakeFiles C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\Input\InputCreator\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) Input\InputCreator\all
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Input\InputCreator
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\CMakeFiles 0
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\Input\InputCreator
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug
 	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) Input\InputCreator\clean
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Input\InputCreator
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\Input\InputCreator
 .PHONY : clean
 
 # The main clean target
@@ -102,30 +102,30 @@ clean\fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug
 	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) Input\InputCreator\preinstall
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Input\InputCreator
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\Input\InputCreator
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall\fast:
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug
 	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) Input\InputCreator\preinstall
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Input\InputCreator
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\Input\InputCreator
 .PHONY : preinstall\fast
 
 # clear depends
 depend:
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Input\InputCreator
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\Input\InputCreator
 .PHONY : depend
 
 # Convenience name for target.
 Input\InputCreator\CMakeFiles\InputCreator.dir\rule:
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug
 	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) Input\InputCreator\CMakeFiles\InputCreator.dir\rule
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Input\InputCreator
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\Input\InputCreator
 .PHONY : Input\InputCreator\CMakeFiles\InputCreator.dir\rule
 
 # Convenience name for target.
@@ -135,9 +135,9 @@ InputCreator: Input\InputCreator\CMakeFiles\InputCreator.dir\rule
 
 # fast build rule for target.
 InputCreator\fast:
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug
 	$(MAKE) -f Input\InputCreator\CMakeFiles\InputCreator.dir\build.make /nologo -$(MAKEFLAGS) Input\InputCreator\CMakeFiles\InputCreator.dir\build
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Input\InputCreator
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\Input\InputCreator
 .PHONY : InputCreator\fast
 
 InputCreator.obj: InputCreator.cpp.obj
@@ -146,9 +146,9 @@ InputCreator.obj: InputCreator.cpp.obj
 
 # target to build an object file
 InputCreator.cpp.obj:
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug
 	$(MAKE) -f Input\InputCreator\CMakeFiles\InputCreator.dir\build.make /nologo -$(MAKEFLAGS) Input\InputCreator\CMakeFiles\InputCreator.dir\InputCreator.cpp.obj
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Input\InputCreator
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\Input\InputCreator
 .PHONY : InputCreator.cpp.obj
 
 InputCreator.i: InputCreator.cpp.i
@@ -157,9 +157,9 @@ InputCreator.i: InputCreator.cpp.i
 
 # target to preprocess a source file
 InputCreator.cpp.i:
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug
 	$(MAKE) -f Input\InputCreator\CMakeFiles\InputCreator.dir\build.make /nologo -$(MAKEFLAGS) Input\InputCreator\CMakeFiles\InputCreator.dir\InputCreator.cpp.i
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Input\InputCreator
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\Input\InputCreator
 .PHONY : InputCreator.cpp.i
 
 InputCreator.s: InputCreator.cpp.s
@@ -168,9 +168,9 @@ InputCreator.s: InputCreator.cpp.s
 
 # target to generate assembly for a file
 InputCreator.cpp.s:
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug
 	$(MAKE) -f Input\InputCreator\CMakeFiles\InputCreator.dir\build.make /nologo -$(MAKEFLAGS) Input\InputCreator\CMakeFiles\InputCreator.dir\InputCreator.cpp.s
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Input\InputCreator
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\Input\InputCreator
 .PHONY : InputCreator.cpp.s
 
 # Help Target
@@ -196,8 +196,8 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
-	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\cmake-build-debug\Input\InputCreator
+	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\PCSCproject\cmake-build-debug\Input\InputCreator
 .PHONY : cmake_check_build_system
 

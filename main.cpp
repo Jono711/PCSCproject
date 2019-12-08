@@ -1,6 +1,8 @@
-#include <iostream>
+#include "Test_Suites/TestSuite.h"
+
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    TestSuite test1;
+    test1.testDataFitting();
     return 0;
 }

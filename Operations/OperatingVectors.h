@@ -12,13 +12,15 @@ class OperatingVectors {
 public:
     explicit OperatingVectors(vector<double> operating_vector);
     explicit OperatingVectors(size_t n);
+    explicit OperatingVectors();
 
     OperatingVectors &operator=(const OperatingVectors &m);
     double &operator[](const size_t &i);
+    double &operator[](size_t &i);
     OperatingVectors operator*(double d) const;
     OperatingVectors operator+(double d) const;
     OperatingVectors operator+(const OperatingVectors &m) const;
-    OperatingVectors operator^(int d) const;
+    OperatingVectors operator^(unsigned int d) const;
     double operator*(const OperatingVectors &m) const;
 
     size_t size() const;

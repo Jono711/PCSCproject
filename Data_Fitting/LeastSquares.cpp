@@ -2,19 +2,31 @@
 // Created by morin on 30.11.2019.
 //
 
+#include <iostream>
 #include "LeastSquares.h"
 #include "../Operations/OperatingMatrices.h"
+using namespace std;
 
-LeastSquares::LeastSquares(const vector<vector<double>>& xy_coords) {
-    x_coords = xy_coords[0];
-    y_coords = xy_coords[1];
+LeastSquares::LeastSquares(const vector<vector<double>> &xy_coords) {
+    if(xy_coords.size()!=2){
+        cout << "There shouldn't be more or less than two coordinates. Creating method with no coordinates." << endl;
+        x_coords = vector<double>();
+        y_coords = vector<double>();
+    } else if(xy_coords[0].size()!=xy_coords[1].size()){
+        cout << "The two coordinates don't have the same size. Creating method with no coordinates." << endl;
+        x_coords = vector<double>();
+        y_coords = vector<double>();
+    } else {
+        x_coords = xy_coords[0];
+        y_coords = xy_coords[1];
+    }
 }
 
 vector<double> LeastSquares::dataFitting(int degree) {
     // Augment X dimension
     vector<OperatingVectors> augmented_x;
     augmented_x.reserve(degree + 1);
-    for(int i = 0; i < degree; i++){
+    for(int i = 0; i < degree + 1; i++){
         augmented_x.push_back(OperatingVectors(x_coords)^i);
     }
     // Linarly solve (XtX)w=(Xty)
@@ -34,7 +46,7 @@ vector<double> LeastSquares::dataFitting(int degree) {
 string LeastSquares::displayEquation(const vector<double>& coefficients) {
     string to_return("y=");
     for(unsigned int i = coefficients.size()-1; i > 0; --i){
-        if (coefficients[i] > 0 and to_return.size() > 2)
+        if (coefficients[i] > 0 && to_return.size() > 2)
             to_return += "+";
         to_return += to_string(coefficients[i]);
         if (i==1) {
@@ -44,7 +56,7 @@ string LeastSquares::displayEquation(const vector<double>& coefficients) {
         }
     }
 
-    if (coefficients[0] > 0 and to_return.size() > 2)
+    if (coefficients[0] > 0 && to_return.size() > 2)
         to_return += "+";
     to_return += to_string(coefficients[0]);
 

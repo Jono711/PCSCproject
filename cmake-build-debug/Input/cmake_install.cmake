@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/morin/OneDrive/Documents/EPFL/PCSC/projet/Input
+# Install script for directory: C:/Users/morin/OneDrive/Documents/EPFL/PCSC/projet/PCSCproject/Input
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,11 +34,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/morin/OneDrive/Documents/EPFL/PCSC/projet/cmake-build-debug/Input/InputCreator/cmake_install.cmake")
+  include("C:/Users/morin/OneDrive/Documents/EPFL/PCSC/projet/PCSCproject/cmake-build-debug/Input/InputCreator/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/morin/OneDrive/Documents/EPFL/PCSC/projet/cmake-build-debug/Input/InputReader/cmake_install.cmake")
+  include("C:/Users/morin/OneDrive/Documents/EPFL/PCSC/projet/PCSCproject/cmake-build-debug/Input/InputReader/cmake_install.cmake")
 endif()
 

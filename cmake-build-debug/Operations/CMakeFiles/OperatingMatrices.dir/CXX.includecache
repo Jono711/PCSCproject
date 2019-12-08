@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/morin/OneDrive/Documents/EPFL/PCSC/projet/PCSCproject/Operations/OperatingMatrices.cpp
+OperatingMatrices.h
+C:/Users/morin/OneDrive/Documents/EPFL/PCSC/projet/PCSCproject/Operations/OperatingMatrices.h
+utility
+-
+iostream
+-
+
+C:/Users/morin/OneDrive/Documents/EPFL/PCSC/projet/PCSCproject/Operations/OperatingMatrices.h
+vector
+-
+OperatingVectors.h
+C:/Users/morin/OneDrive/Documents/EPFL/PCSC/projet/PCSCproject/Operations/OperatingVectors.h
+
+C:/Users/morin/OneDrive/Documents/EPFL/PCSC/projet/PCSCproject/Operations/OperatingVectors.cpp
+OperatingVectors.h
+C:/Users/morin/OneDrive/Documents/EPFL/PCSC/projet/PCSCproject/Operations/OperatingVectors.h
+utility
+-
+
+C:/Users/morin/OneDrive/Documents/EPFL/PCSC/projet/PCSCproject/Operations/OperatingVectors.h
+vector
+-
+

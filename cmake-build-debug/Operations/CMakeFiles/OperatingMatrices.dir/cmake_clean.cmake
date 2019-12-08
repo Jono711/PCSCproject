@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/OperatingMatrices.dir/OperatingMatrices.cpp.obj"
+  "CMakeFiles/OperatingMatrices.dir/OperatingVectors.cpp.obj"
   "OperatingMatrices.exe"
   "OperatingMatrices.exe.manifest"
   "OperatingMatrices.lib"

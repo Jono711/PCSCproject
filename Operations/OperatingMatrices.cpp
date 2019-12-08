@@ -8,7 +8,20 @@
 #include <iostream>
 
 OperatingMatrices::OperatingMatrices(vector<OperatingVectors> operating_matrix) {
-    this->operating_matrix = move(operating_matrix);
+    size_t i = operating_matrix.size();
+    bool is_authorized_matrix = true;
+    while(i>1 && is_authorized_matrix)
+    {
+        i = i-1;
+        if (operating_matrix[i].size()!=operating_matrix[0].size())
+            is_authorized_matrix = false;
+    }
+    if(is_authorized_matrix)
+    {
+        this->operating_matrix = move(operating_matrix);
+    } else {
+        cout << "Unauthorized matrix dimensions. Creating an empty matrix." << endl;
+    }
 }
 
 OperatingMatrices::OperatingMatrices(size_t n) {
@@ -43,21 +56,31 @@ OperatingMatrices OperatingMatrices::operator+(const double d) const {
 }
 
 OperatingMatrices OperatingMatrices::operator+(const OperatingMatrices &m) const {
-    // Error handling when this->operating_matrix.size()!=m.operating_matrix.size() ?
-    vector<OperatingVectors> new_matrix(this->operating_matrix.size());
+    if(this->operating_matrix.size()!=m.operating_matrix.size() || this->operating_matrix[0].size()!=m.operating_matrix[0].size()){
+        cout << "Trying to add matrices of different sizes. The right matrices will be truncated or filled with 0." << endl;
+    }
+    vector<OperatingVectors> new_matrix;
     for(size_t i =0; i < this->operating_matrix.size(); i++ ){
-        new_matrix[i] = this->operating_matrix[i] + m.operating_matrix[i];
+        if(i>=m.operating_matrix.size()){
+            new_matrix.push_back(this->operating_matrix[i]);
+        } else {
+            new_matrix.push_back(this->operating_matrix[i] + m.operating_matrix[i]);
+        }
     }
     return OperatingMatrices(new_matrix);
 }
 
-OperatingMatrices OperatingMatrices::operator*(OperatingMatrices &m) { //issue with the const
+OperatingMatrices OperatingMatrices::operator*(OperatingMatrices &m) {
+    if(this->operating_matrix[0].size()!=m.operating_matrix.size()){
+        cout << "Size of matrices doesn't match for matrix multiplication. Outputing square matrix of size equal to RHS's row filled with 0." << endl;
+        return OperatingMatrices(m.operating_matrix.size());
+    }
     vector<OperatingVectors> new_matrix;
-    for(auto & row : this->operating_matrix){
+    for (auto &row : this->operating_matrix) {
         vector<double> new_vector;
-        for (size_t j = 0; j < m[0].size(); j++){
+        for (size_t j = 0; j < m[0].size(); j++) {
             double new_double(0.);
-            for (size_t k = 0; k < m.operating_matrix.size(); k++){
+            for (size_t k = 0; k < m.operating_matrix.size(); k++) {
                 new_double += row[k] * m[k][j];
             }
             new_vector.push_back(new_double);
@@ -68,7 +91,10 @@ OperatingMatrices OperatingMatrices::operator*(OperatingMatrices &m) { //issue w
 }
 
 OperatingVectors OperatingMatrices::operator*(OperatingVectors &m){
-    // Error handling when this->operating_matrix[0].size()!=m.OperatingVectors.size() ?
+    if(this->operating_matrix[0].size()!=m.size()){
+        cout << "Size of matrices doesn't match for matrix multiplication. Outputing vector of size equal to RHS filled with 0." << endl;
+        return OperatingVectors(m.size());
+    }
     vector<double> new_vector;
     for(auto & row : this->operating_matrix){
         double new_double = row * m;
@@ -86,8 +112,7 @@ OperatingMatrices OperatingMatrices::transpose() {
         }
         new_matrix.emplace_back(OperatingVectors(new_vector));
     }
-    *this = OperatingMatrices(new_matrix);
-    return *this;
+    return OperatingMatrices(new_matrix);
 }
 
 void OperatingMatrices::getCfactor(OperatingMatrices &M, OperatingMatrices &t, int p, int q, size_t n) {
@@ -107,16 +132,20 @@ void OperatingMatrices::getCfactor(OperatingMatrices &M, OperatingMatrices &t, i
 
 double OperatingMatrices::determinant(OperatingMatrices &M, size_t n){ //to find determinant only works on square matrix
     double determ = 0.;
-    if (n == 1)
-        return M[0][0];
-    OperatingMatrices t(M.operating_matrix.size()); //store cofactors
-    int s = 1; //store sign multiplier
-    // To Iterate each element of first row
-    for (size_t f = 0; f < n; f++) {
-    //For Getting Cofactor of M[0][f] do
-        getCfactor(M, t, 0, f, n);
-        determ += s * M[0][f] * determinant(t, n - 1);
-        s = -s;
+    if(M.operating_matrix.size()!=M.operating_matrix[0].size()){
+        cout << "Trying to compute the determinant of a non-quare matrix. Returning 0." << endl;
+    } else {
+        if (n == 1)
+            return M[0][0];
+        OperatingMatrices t(M.operating_matrix.size()); //store cofactors
+        int s = 1; //store sign multiplier
+        // To Iterate each element of first row
+        for (size_t f = 0; f < n; f++) {
+            //For Getting Cofactor of M[0][f] do
+            getCfactor(M, t, 0, f, n);
+            determ += s * M[0][f] * determinant(t, n - 1);
+            s = -s;
+        }
     }
     return determ;
 }
@@ -155,4 +184,8 @@ OperatingMatrices OperatingMatrices::inverse()
     OperatingMatrices inv = this->adjoint()*(1./det);
 
     return inv;
+}
+
+vector <OperatingVectors>& OperatingMatrices::get() {
+    return this->operating_matrix;
 }

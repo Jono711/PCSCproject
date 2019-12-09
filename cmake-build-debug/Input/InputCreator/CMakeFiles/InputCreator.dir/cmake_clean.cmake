@@ -1,8 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/InputCreator.dir/InputCreator.cpp.obj"
-  "InputCreator.exe"
-  "InputCreator.exe.manifest"
-  "InputCreator.lib"
+  "CMakeFiles/InputCreator.dir/InputCreator.cpp.o"
+  "InputCreator"
   "InputCreator.pdb"
 )
 

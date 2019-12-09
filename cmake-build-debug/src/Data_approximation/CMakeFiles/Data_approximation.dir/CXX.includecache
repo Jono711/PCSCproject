@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../src/Operations/OperatingMatrices.h
+vector
+-
+OperatingVectors.h
+../src/Operations/OperatingVectors.h
+
+../src/Operations/OperatingVectors.h
+vector
+-
+
+/Users/youssef/Desktop/PCSCproject/src/Data_approximation/Polynomial_approximation.cpp
+iostream
+-
+Polynomial_approximation.h
+/Users/youssef/Desktop/PCSCproject/src/Data_approximation/Polynomial_approximation.h
+Operations/OperatingVectors.h
+/Users/youssef/Desktop/PCSCproject/src/Data_approximation/Operations/OperatingVectors.h
+math.h
+/Users/youssef/Desktop/PCSCproject/src/Data_approximation/math.h
+
+/Users/youssef/Desktop/PCSCproject/src/Data_approximation/Polynomial_approximation.h
+vector
+-
+string
+-
+Operations/OperatingVectors.h
+/Users/youssef/Desktop/PCSCproject/src/Data_approximation/Operations/OperatingVectors.h
+Operations/OperatingMatrices.h
+/Users/youssef/Desktop/PCSCproject/src/Data_approximation/Operations/OperatingMatrices.h
+

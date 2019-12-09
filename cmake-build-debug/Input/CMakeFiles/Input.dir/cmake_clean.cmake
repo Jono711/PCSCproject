@@ -1,8 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Input.dir/Input.cpp.obj"
-  "Input.exe"
-  "Input.exe.manifest"
-  "Input.lib"
+  "CMakeFiles/Input.dir/Input.cpp.o"
+  "Input"
   "Input.pdb"
 )
 

@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/youssef/Desktop/PCSCproject/src/Input/Input.h
+vector
+-
+
+/Users/youssef/Desktop/PCSCproject/src/Input/InputReader/InputReader.cpp
+InputReader.h
+/Users/youssef/Desktop/PCSCproject/src/Input/InputReader/InputReader.h
+algorithm
+-
+utility
+-
+iostream
+-
+fstream
+-
+sstream
+-
+
+/Users/youssef/Desktop/PCSCproject/src/Input/InputReader/InputReader.h
+string
+-
+../Input.h
+/Users/youssef/Desktop/PCSCproject/src/Input/Input.h
+

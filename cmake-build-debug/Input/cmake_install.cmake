@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/morin/OneDrive/Documents/EPFL/PCSC/projet/PCSCproject/Input
+# Install script for directory: /Users/youssef/Desktop/PCSCproject/Input
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/projet")
+  set(CMAKE_INSTALL_PREFIX "/usr/local")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -34,11 +34,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/morin/OneDrive/Documents/EPFL/PCSC/projet/PCSCproject/cmake-build-debug/Input/InputCreator/cmake_install.cmake")
+  include("/Users/youssef/Desktop/PCSCproject/cmake-build-debug/Input/InputCreator/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/morin/OneDrive/Documents/EPFL/PCSC/projet/PCSCproject/cmake-build-debug/Input/InputReader/cmake_install.cmake")
+  include("/Users/youssef/Desktop/PCSCproject/cmake-build-debug/Input/InputReader/cmake_install.cmake")
 endif()
 

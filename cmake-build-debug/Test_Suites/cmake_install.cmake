@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/morin/OneDrive/Documents/EPFL/PCSC/projet/PCSCproject/Test_Suites
+# Install script for directory: /Users/youssef/Desktop/PCSCproject/Test_Suites
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/projet")
+  set(CMAKE_INSTALL_PREFIX "/usr/local")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

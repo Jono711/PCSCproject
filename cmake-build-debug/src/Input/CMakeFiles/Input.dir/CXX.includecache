@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/youssef/Desktop/PCSCproject/src/Input/Input.cpp
+Input.h
+/Users/youssef/Desktop/PCSCproject/src/Input/Input.h
+
+/Users/youssef/Desktop/PCSCproject/src/Input/Input.h
+vector
+-
+

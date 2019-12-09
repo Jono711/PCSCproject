@@ -1,10 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/LeastSquares.dir/LeastSquares.cpp.obj"
-  "CMakeFiles/LeastSquares.dir/__/Operations/OperatingMatrices.cpp.obj"
-  "CMakeFiles/LeastSquares.dir/__/Operations/OperatingVectors.cpp.obj"
-  "LeastSquares.exe"
-  "LeastSquares.exe.manifest"
-  "LeastSquares.lib"
+  "CMakeFiles/LeastSquares.dir/LeastSquares.cpp.o"
+  "CMakeFiles/LeastSquares.dir/__/Operations/OperatingMatrices.cpp.o"
+  "CMakeFiles/LeastSquares.dir/__/Operations/OperatingVectors.cpp.o"
+  "LeastSquares"
   "LeastSquares.pdb"
 )
 

@@ -1,8 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/InputReader.dir/InputReader.cpp.obj"
-  "InputReader.exe"
-  "InputReader.exe.manifest"
-  "InputReader.lib"
+  "CMakeFiles/InputReader.dir/InputReader.cpp.o"
+  "InputReader"
   "InputReader.pdb"
 )
 

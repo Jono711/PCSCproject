@@ -24,30 +24,6 @@ OperatingMatrices::OperatingMatrices(vector<OperatingVectors> operating_matrix) 
     }
 }
 
-OperatingMatrices::OperatingMatrices(vector<vector<double>> operating_matrix) {
-    size_t i = operating_matrix.size();
-    bool is_authorized_matrix = true;
-    while(i>1 && is_authorized_matrix)
-    {
-        i = i-1;
-        if (operating_matrix[i].size()!=operating_matrix[0].size())
-            is_authorized_matrix = false;
-    }
-
-    vector<OperatingVectors> res;
-    if(is_authorized_matrix)
-    {
-        for (int j=0; j < operating_matrix.size(); j++) {
-            vector<double> a = operating_matrix[j];
-            res.push_back(OperatingVectors( a ));
-        }
-        this->operating_matrix = move(res);
-    } else {
-        cout << "Unauthorized matrix dimensions. Creating an empty matrix." << endl;
-    }
-
-}
-
 OperatingMatrices::OperatingMatrices(size_t n) {
     vector<OperatingVectors> new_matrix;
     for(size_t i=0; i < n; i++){
@@ -55,17 +31,6 @@ OperatingMatrices::OperatingMatrices(size_t n) {
     }
     *this = OperatingMatrices(new_matrix);
 }
-
-
-OperatingMatrices::OperatingMatrices(size_t m,size_t n) {
-    vector<OperatingVectors> new_matrix;
-    for(size_t i=0; i < m; i++){
-            new_matrix.emplace_back(OperatingVectors(n));
-
-    }
-    *this = OperatingMatrices(new_matrix);
-}
-
 
 
 OperatingMatrices &OperatingMatrices::operator=(const OperatingMatrices &m) = default;
@@ -185,9 +150,6 @@ double OperatingMatrices::determinant(OperatingMatrices &M, size_t n){ //to find
     return determ;
 }
 
-
-
-
 OperatingMatrices OperatingMatrices::adjoint(){
 //to find adjoint matrix, only works on square matrix
     if (this->operating_matrix.size() == 1){
@@ -227,11 +189,3 @@ OperatingMatrices OperatingMatrices::inverse()
 vector <OperatingVectors>& OperatingMatrices::get() {
     return this->operating_matrix;
 }
-
-size_t OperatingMatrices::size() const {
-    return this->operating_matrix.size();
-}
-
-
-
-

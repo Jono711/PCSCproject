@@ -3,4 +3,4 @@ project(projet)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(InputCreator InputCreator.h InputCreator.cpp)
+add_executable(Output Output.h Output.cpp)

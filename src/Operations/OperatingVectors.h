@@ -23,19 +23,11 @@ public:
     OperatingVectors operator^(unsigned int d) const;
     double operator*(const OperatingVectors &m) const;
 
-
-    void afficher_Operating_vector();
-
     size_t size() const;
+    vector<double> &get();
 
-
-    vector<double>  get() ;
-
-
-
-        private:
+private:
     vector<double> operating_vector;
-
 };
 
 

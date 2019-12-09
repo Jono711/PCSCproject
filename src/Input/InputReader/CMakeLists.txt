@@ -3,11 +3,4 @@ project(projet)
 
 set(CMAKE_CXX_STANDARD 14)
 
-set(HEADER_FILES
-        InputReader.h
-        )
-
-set(SOURCE_FILES
-        InputReader.cpp
-        )
-add_library(InputReader STATIC ${SOURCE_FILES} ${HEADER_FILES})
+add_executable(InputReader InputReader.h InputReader.cpp)

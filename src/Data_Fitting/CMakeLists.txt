@@ -3,11 +3,6 @@ project(projet)
 
 set(CMAKE_CXX_STANDARD 14)
 
-set(HEADER_FILES
-        LeastSquares.h
-        )
-
-set(SOURCE_FILES
-        LeastSquares.cpp
-        )
-add_library(Data_Fitting STATIC ${SOURCE_FILES} ${HEADER_FILES})
+add_executable(LeastSquares LeastSquares.h LeastSquares.cpp
+        ../Operations/OperatingMatrices.h ../Operations/OperatingMatrices.cpp
+        ../Operations/OperatingVectors.h ../Operations/OperatingVectors.cpp)

@@ -12,9 +12,7 @@ using namespace std;
 class OperatingMatrices {
 public:
     explicit OperatingMatrices(vector<OperatingVectors> operating_matrix);
-    explicit OperatingMatrices(vector<vector<double>> operating_matrix);
     explicit OperatingMatrices(size_t n);
-    explicit OperatingMatrices(size_t m ,size_t n );
 
     OperatingMatrices &operator=(const OperatingMatrices &m);
 
@@ -27,11 +25,9 @@ public:
 
     OperatingMatrices transpose();
     double determinant(OperatingMatrices &M, size_t n);
-
     OperatingMatrices adjoint();
     OperatingMatrices inverse();
     vector<OperatingVectors>& get();
-    size_t size() const;
 
     // vector<OperatingMatrices> LUdecomposition(OperatingMatrices A, OperatingMatrices B);
 

@@ -174,6 +174,7 @@ Data_approximation\fast:
 	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\newproject\PCSCproject\cmake-build-debug\src\Data_approximation
 .PHONY : Data_approximation\fast
 
+<<<<<<< HEAD
 Polynomial_approximation.obj: Polynomial_approximation.cpp.obj
 
 .PHONY : Polynomial_approximation.obj
@@ -184,23 +185,40 @@ Polynomial_approximation.cpp.obj:
 	$(MAKE) -f src\Data_approximation\CMakeFiles\Data_approximation.dir\build.make /nologo -$(MAKEFLAGS) src\Data_approximation\CMakeFiles\Data_approximation.dir\Polynomial_approximation.cpp.obj
 	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\newproject\PCSCproject\cmake-build-debug\src\Data_approximation
 .PHONY : Polynomial_approximation.cpp.obj
+=======
+PolynomialApproximationTest.o: PolynomialApproximationTest.cpp.o
 
-Polynomial_approximation.i: Polynomial_approximation.cpp.i
+.PHONY : PolynomialApproximationTest.o
 
-.PHONY : Polynomial_approximation.i
+# target to build an object file
+PolynomialApproximationTest.cpp.o:
+	cd /Users/youssef/Desktop/PCSCproject/cmake-build-debug && $(MAKE) -f src/Data_approximation/CMakeFiles/Data_approximation.dir/build.make src/Data_approximation/CMakeFiles/Data_approximation.dir/PolynomialApproximationTest.cpp.o
+.PHONY : PolynomialApproximationTest.cpp.o
+>>>>>>> Add test cases
+
+PolynomialApproximationTest.i: PolynomialApproximationTest.cpp.i
+
+.PHONY : PolynomialApproximationTest.i
 
 # target to preprocess a source file
+<<<<<<< HEAD
 Polynomial_approximation.cpp.i:
 	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\newproject\PCSCproject\cmake-build-debug
 	$(MAKE) -f src\Data_approximation\CMakeFiles\Data_approximation.dir\build.make /nologo -$(MAKEFLAGS) src\Data_approximation\CMakeFiles\Data_approximation.dir\Polynomial_approximation.cpp.i
 	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\newproject\PCSCproject\cmake-build-debug\src\Data_approximation
 .PHONY : Polynomial_approximation.cpp.i
+=======
+PolynomialApproximationTest.cpp.i:
+	cd /Users/youssef/Desktop/PCSCproject/cmake-build-debug && $(MAKE) -f src/Data_approximation/CMakeFiles/Data_approximation.dir/build.make src/Data_approximation/CMakeFiles/Data_approximation.dir/PolynomialApproximationTest.cpp.i
+.PHONY : PolynomialApproximationTest.cpp.i
+>>>>>>> Add test cases
 
-Polynomial_approximation.s: Polynomial_approximation.cpp.s
+PolynomialApproximationTest.s: PolynomialApproximationTest.cpp.s
 
-.PHONY : Polynomial_approximation.s
+.PHONY : PolynomialApproximationTest.s
 
 # target to generate assembly for a file
+<<<<<<< HEAD
 Polynomial_approximation.cpp.s:
 	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\newproject\PCSCproject\cmake-build-debug
 	$(MAKE) -f src\Data_approximation\CMakeFiles\Data_approximation.dir\build.make /nologo -$(MAKEFLAGS) src\Data_approximation\CMakeFiles\Data_approximation.dir\Polynomial_approximation.cpp.s
@@ -222,6 +240,28 @@ help:
 	@echo ... Polynomial_approximation.obj
 	@echo ... Polynomial_approximation.i
 	@echo ... Polynomial_approximation.s
+=======
+PolynomialApproximationTest.cpp.s:
+	cd /Users/youssef/Desktop/PCSCproject/cmake-build-debug && $(MAKE) -f src/Data_approximation/CMakeFiles/Data_approximation.dir/build.make src/Data_approximation/CMakeFiles/Data_approximation.dir/PolynomialApproximationTest.cpp.s
+.PHONY : PolynomialApproximationTest.cpp.s
+
+# Help Target
+help:
+	@echo "The following are some of the valid targets for this Makefile:"
+	@echo "... all (the default if no target is provided)"
+	@echo "... clean"
+	@echo "... depend"
+	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... install"
+	@echo "... list_install_components"
+	@echo "... rebuild_cache"
+	@echo "... edit_cache"
+	@echo "... Data_approximation"
+	@echo "... PolynomialApproximationTest.o"
+	@echo "... PolynomialApproximationTest.i"
+	@echo "... PolynomialApproximationTest.s"
+>>>>>>> Add test cases
 .PHONY : help
 
 

@@ -306,6 +306,16 @@ cxxabi.h
 acxx_demangle.h
 -
 
+../src/Data_approximation/PolynomialApproximationTest.h
+vector
+-
+string
+-
+Operations/OperatingVectors.h
+../src/Data_approximation/Operations/OperatingVectors.h
+Operations/OperatingMatrices.h
+../src/Data_approximation/Operations/OperatingMatrices.h
+
 ../src/Operations/OperatingMatrices.h
 vector
 -
@@ -316,6 +326,7 @@ OperatingVectors.h
 vector
 -
 
+<<<<<<< HEAD
 C:/Users/morin/OneDrive/Documents/EPFL/PCSC/newproject/PCSCproject/Google_tests/OperatingMatricesTest.cpp
 gtest/gtest.h
 C:/Users/morin/OneDrive/Documents/EPFL/PCSC/newproject/PCSCproject/Google_tests/gtest/gtest.h
@@ -323,4 +334,11 @@ Operations/OperatingVectors.h
 C:/Users/morin/OneDrive/Documents/EPFL/PCSC/newproject/PCSCproject/Google_tests/Operations/OperatingVectors.h
 Operations/OperatingMatrices.h
 C:/Users/morin/OneDrive/Documents/EPFL/PCSC/newproject/PCSCproject/Google_tests/Operations/OperatingMatrices.h
+=======
+/Users/youssef/Desktop/PCSCproject/Google_tests/PolynomialApproximationTest.cpp
+gtest/gtest.h
+/Users/youssef/Desktop/PCSCproject/Google_tests/gtest/gtest.h
+Data_approximation/PolynomialApproximationTest.h
+/Users/youssef/Desktop/PCSCproject/Google_tests/Data_approximation/PolynomialApproximationTest.h
+>>>>>>> Add test cases
 

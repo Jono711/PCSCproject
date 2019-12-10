@@ -25,6 +25,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0b28300b-e41a-4426-8b7e-298cd276497b" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
@@ -38,12 +39,16 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/Google_tests/PolynomialApproximationTest.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Google_tests/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Google_tests/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Google_tests/OperatingMatricesTest.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Google_tests/OperatingMatricesTest.cpp" afterDir="false" />
+>>>>>>> Add test cases
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/projet.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/projet.dir/CXX.includecache" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/projet.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/projet.dir/DependInfo.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/projet.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/projet.dir/build.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/projet.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/projet.dir/cmake_clean.cmake" afterDir="false" />
@@ -181,6 +186,49 @@
       <change beforePath="$PROJECT_DIR$/src/Input/InputReader/InputReaderCsv/InputReaderCsv.h" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Operations/OperatingMatrices.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Operations/OperatingMatrices.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Operations/OperatingVectors.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Operations/OperatingVectors.cpp" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/projet.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/projet.dir/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/projet.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/projet.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Google_tests/CMakeFiles/Google_Tests_run.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Google_tests/CMakeFiles/Google_Tests_run.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Google_tests/CMakeFiles/Google_Tests_run.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Google_tests/CMakeFiles/Google_Tests_run.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Google_tests/CMakeFiles/Google_Tests_run.dir/OperatingMatricesTest.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Google_tests/CMakeFiles/Google_Tests_run.dir/OperatingMatricesTest.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Google_tests/CMakeFiles/Google_Tests_run.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Google_tests/CMakeFiles/Google_Tests_run.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Google_tests/CMakeFiles/Google_Tests_run.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Google_tests/CMakeFiles/Google_Tests_run.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Google_tests/CMakeFiles/Google_Tests_run.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Google_tests/CMakeFiles/Google_Tests_run.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Google_tests/CMakeFiles/Google_Tests_run.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Google_tests/CMakeFiles/Google_Tests_run.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Google_tests/CMakeFiles/Google_Tests_run.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Google_tests/CMakeFiles/Google_Tests_run.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Google_tests/CMakeFiles/Google_Tests_run.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Google_tests/CMakeFiles/Google_Tests_run.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Google_tests/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Google_tests/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Google_tests/Google_Tests_run" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Google_tests/Google_Tests_run" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Google_tests/Google_tests.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Google_tests/Google_tests.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Google_tests/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Google_tests/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Google_tests/lib/googlemock/CMakeFiles/gmock.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Google_tests/lib/googlemock/CMakeFiles/gmock.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Google_tests/lib/googlemock/CMakeFiles/gmock_main.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Google_tests/lib/googlemock/CMakeFiles/gmock_main.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Google_tests/lib/googletest/CMakeFiles/gtest.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Google_tests/lib/googletest/CMakeFiles/gtest.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Google_tests/lib/googletest/CMakeFiles/gtest_main.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Google_tests/lib/googletest/CMakeFiles/gtest_main.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/projet" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/projet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/projet.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/projet.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/Data_Fitting/CMakeFiles/Data_Fitting.dir/LeastSquares.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/Data_Fitting/CMakeFiles/Data_Fitting.dir/LeastSquares.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/Data_Fitting/libData_Fitting.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/Data_Fitting/libData_Fitting.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/Data_approximation/CMakeFiles/Data_approximation.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/Data_approximation/CMakeFiles/Data_approximation.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/Data_approximation/CMakeFiles/Data_approximation.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/Data_approximation/CMakeFiles/Data_approximation.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/Data_approximation/CMakeFiles/Data_approximation.dir/Polynomial_approximation.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/Data_approximation/CMakeFiles/Data_approximation.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/Data_approximation/CMakeFiles/Data_approximation.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/Data_approximation/CMakeFiles/Data_approximation.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/Data_approximation/CMakeFiles/Data_approximation.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/Data_approximation/CMakeFiles/Data_approximation.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/Data_approximation/CMakeFiles/Data_approximation.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/Data_approximation/CMakeFiles/Data_approximation.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/Data_approximation/CMakeFiles/Data_approximation.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/Data_approximation/CMakeFiles/Data_approximation.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/Data_approximation/CMakeFiles/Data_approximation.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/Data_approximation/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/Data_approximation/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/Data_approximation/libData_approximation.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/Data_approximation/libData_approximation.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/Input/CMakeFiles/Input.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/Input/CMakeFiles/Input.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/Input/InputCreator/CMakeFiles/InputCreator.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/Input/InputCreator/CMakeFiles/InputCreator.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/Input/InputReader/CMakeFiles/InputReader.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/Input/InputReader/CMakeFiles/InputReader.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/Operations/CMakeFiles/Operations.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/Operations/CMakeFiles/Operations.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Data_approximation/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Data_approximation/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Data_approximation/Polynomial_approximation.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Data_approximation/PolynomialApproximationTest.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Data_approximation/Polynomial_approximation.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Data_approximation/PolynomialApproximationTest.h" afterDir="false" />
+>>>>>>> Add test cases
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -213,6 +261,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.advertisement.text.has.clang-format" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="CMake" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -234,6 +283,7 @@
       <recent name="C:\Users\morin\OneDrive\Documents\EPFL\PCSC\projet\Input" />
     </key>
   </component>
+<<<<<<< HEAD
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -247,6 +297,21 @@
     </option>
   </component>
   <component name="RunManager" selected="CMake Application.projet">
+=======
+  <component name="RunManager" selected="CMake Application.Google_Tests_run">
+    <configuration name="OperatingMatrices.comatrix" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="projet" TARGET_NAME="Google_Tests_run" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="projet" RUN_TARGET_NAME="Google_Tests_run" TEST_CLASS="OperatingMatrices" TEST_METHOD="comatrix" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OperatingMatrices.determinant" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="projet" TARGET_NAME="Google_Tests_run" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="projet" RUN_TARGET_NAME="Google_Tests_run" TEST_CLASS="OperatingMatrices" TEST_METHOD="determinant" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
+>>>>>>> Add test cases
     <configuration name="Data_Fitting" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="projet" TARGET_NAME="Data_Fitting" CONFIG_NAME="Debug">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -330,9 +395,20 @@
       <item itemvalue="CMake Application.InputCreator" />
       <item itemvalue="CMake Application.InputReader" />
       <item itemvalue="CMake Application.Operations" />
+<<<<<<< HEAD
       <item itemvalue="CMake Application.Output" />
       <item itemvalue="CMake Application.Run" />
+=======
+      <item itemvalue="Google Test.OperatingMatrices.determinant" />
+      <item itemvalue="Google Test.OperatingMatrices.comatrix" />
+>>>>>>> Add test cases
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Google Test.OperatingMatrices.comatrix" />
+        <item itemvalue="Google Test.OperatingMatrices.determinant" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -355,7 +431,7 @@
       <workItem from="1575202992399" duration="9890000" />
       <workItem from="1575274624344" duration="346000" />
       <workItem from="1575840450608" duration="32689000" />
-      <workItem from="1575920497598" duration="6862000" />
+      <workItem from="1575920497598" duration="21167000" />
     </task>
     <servers />
   </component>
@@ -363,6 +439,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="427" y="181" key="#Data_Fitting" timestamp="1575928100587">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="427" y="181" key="#Data_Fitting/0.0.1440.900@0.0.1440.900" timestamp="1575928100587" />
     <state x="184" y="113" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575924550194">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -371,42 +451,50 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="458" y="205" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1575919946237" />
-    <state width="1398" height="218" key="GridCell.Tab.0.bottom" timestamp="1575927674017">
+    <state width="1398" height="218" key="GridCell.Tab.0.bottom" timestamp="1576003156471">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="218" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1575927674017" />
-    <state width="1398" height="218" key="GridCell.Tab.0.center" timestamp="1575927674011">
+    <state width="1398" height="218" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1576003156471" />
+    <state width="798" height="218" key="GridCell.Tab.0.bottom/0.23.1440.831@0.23.1440.831" timestamp="1575984122514" />
+    <state width="1398" height="218" key="GridCell.Tab.0.center" timestamp="1576003156468">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="218" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1575927674011" />
-    <state width="1398" height="218" key="GridCell.Tab.0.left" timestamp="1575927674010">
+    <state width="1398" height="218" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1576003156468" />
+    <state width="798" height="218" key="GridCell.Tab.0.center/0.23.1440.831@0.23.1440.831" timestamp="1575984122513" />
+    <state width="1398" height="218" key="GridCell.Tab.0.left" timestamp="1576003156467">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="218" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1575927674010" />
-    <state width="1398" height="218" key="GridCell.Tab.0.right" timestamp="1575927674011">
+    <state width="1398" height="218" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1576003156467" />
+    <state width="798" height="218" key="GridCell.Tab.0.left/0.23.1440.831@0.23.1440.831" timestamp="1575984122513" />
+    <state width="1398" height="218" key="GridCell.Tab.0.right" timestamp="1576003156469">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="218" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1575927674011" />
-    <state width="1398" height="84" key="GridCell.Tab.1.bottom" timestamp="1575927611042">
+    <state width="1398" height="218" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1576003156469" />
+    <state width="798" height="218" key="GridCell.Tab.0.right/0.23.1440.831@0.23.1440.831" timestamp="1575984122514" />
+    <state width="1398" height="345" key="GridCell.Tab.1.bottom" timestamp="1576003091771">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="84" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1575927611042" />
-    <state width="1398" height="84" key="GridCell.Tab.1.center" timestamp="1575927611041">
+    <state width="1398" height="345" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1576003091771" />
+    <state width="1398" height="345" key="GridCell.Tab.1.center" timestamp="1576003091771">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="84" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1575927611041" />
-    <state width="1398" height="84" key="GridCell.Tab.1.left" timestamp="1575927611041">
+    <state width="1398" height="345" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1576003091771" />
+    <state width="1398" height="345" key="GridCell.Tab.1.left" timestamp="1576003091770">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="84" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1575927611041" />
-    <state width="1398" height="84" key="GridCell.Tab.1.right" timestamp="1575927611042">
+    <state width="1398" height="345" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1576003091770" />
+    <state width="1398" height="345" key="GridCell.Tab.1.right" timestamp="1576003091771">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="84" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1575927611042" />
+    <state width="1398" height="345" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1576003091771" />
     <state x="229" y="89" width="1168" height="722" key="SettingsEditor" timestamp="1575919382718">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="229" y="89" width="1168" height="722" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1575919382718" />
+    <state x="246" y="194" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1575974055233">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="246" y="194" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1440.900@0.0.1440.900" timestamp="1575974055233" />
     <state x="383" y="103" width="673" height="693" key="find.popup" timestamp="1575917928379">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -415,5 +503,15 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="482" y="90" key="refactoring.ChangeSignatureDialog/0.0.1440.900@0.0.1440.900" timestamp="1575886072068" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="CMakeRunConfiguration">
+        <watch expression="matrix" />
+        <watch expression="matrix" />
+        <watch expression="matrix" />
+        <watch expression="matrix" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

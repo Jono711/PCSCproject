@@ -743,8 +743,15 @@
 		<Unit filename="C:/Users/morin/OneDrive/Documents/EPFL/PCSC/newproject/PCSCproject/Google_tests/OperatingMatricesTest.cpp">
 			<Option target="Google_Tests_run"/>
 		</Unit>
+<<<<<<< HEAD
 		<Unit filename="C:/Users/morin/OneDrive/Documents/EPFL/PCSC/newproject/PCSCproject/Google_tests/lib/googlemock/src/gmock-all.cc">
 			<Option target="gmock_main"/>
+=======
+		<Unit filename="/Users/youssef/Desktop/PCSCproject/Google_tests/PolynomialApproximationTest.cpp">
+			<Option target="Google_Tests_run"/>
+		</Unit>
+		<Unit filename="/Users/youssef/Desktop/PCSCproject/Google_tests/lib/googlemock/src/gmock-all.cc">
+>>>>>>> Add test cases
 			<Option target="gmock"/>
 		</Unit>
 		<Unit filename="C:/Users/morin/OneDrive/Documents/EPFL/PCSC/newproject/PCSCproject/Google_tests/lib/googlemock/src/gmock_main.cc">
@@ -767,10 +774,17 @@
 		<Unit filename="C:/Users/morin/OneDrive/Documents/EPFL/PCSC/newproject/PCSCproject/src/Data_Fitting/LeastSquares.h">
 			<Option target="Data_Fitting"/>
 		</Unit>
+<<<<<<< HEAD
 		<Unit filename="C:/Users/morin/OneDrive/Documents/EPFL/PCSC/newproject/PCSCproject/src/Data_approximation/Polynomial_approximation.cpp">
 			<Option target="Data_approximation"/>
 		</Unit>
 		<Unit filename="C:/Users/morin/OneDrive/Documents/EPFL/PCSC/newproject/PCSCproject/src/Data_approximation/Polynomial_approximation.h">
+=======
+		<Unit filename="/Users/youssef/Desktop/PCSCproject/src/Data_approximation/PolynomialApproximationTest.cpp">
+			<Option target="Data_approximation"/>
+		</Unit>
+		<Unit filename="/Users/youssef/Desktop/PCSCproject/src/Data_approximation/PolynomialApproximationTest.h">
+>>>>>>> Add test cases
 			<Option target="Data_approximation"/>
 		</Unit>
 		<Unit filename="C:/Users/morin/OneDrive/Documents/EPFL/PCSC/newproject/PCSCproject/src/Input/Input.cpp">

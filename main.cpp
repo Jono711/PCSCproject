@@ -1,4 +1,4 @@
-#include "src/Data_approximation/Polynomial_approximation.h"
+#include "Data_approximation/PolynomialApproximationTest.h"
 #include "src/Operations/OperatingVectors.h"
 #include "src/Operations/OperatingMatrices.h"
 #include "src/Run/Run.h"
@@ -14,7 +14,7 @@ int main() {
     /*
     vector<double> operating_vector = {1,3,4,8,4,2};
     OperatingVectors vecteur(operating_vector);
-    Polynomial_approximation poly_1;
+    PolynomialApproximationTest poly_1;
     OperatingVectors resultat_diff = poly_1.difference_data(vecteur) ;
 
     resultat_diff.afficher_Operating_vector();

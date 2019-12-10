@@ -77,6 +77,7 @@ preinstall: Google_tests\preinstall
 # Target rules for target CMakeFiles/projet.dir
 
 # All Build rule for target.
+<<<<<<< HEAD
 CMakeFiles\projet.dir\all: src\Data_approximation\CMakeFiles\Data_approximation.dir\all
 CMakeFiles\projet.dir\all: src\Data_Fitting\CMakeFiles\Data_Fitting.dir\all
 CMakeFiles\projet.dir\all: src\Input\CMakeFiles\Input.dir\all
@@ -89,6 +90,18 @@ CMakeFiles\projet.dir\all: src\Output\CMakeFiles\Output.dir\all
 	$(MAKE) -f CMakeFiles\projet.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\projet.dir\build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\morin\OneDrive\Documents\EPFL\PCSC\newproject\PCSCproject\cmake-build-debug\CMakeFiles --progress-num=31,32 "Built target projet"
 .PHONY : CMakeFiles\projet.dir\all
+=======
+CMakeFiles/projet.dir/all: src/Data_approximation/CMakeFiles/Data_approximation.dir/all
+CMakeFiles/projet.dir/all: src/Data_Fitting/CMakeFiles/Data_Fitting.dir/all
+CMakeFiles/projet.dir/all: src/Input/CMakeFiles/Input.dir/all
+CMakeFiles/projet.dir/all: src/Input/InputCreator/CMakeFiles/InputCreator.dir/all
+CMakeFiles/projet.dir/all: src/Input/InputReader/CMakeFiles/InputReader.dir/all
+CMakeFiles/projet.dir/all: src/Operations/CMakeFiles/Operations.dir/all
+	$(MAKE) -f CMakeFiles/projet.dir/build.make CMakeFiles/projet.dir/depend
+	$(MAKE) -f CMakeFiles/projet.dir/build.make CMakeFiles/projet.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/youssef/Desktop/PCSCproject/cmake-build-debug/CMakeFiles --progress-num=25,26 "Built target projet"
+.PHONY : CMakeFiles/projet.dir/all
+>>>>>>> Add test cases
 
 # Build rule for subdir invocation for target.
 CMakeFiles\projet.dir\rule: cmake_check_build_system
@@ -257,11 +270,19 @@ src\Input\preinstall: src\Input\InputReader\preinstall
 # Target rules for target src/Input/CMakeFiles/Input.dir
 
 # All Build rule for target.
+<<<<<<< HEAD
 src\Input\CMakeFiles\Input.dir\all:
 	$(MAKE) -f src\Input\CMakeFiles\Input.dir\build.make /nologo -$(MAKEFLAGS) src\Input\CMakeFiles\Input.dir\depend
 	$(MAKE) -f src\Input\CMakeFiles\Input.dir\build.make /nologo -$(MAKEFLAGS) src\Input\CMakeFiles\Input.dir\build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\morin\OneDrive\Documents\EPFL\PCSC\newproject\PCSCproject\cmake-build-debug\CMakeFiles --progress-num=7,8 "Built target Input"
 .PHONY : src\Input\CMakeFiles\Input.dir\all
+=======
+src/Input/CMakeFiles/Input.dir/all:
+	$(MAKE) -f src/Input/CMakeFiles/Input.dir/build.make src/Input/CMakeFiles/Input.dir/depend
+	$(MAKE) -f src/Input/CMakeFiles/Input.dir/build.make src/Input/CMakeFiles/Input.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/youssef/Desktop/PCSCproject/cmake-build-debug/CMakeFiles --progress-num=8,9 "Built target Input"
+.PHONY : src/Input/CMakeFiles/Input.dir/all
+>>>>>>> Add test cases
 
 # Build rule for subdir invocation for target.
 src\Input\CMakeFiles\Input.dir\rule: cmake_check_build_system
@@ -302,11 +323,19 @@ src\Input\InputCreator\preinstall:
 # Target rules for target src/Input/InputCreator/CMakeFiles/InputCreator.dir
 
 # All Build rule for target.
+<<<<<<< HEAD
 src\Input\InputCreator\CMakeFiles\InputCreator.dir\all:
 	$(MAKE) -f src\Input\InputCreator\CMakeFiles\InputCreator.dir\build.make /nologo -$(MAKEFLAGS) src\Input\InputCreator\CMakeFiles\InputCreator.dir\depend
 	$(MAKE) -f src\Input\InputCreator\CMakeFiles\InputCreator.dir\build.make /nologo -$(MAKEFLAGS) src\Input\InputCreator\CMakeFiles\InputCreator.dir\build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\morin\OneDrive\Documents\EPFL\PCSC\newproject\PCSCproject\cmake-build-debug\CMakeFiles --progress-num=9,10 "Built target InputCreator"
 .PHONY : src\Input\InputCreator\CMakeFiles\InputCreator.dir\all
+=======
+src/Input/InputCreator/CMakeFiles/InputCreator.dir/all:
+	$(MAKE) -f src/Input/InputCreator/CMakeFiles/InputCreator.dir/build.make src/Input/InputCreator/CMakeFiles/InputCreator.dir/depend
+	$(MAKE) -f src/Input/InputCreator/CMakeFiles/InputCreator.dir/build.make src/Input/InputCreator/CMakeFiles/InputCreator.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/youssef/Desktop/PCSCproject/cmake-build-debug/CMakeFiles --progress-num=10,11 "Built target InputCreator"
+.PHONY : src/Input/InputCreator/CMakeFiles/InputCreator.dir/all
+>>>>>>> Add test cases
 
 # Build rule for subdir invocation for target.
 src\Input\InputCreator\CMakeFiles\InputCreator.dir\rule: cmake_check_build_system
@@ -347,11 +376,19 @@ src\Input\InputReader\preinstall:
 # Target rules for target src/Input/InputReader/CMakeFiles/InputReader.dir
 
 # All Build rule for target.
+<<<<<<< HEAD
 src\Input\InputReader\CMakeFiles\InputReader.dir\all:
 	$(MAKE) -f src\Input\InputReader\CMakeFiles\InputReader.dir\build.make /nologo -$(MAKEFLAGS) src\Input\InputReader\CMakeFiles\InputReader.dir\depend
 	$(MAKE) -f src\Input\InputReader\CMakeFiles\InputReader.dir\build.make /nologo -$(MAKEFLAGS) src\Input\InputReader\CMakeFiles\InputReader.dir\build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\morin\OneDrive\Documents\EPFL\PCSC\newproject\PCSCproject\cmake-build-debug\CMakeFiles --progress-num=11,12 "Built target InputReader"
 .PHONY : src\Input\InputReader\CMakeFiles\InputReader.dir\all
+=======
+src/Input/InputReader/CMakeFiles/InputReader.dir/all:
+	$(MAKE) -f src/Input/InputReader/CMakeFiles/InputReader.dir/build.make src/Input/InputReader/CMakeFiles/InputReader.dir/depend
+	$(MAKE) -f src/Input/InputReader/CMakeFiles/InputReader.dir/build.make src/Input/InputReader/CMakeFiles/InputReader.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/youssef/Desktop/PCSCproject/cmake-build-debug/CMakeFiles --progress-num=12,13 "Built target InputReader"
+.PHONY : src/Input/InputReader/CMakeFiles/InputReader.dir/all
+>>>>>>> Add test cases
 
 # Build rule for subdir invocation for target.
 src\Input\InputReader\CMakeFiles\InputReader.dir\rule: cmake_check_build_system
@@ -392,11 +429,19 @@ src\Operations\preinstall:
 # Target rules for target src/Operations/CMakeFiles/Operations.dir
 
 # All Build rule for target.
+<<<<<<< HEAD
 src\Operations\CMakeFiles\Operations.dir\all:
 	$(MAKE) -f src\Operations\CMakeFiles\Operations.dir\build.make /nologo -$(MAKEFLAGS) src\Operations\CMakeFiles\Operations.dir\depend
 	$(MAKE) -f src\Operations\CMakeFiles\Operations.dir\build.make /nologo -$(MAKEFLAGS) src\Operations\CMakeFiles\Operations.dir\build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\morin\OneDrive\Documents\EPFL\PCSC\newproject\PCSCproject\cmake-build-debug\CMakeFiles --progress-num=13,14,15 "Built target Operations"
 .PHONY : src\Operations\CMakeFiles\Operations.dir\all
+=======
+src/Operations/CMakeFiles/Operations.dir/all:
+	$(MAKE) -f src/Operations/CMakeFiles/Operations.dir/build.make src/Operations/CMakeFiles/Operations.dir/depend
+	$(MAKE) -f src/Operations/CMakeFiles/Operations.dir/build.make src/Operations/CMakeFiles/Operations.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/youssef/Desktop/PCSCproject/cmake-build-debug/CMakeFiles --progress-num=14,15,16 "Built target Operations"
+.PHONY : src/Operations/CMakeFiles/Operations.dir/all
+>>>>>>> Add test cases
 
 # Build rule for subdir invocation for target.
 src\Operations\CMakeFiles\Operations.dir\rule: cmake_check_build_system
@@ -529,6 +574,7 @@ Google_tests\preinstall: Google_tests\lib\preinstall
 # Target rules for target Google_tests/CMakeFiles/Google_Tests_run.dir
 
 # All Build rule for target.
+<<<<<<< HEAD
 Google_tests\CMakeFiles\Google_Tests_run.dir\all: src\Operations\CMakeFiles\Operations.dir\all
 Google_tests\CMakeFiles\Google_Tests_run.dir\all: Google_tests\lib\googletest\CMakeFiles\gtest.dir\all
 Google_tests\CMakeFiles\Google_Tests_run.dir\all: Google_tests\lib\googletest\CMakeFiles\gtest_main.dir\all
@@ -543,6 +589,23 @@ Google_tests\CMakeFiles\Google_Tests_run.dir\rule: cmake_check_build_system
 	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) Google_tests\CMakeFiles\Google_Tests_run.dir\all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\morin\OneDrive\Documents\EPFL\PCSC\newproject\PCSCproject\cmake-build-debug\CMakeFiles 0
 .PHONY : Google_tests\CMakeFiles\Google_Tests_run.dir\rule
+=======
+Google_tests/CMakeFiles/Google_Tests_run.dir/all: src/Data_approximation/CMakeFiles/Data_approximation.dir/all
+Google_tests/CMakeFiles/Google_Tests_run.dir/all: src/Operations/CMakeFiles/Operations.dir/all
+Google_tests/CMakeFiles/Google_Tests_run.dir/all: Google_tests/lib/googletest/CMakeFiles/gtest_main.dir/all
+Google_tests/CMakeFiles/Google_Tests_run.dir/all: Google_tests/lib/googletest/CMakeFiles/gtest.dir/all
+	$(MAKE) -f Google_tests/CMakeFiles/Google_Tests_run.dir/build.make Google_tests/CMakeFiles/Google_Tests_run.dir/depend
+	$(MAKE) -f Google_tests/CMakeFiles/Google_Tests_run.dir/build.make Google_tests/CMakeFiles/Google_Tests_run.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/youssef/Desktop/PCSCproject/cmake-build-debug/CMakeFiles --progress-num=5,6,7 "Built target Google_Tests_run"
+.PHONY : Google_tests/CMakeFiles/Google_Tests_run.dir/all
+
+# Build rule for subdir invocation for target.
+Google_tests/CMakeFiles/Google_Tests_run.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/youssef/Desktop/PCSCproject/cmake-build-debug/CMakeFiles 12
+	$(MAKE) -f CMakeFiles/Makefile2 Google_tests/CMakeFiles/Google_Tests_run.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/youssef/Desktop/PCSCproject/cmake-build-debug/CMakeFiles 0
+.PHONY : Google_tests/CMakeFiles/Google_Tests_run.dir/rule
+>>>>>>> Add test cases
 
 # Convenience name for target.
 Google_Tests_run: Google_tests\CMakeFiles\Google_Tests_run.dir\rule
@@ -598,11 +661,19 @@ Google_tests\lib\googlemock\preinstall: Google_tests\lib\googletest\preinstall
 # Target rules for target Google_tests/lib/googlemock/CMakeFiles/gmock_main.dir
 
 # All Build rule for target.
+<<<<<<< HEAD
 Google_tests\lib\googlemock\CMakeFiles\gmock_main.dir\all:
 	$(MAKE) -f Google_tests\lib\googlemock\CMakeFiles\gmock_main.dir\build.make /nologo -$(MAKEFLAGS) Google_tests\lib\googlemock\CMakeFiles\gmock_main.dir\depend
 	$(MAKE) -f Google_tests\lib\googlemock\CMakeFiles\gmock_main.dir\build.make /nologo -$(MAKEFLAGS) Google_tests\lib\googlemock\CMakeFiles\gmock_main.dir\build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\morin\OneDrive\Documents\EPFL\PCSC\newproject\PCSCproject\cmake-build-debug\CMakeFiles --progress-num=23,24,25,26 "Built target gmock_main"
 .PHONY : Google_tests\lib\googlemock\CMakeFiles\gmock_main.dir\all
+=======
+Google_tests/lib/googlemock/CMakeFiles/gmock.dir/all: Google_tests/lib/googletest/CMakeFiles/gtest.dir/all
+	$(MAKE) -f Google_tests/lib/googlemock/CMakeFiles/gmock.dir/build.make Google_tests/lib/googlemock/CMakeFiles/gmock.dir/depend
+	$(MAKE) -f Google_tests/lib/googlemock/CMakeFiles/gmock.dir/build.make Google_tests/lib/googlemock/CMakeFiles/gmock.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/youssef/Desktop/PCSCproject/cmake-build-debug/CMakeFiles --progress-num=17,18 "Built target gmock"
+.PHONY : Google_tests/lib/googlemock/CMakeFiles/gmock.dir/all
+>>>>>>> Add test cases
 
 # Build rule for subdir invocation for target.
 Google_tests\lib\googlemock\CMakeFiles\gmock_main.dir\rule: cmake_check_build_system
@@ -625,11 +696,20 @@ Google_tests\lib\googlemock\CMakeFiles\gmock_main.dir\clean:
 # Target rules for target Google_tests/lib/googlemock/CMakeFiles/gmock.dir
 
 # All Build rule for target.
+<<<<<<< HEAD
 Google_tests\lib\googlemock\CMakeFiles\gmock.dir\all:
 	$(MAKE) -f Google_tests\lib\googlemock\CMakeFiles\gmock.dir\build.make /nologo -$(MAKEFLAGS) Google_tests\lib\googlemock\CMakeFiles\gmock.dir\depend
 	$(MAKE) -f Google_tests\lib\googlemock\CMakeFiles\gmock.dir\build.make /nologo -$(MAKEFLAGS) Google_tests\lib\googlemock\CMakeFiles\gmock.dir\build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\morin\OneDrive\Documents\EPFL\PCSC\newproject\PCSCproject\cmake-build-debug\CMakeFiles --progress-num=20,21,22 "Built target gmock"
 .PHONY : Google_tests\lib\googlemock\CMakeFiles\gmock.dir\all
+=======
+Google_tests/lib/googlemock/CMakeFiles/gmock_main.dir/all: Google_tests/lib/googlemock/CMakeFiles/gmock.dir/all
+Google_tests/lib/googlemock/CMakeFiles/gmock_main.dir/all: Google_tests/lib/googletest/CMakeFiles/gtest.dir/all
+	$(MAKE) -f Google_tests/lib/googlemock/CMakeFiles/gmock_main.dir/build.make Google_tests/lib/googlemock/CMakeFiles/gmock_main.dir/depend
+	$(MAKE) -f Google_tests/lib/googlemock/CMakeFiles/gmock_main.dir/build.make Google_tests/lib/googlemock/CMakeFiles/gmock_main.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/youssef/Desktop/PCSCproject/cmake-build-debug/CMakeFiles --progress-num=19,20 "Built target gmock_main"
+.PHONY : Google_tests/lib/googlemock/CMakeFiles/gmock_main.dir/all
+>>>>>>> Add test cases
 
 # Build rule for subdir invocation for target.
 Google_tests\lib\googlemock\CMakeFiles\gmock.dir\rule: cmake_check_build_system
@@ -672,11 +752,19 @@ Google_tests\lib\googletest\preinstall:
 # Target rules for target Google_tests/lib/googletest/CMakeFiles/gtest.dir
 
 # All Build rule for target.
+<<<<<<< HEAD
 Google_tests\lib\googletest\CMakeFiles\gtest.dir\all:
 	$(MAKE) -f Google_tests\lib\googletest\CMakeFiles\gtest.dir\build.make /nologo -$(MAKEFLAGS) Google_tests\lib\googletest\CMakeFiles\gtest.dir\depend
 	$(MAKE) -f Google_tests\lib\googletest\CMakeFiles\gtest.dir\build.make /nologo -$(MAKEFLAGS) Google_tests\lib\googletest\CMakeFiles\gtest.dir\build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\morin\OneDrive\Documents\EPFL\PCSC\newproject\PCSCproject\cmake-build-debug\CMakeFiles --progress-num=27,28 "Built target gtest"
 .PHONY : Google_tests\lib\googletest\CMakeFiles\gtest.dir\all
+=======
+Google_tests/lib/googletest/CMakeFiles/gtest_main.dir/all: Google_tests/lib/googletest/CMakeFiles/gtest.dir/all
+	$(MAKE) -f Google_tests/lib/googletest/CMakeFiles/gtest_main.dir/build.make Google_tests/lib/googletest/CMakeFiles/gtest_main.dir/depend
+	$(MAKE) -f Google_tests/lib/googletest/CMakeFiles/gtest_main.dir/build.make Google_tests/lib/googletest/CMakeFiles/gtest_main.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/youssef/Desktop/PCSCproject/cmake-build-debug/CMakeFiles --progress-num=23,24 "Built target gtest_main"
+.PHONY : Google_tests/lib/googletest/CMakeFiles/gtest_main.dir/all
+>>>>>>> Add test cases
 
 # Build rule for subdir invocation for target.
 Google_tests\lib\googletest\CMakeFiles\gtest.dir\rule: cmake_check_build_system
@@ -699,11 +787,19 @@ Google_tests\lib\googletest\CMakeFiles\gtest.dir\clean:
 # Target rules for target Google_tests/lib/googletest/CMakeFiles/gtest_main.dir
 
 # All Build rule for target.
+<<<<<<< HEAD
 Google_tests\lib\googletest\CMakeFiles\gtest_main.dir\all: Google_tests\lib\googletest\CMakeFiles\gtest.dir\all
 	$(MAKE) -f Google_tests\lib\googletest\CMakeFiles\gtest_main.dir\build.make /nologo -$(MAKEFLAGS) Google_tests\lib\googletest\CMakeFiles\gtest_main.dir\depend
 	$(MAKE) -f Google_tests\lib\googletest\CMakeFiles\gtest_main.dir\build.make /nologo -$(MAKEFLAGS) Google_tests\lib\googletest\CMakeFiles\gtest_main.dir\build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\morin\OneDrive\Documents\EPFL\PCSC\newproject\PCSCproject\cmake-build-debug\CMakeFiles --progress-num=29,30 "Built target gtest_main"
 .PHONY : Google_tests\lib\googletest\CMakeFiles\gtest_main.dir\all
+=======
+Google_tests/lib/googletest/CMakeFiles/gtest.dir/all:
+	$(MAKE) -f Google_tests/lib/googletest/CMakeFiles/gtest.dir/build.make Google_tests/lib/googletest/CMakeFiles/gtest.dir/depend
+	$(MAKE) -f Google_tests/lib/googletest/CMakeFiles/gtest.dir/build.make Google_tests/lib/googletest/CMakeFiles/gtest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/youssef/Desktop/PCSCproject/cmake-build-debug/CMakeFiles --progress-num=21,22 "Built target gtest"
+.PHONY : Google_tests/lib/googletest/CMakeFiles/gtest.dir/all
+>>>>>>> Add test cases
 
 # Build rule for subdir invocation for target.
 Google_tests\lib\googletest\CMakeFiles\gtest_main.dir\rule: cmake_check_build_system

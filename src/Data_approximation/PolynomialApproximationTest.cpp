@@ -3,15 +3,16 @@
 //
 
 #include <iostream>
-#include "Polynomial_approximation.h"
+#include "PolynomialApproximationTest.h"
 #include "Operations/OperatingVectors.h"
+#include "Operations/OperatingMatrices.h"
 #include "math.h"
 using namespace std;
 
-Polynomial_approximation::Polynomial_approximation() = default;
+PolynomialApproximationTest::PolynomialApproximationTest() = default;
 
 
-OperatingVectors Polynomial_approximation::difference_data(OperatingVectors coords){
+OperatingVectors PolynomialApproximationTest::difference_data(OperatingVectors coords){
     size_t coords_size = coords.size() ;
     cout << coords_size << endl;
     OperatingVectors difference_x(coords_size-1);
@@ -24,7 +25,7 @@ OperatingVectors Polynomial_approximation::difference_data(OperatingVectors coor
 
 
 
-OperatingMatrices Polynomial_approximation::natural_spline_data_matrix(OperatingVectors x_coordinate){
+OperatingMatrices PolynomialApproximationTest::natural_spline_data_matrix(OperatingVectors x_coordinate){
     size_t size = x_coordinate.size();
 
     // Using the fill constructor to initialize a two-dimensional vector
@@ -52,7 +53,7 @@ OperatingMatrices Polynomial_approximation::natural_spline_data_matrix(Operating
 
 
 
-OperatingVectors Polynomial_approximation:: natural_spline_vector(OperatingVectors x_coordinate ,OperatingVectors y_coordinate){
+OperatingVectors PolynomialApproximationTest:: natural_spline_vector(OperatingVectors x_coordinate , OperatingVectors y_coordinate){
     size_t size = x_coordinate.size();
     // Using the fill constructor to initialize a two-dimensional vector
     // with given default value
@@ -66,7 +67,7 @@ OperatingVectors Polynomial_approximation:: natural_spline_vector(OperatingVecto
     return result;
 }
 
-OperatingMatrices Polynomial_approximation:: clamped_spline_data_matrix(OperatingVectors x_coordinate){
+OperatingMatrices PolynomialApproximationTest:: clamped_spline_data_matrix(OperatingVectors x_coordinate){
     size_t size = x_coordinate.size();
 
     // Using the fill constructor to initialize a two-dimensional vector
@@ -91,7 +92,7 @@ OperatingMatrices Polynomial_approximation:: clamped_spline_data_matrix(Operatin
 
 }
 
-OperatingVectors Polynomial_approximation:: clamped_spline_vector(OperatingVectors x_coordinate,OperatingVectors y_coordinate,float A, float B){
+OperatingVectors PolynomialApproximationTest:: clamped_spline_vector(OperatingVectors x_coordinate, OperatingVectors y_coordinate, double A, double B){
     size_t size = x_coordinate.size();
 
     // Using the fill constructor to initialize a two-dimensional vector
@@ -114,7 +115,7 @@ OperatingVectors Polynomial_approximation:: clamped_spline_vector(OperatingVecto
     return result;
 }
 
-OperatingMatrices Polynomial_approximation:: polynomial_interpolation_data_matrix(OperatingVectors x_coordinate, int degree ){
+OperatingMatrices PolynomialApproximationTest:: polynomial_interpolation_data_matrix(OperatingVectors x_coordinate, int degree ){
     size_t size = x_coordinate.size();
 
     OperatingMatrices result(size,degree+1);
@@ -128,7 +129,7 @@ OperatingMatrices Polynomial_approximation:: polynomial_interpolation_data_matri
 }
 
 
-OperatingMatrices Polynomial_approximation:: poly_cubic_hermite_interpolation_data_coefficients(OperatingVectors x_coordinate, float x  ){
+OperatingMatrices PolynomialApproximationTest:: poly_cubic_hermite_interpolation_data_coefficients(OperatingVectors x_coordinate, float x  ){
     size_t size = x_coordinate.size();
 
     OperatingMatrices result(size-1,4);
@@ -147,12 +148,13 @@ OperatingMatrices Polynomial_approximation:: poly_cubic_hermite_interpolation_da
 
 
 
-OperatingMatrices Polynomial_approximation:: natural_spline_coefficients(OperatingVectors derivatives,OperatingVectors x_coordinate,OperatingVectors y_coordinate){
+OperatingMatrices PolynomialApproximationTest:: natural_spline_coefficients(OperatingVectors derivatives, OperatingVectors x_coordinate, OperatingVectors y_coordinate){
     size_t size = derivatives.size();
     OperatingMatrices result(size+1,size);
     OperatingVectors difference_x = difference_data(x_coordinate);
     OperatingVectors difference_y = difference_data(y_coordinate);
-
+    derivatives[size] = 0 ;
+    derivatives[-1] = 0 ;
 
     for (int i = 0 ; i < size+1 ; i++){
         result[i][0] = (derivatives[i]-derivatives[i-1])/(6*difference_x[i]);
@@ -160,10 +162,11 @@ OperatingMatrices Polynomial_approximation:: natural_spline_coefficients(Operati
         result[i][2] = (difference_y[i]/difference_x[i])-(difference_x[i]*(derivatives[i]+ 2*derivatives[i-1]))/6 ;
         result[i][3] = y_coordinate[i];
     }
+
     return result ;
 }
 
-OperatingMatrices Polynomial_approximation:: clamped_spline_coefficients(OperatingVectors derivatives,OperatingVectors x_coordinate,OperatingVectors y_coordinate){
+OperatingMatrices PolynomialApproximationTest:: clamped_spline_coefficients(OperatingVectors derivatives, OperatingVectors x_coordinate, OperatingVectors y_coordinate){
     size_t  size = derivatives.size();
 
     OperatingMatrices result(size-1,size-2);
@@ -171,12 +174,29 @@ OperatingMatrices Polynomial_approximation:: clamped_spline_coefficients(Operati
     OperatingVectors difference_y = difference_data(y_coordinate);
 
     for (int i = 0 ; i < size-1 ; i++){
-        result[i][0] = (derivatives[i]-derivatives[i-1])/(6*difference_x[i]);
+        result[i][0] = (derivatives[i+1]-derivatives[i])/(6*difference_x[i]);
         result[i][1] = derivatives[i]/2 ;
-        result[i][2] = (difference_y[i]/difference_x[i])-(difference_x[i]*(derivatives[i]+ 2*derivatives[i-1]))/6 ;
+        result[i][2] = (difference_y[i]/difference_x[i])-(difference_x[i]*(derivatives[i+1]+ 2*derivatives[i]))/6 ;
         result[i][3] = y_coordinate[i];
     }
     return result ;
 }
 
+/*
+OperatingVectors PolynomialApproximationTest:: Polynomial_interpolation_coefficients(OperatingMatrices Vandermonde_matrix,
+        OperatingVectors y_coordinate){
 
+    size_t m = Vandermonde_matrix.size();
+    size_t n = y_coordinate.size() ;
+    OperatingVectors result(n);
+
+    //OperatingMatrices inverse_data_matrix(m,n);
+    OperatingMatrices inverse_data_matrix = Vandermonde_matrix.inverse() ;
+
+    result = inverse_data_matrix*y_coordinate ;
+
+    return result ;
+
+}
+
+*/

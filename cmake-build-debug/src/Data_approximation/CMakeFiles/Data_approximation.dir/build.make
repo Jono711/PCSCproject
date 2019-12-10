@@ -56,6 +56,7 @@ include src\Data_approximation\CMakeFiles\Data_approximation.dir\depend.make
 include src\Data_approximation\CMakeFiles\Data_approximation.dir\progress.make
 
 # Include the compile flags for this target's objects.
+<<<<<<< HEAD
 include src\Data_approximation\CMakeFiles\Data_approximation.dir\flags.make
 
 src\Data_approximation\CMakeFiles\Data_approximation.dir\Polynomial_approximation.cpp.obj: src\Data_approximation\CMakeFiles\Data_approximation.dir\flags.make
@@ -86,10 +87,31 @@ src\Data_approximation\CMakeFiles\Data_approximation.dir\Polynomial_approximatio
 # Object files for target Data_approximation
 Data_approximation_OBJECTS = \
 "CMakeFiles\Data_approximation.dir\Polynomial_approximation.cpp.obj"
+=======
+include src/Data_approximation/CMakeFiles/Data_approximation.dir/flags.make
+
+src/Data_approximation/CMakeFiles/Data_approximation.dir/PolynomialApproximationTest.cpp.o: src/Data_approximation/CMakeFiles/Data_approximation.dir/flags.make
+src/Data_approximation/CMakeFiles/Data_approximation.dir/PolynomialApproximationTest.cpp.o: ../src/Data_approximation/PolynomialApproximationTest.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/youssef/Desktop/PCSCproject/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/Data_approximation/CMakeFiles/Data_approximation.dir/PolynomialApproximationTest.cpp.o"
+	cd /Users/youssef/Desktop/PCSCproject/cmake-build-debug/src/Data_approximation && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Data_approximation.dir/PolynomialApproximationTest.cpp.o -c /Users/youssef/Desktop/PCSCproject/src/Data_approximation/PolynomialApproximationTest.cpp
+
+src/Data_approximation/CMakeFiles/Data_approximation.dir/PolynomialApproximationTest.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Data_approximation.dir/PolynomialApproximationTest.cpp.i"
+	cd /Users/youssef/Desktop/PCSCproject/cmake-build-debug/src/Data_approximation && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/youssef/Desktop/PCSCproject/src/Data_approximation/PolynomialApproximationTest.cpp > CMakeFiles/Data_approximation.dir/PolynomialApproximationTest.cpp.i
+
+src/Data_approximation/CMakeFiles/Data_approximation.dir/PolynomialApproximationTest.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Data_approximation.dir/PolynomialApproximationTest.cpp.s"
+	cd /Users/youssef/Desktop/PCSCproject/cmake-build-debug/src/Data_approximation && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/youssef/Desktop/PCSCproject/src/Data_approximation/PolynomialApproximationTest.cpp -o CMakeFiles/Data_approximation.dir/PolynomialApproximationTest.cpp.s
+
+# Object files for target Data_approximation
+Data_approximation_OBJECTS = \
+"CMakeFiles/Data_approximation.dir/PolynomialApproximationTest.cpp.o"
+>>>>>>> Add test cases
 
 # External object files for target Data_approximation
 Data_approximation_EXTERNAL_OBJECTS =
 
+<<<<<<< HEAD
 src\Data_approximation\Data_approximation.lib: src\Data_approximation\CMakeFiles\Data_approximation.dir\Polynomial_approximation.cpp.obj
 src\Data_approximation\Data_approximation.lib: src\Data_approximation\CMakeFiles\Data_approximation.dir\build.make
 src\Data_approximation\Data_approximation.lib: src\Data_approximation\CMakeFiles\Data_approximation.dir\objects1.rsp
@@ -100,6 +122,14 @@ src\Data_approximation\Data_approximation.lib: src\Data_approximation\CMakeFiles
 	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\newproject\PCSCproject\cmake-build-debug\src\Data_approximation
 	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1423~1.281\bin\Hostx86\x86\link.exe /lib /nologo /machine:X86 /out:Data_approximation.lib @CMakeFiles\Data_approximation.dir\objects1.rsp 
 	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\newproject\PCSCproject\cmake-build-debug
+=======
+src/Data_approximation/libData_approximation.a: src/Data_approximation/CMakeFiles/Data_approximation.dir/PolynomialApproximationTest.cpp.o
+src/Data_approximation/libData_approximation.a: src/Data_approximation/CMakeFiles/Data_approximation.dir/build.make
+src/Data_approximation/libData_approximation.a: src/Data_approximation/CMakeFiles/Data_approximation.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/youssef/Desktop/PCSCproject/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libData_approximation.a"
+	cd /Users/youssef/Desktop/PCSCproject/cmake-build-debug/src/Data_approximation && $(CMAKE_COMMAND) -P CMakeFiles/Data_approximation.dir/cmake_clean_target.cmake
+	cd /Users/youssef/Desktop/PCSCproject/cmake-build-debug/src/Data_approximation && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Data_approximation.dir/link.txt --verbose=$(VERBOSE)
+>>>>>>> Add test cases
 
 # Rule to build all files generated by this target.
 src\Data_approximation\CMakeFiles\Data_approximation.dir\build: src\Data_approximation\Data_approximation.lib

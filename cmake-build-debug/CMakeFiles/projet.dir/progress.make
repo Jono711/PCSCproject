@@ -1,3 +1,8 @@
+<<<<<<< HEAD
 CMAKE_PROGRESS_1 = 31
 CMAKE_PROGRESS_2 = 32
+=======
+CMAKE_PROGRESS_1 = 25
+CMAKE_PROGRESS_2 = 26
+>>>>>>> Add test cases
 

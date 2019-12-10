@@ -207,8 +207,36 @@ OperatingMatricesTest.cpp.s:
 	cd C:\Users\morin\OneDrive\Documents\EPFL\PCSC\newproject\PCSCproject\cmake-build-debug\Google_tests
 .PHONY : OperatingMatricesTest.cpp.s
 
+PolynomialApproximationTest.o: PolynomialApproximationTest.cpp.o
+
+.PHONY : PolynomialApproximationTest.o
+
+# target to build an object file
+PolynomialApproximationTest.cpp.o:
+	cd /Users/youssef/Desktop/PCSCproject/cmake-build-debug && $(MAKE) -f Google_tests/CMakeFiles/Google_Tests_run.dir/build.make Google_tests/CMakeFiles/Google_Tests_run.dir/PolynomialApproximationTest.cpp.o
+.PHONY : PolynomialApproximationTest.cpp.o
+
+PolynomialApproximationTest.i: PolynomialApproximationTest.cpp.i
+
+.PHONY : PolynomialApproximationTest.i
+
+# target to preprocess a source file
+PolynomialApproximationTest.cpp.i:
+	cd /Users/youssef/Desktop/PCSCproject/cmake-build-debug && $(MAKE) -f Google_tests/CMakeFiles/Google_Tests_run.dir/build.make Google_tests/CMakeFiles/Google_Tests_run.dir/PolynomialApproximationTest.cpp.i
+.PHONY : PolynomialApproximationTest.cpp.i
+
+PolynomialApproximationTest.s: PolynomialApproximationTest.cpp.s
+
+.PHONY : PolynomialApproximationTest.s
+
+# target to generate assembly for a file
+PolynomialApproximationTest.cpp.s:
+	cd /Users/youssef/Desktop/PCSCproject/cmake-build-debug && $(MAKE) -f Google_tests/CMakeFiles/Google_Tests_run.dir/build.make Google_tests/CMakeFiles/Google_Tests_run.dir/PolynomialApproximationTest.cpp.s
+.PHONY : PolynomialApproximationTest.cpp.s
+
 # Help Target
 help:
+<<<<<<< HEAD
 	@echo The following are some of the valid targets for this Makefile:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
@@ -222,6 +250,25 @@ help:
 	@echo ... OperatingMatricesTest.obj
 	@echo ... OperatingMatricesTest.i
 	@echo ... OperatingMatricesTest.s
+=======
+	@echo "The following are some of the valid targets for this Makefile:"
+	@echo "... all (the default if no target is provided)"
+	@echo "... clean"
+	@echo "... depend"
+	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... install"
+	@echo "... list_install_components"
+	@echo "... rebuild_cache"
+	@echo "... edit_cache"
+	@echo "... Google_Tests_run"
+	@echo "... OperatingMatricesTest.o"
+	@echo "... OperatingMatricesTest.i"
+	@echo "... OperatingMatricesTest.s"
+	@echo "... PolynomialApproximationTest.o"
+	@echo "... PolynomialApproximationTest.i"
+	@echo "... PolynomialApproximationTest.s"
+>>>>>>> Add test cases
 .PHONY : help
 
 

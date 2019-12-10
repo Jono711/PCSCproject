@@ -16,6 +16,7 @@ OperatingVectors.h
 vector
 -
 
+<<<<<<< HEAD
 C:/Users/morin/OneDrive/Documents/EPFL/PCSC/newproject/PCSCproject/src/Data_approximation/Polynomial_approximation.cpp
 iostream
 -
@@ -23,10 +24,25 @@ Polynomial_approximation.h
 C:/Users/morin/OneDrive/Documents/EPFL/PCSC/newproject/PCSCproject/src/Data_approximation/Polynomial_approximation.h
 Operations/OperatingVectors.h
 C:/Users/morin/OneDrive/Documents/EPFL/PCSC/newproject/PCSCproject/src/Data_approximation/Operations/OperatingVectors.h
+=======
+/Users/youssef/Desktop/PCSCproject/src/Data_approximation/PolynomialApproximationTest.cpp
+iostream
+-
+PolynomialApproximationTest.h
+/Users/youssef/Desktop/PCSCproject/src/Data_approximation/PolynomialApproximationTest.h
+Operations/OperatingVectors.h
+/Users/youssef/Desktop/PCSCproject/src/Data_approximation/Operations/OperatingVectors.h
+Operations/OperatingMatrices.h
+/Users/youssef/Desktop/PCSCproject/src/Data_approximation/Operations/OperatingMatrices.h
+>>>>>>> Add test cases
 math.h
 C:/Users/morin/OneDrive/Documents/EPFL/PCSC/newproject/PCSCproject/src/Data_approximation/math.h
 
+<<<<<<< HEAD
 C:/Users/morin/OneDrive/Documents/EPFL/PCSC/newproject/PCSCproject/src/Data_approximation/Polynomial_approximation.h
+=======
+/Users/youssef/Desktop/PCSCproject/src/Data_approximation/PolynomialApproximationTest.h
+>>>>>>> Add test cases
 vector
 -
 string

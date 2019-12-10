@@ -37,3 +37,21 @@ TEST(OperatingMatrices, comatrix){
 
     ASSERT_MATRIX_EQUAL(comatrix, m_real);
 }
+
+
+TEST(OperatingMatrices, transpose){
+    vector<vector<double>> matrice = {{-16,-7,0,0},{-7,-2,6,0},{0,6,4,-4},{0,0,-4,14}};
+    OperatingMatrices m(matrice);
+
+    OperatingMatrices transpose = m.transpose();
+
+    vector<vector<double>> real_transpose = {{-16,-7,0,0},{-7,-2,6,0},{0,6,4,-4},{0,0,-4,14}};
+    OperatingMatrices m_real(real_transpose);
+
+    ASSERT_MATRIX_EQUAL(transpose, m_real);
+}
+
+
+
+
+

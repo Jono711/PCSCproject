@@ -4,10 +4,10 @@ project(projet)
 set(CMAKE_CXX_STANDARD 14)
 
 set(HEADER_FILES
-        Polynomial_approximation.h
+        PolynomialApproximationTest.h
         )
 
 set(SOURCE_FILES
-        Polynomial_approximation.cpp
+        PolynomialApproximationTest.cpp
         )
 add_library(Data_approximation STATIC ${SOURCE_FILES} ${HEADER_FILES})

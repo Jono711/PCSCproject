@@ -25,6 +25,8 @@ public:
     OperatingMatrices operator*(OperatingMatrices &m);
     OperatingVectors operator*(OperatingVectors &m);
 
+    /** \brief Exemple de documentation pour transpose
+    */
     OperatingMatrices transpose();
     double determinant(OperatingMatrices &M, size_t n);
 

@@ -14,7 +14,6 @@ PolynomialApproximationTest::PolynomialApproximationTest() = default;
 
 OperatingVectors PolynomialApproximationTest::difference_data(OperatingVectors coords){
     size_t coords_size = coords.size() ;
-    cout << coords_size << endl;
     OperatingVectors difference_x(coords_size-1);
 
     for(int i = 0 ; i < coords_size-1 ; i++){

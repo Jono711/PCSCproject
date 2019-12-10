@@ -6,27 +6,27 @@
 
 #IncludeRegexTransform: 
 
-../src/Operations/OperatingMatrices.h
-vector
--
-OperatingVectors.h
-../src/Operations/OperatingVectors.h
-
-../src/Operations/OperatingVectors.h
-vector
--
-
-/Users/youssef/Desktop/PCSCproject/src/Data_Fitting/LeastSquares.cpp
+C:/Users/morin/OneDrive/Documents/EPFL/PCSC/newproject/PCSCproject/src/Data_Fitting/LeastSquares.cpp
 iostream
 -
 LeastSquares.h
-/Users/youssef/Desktop/PCSCproject/src/Data_Fitting/LeastSquares.h
-Operations/OperatingMatrices.h
-/Users/youssef/Desktop/PCSCproject/src/Data_Fitting/Operations/OperatingMatrices.h
+C:/Users/morin/OneDrive/Documents/EPFL/PCSC/newproject/PCSCproject/src/Data_Fitting/LeastSquares.h
+../Operations/OperatingMatrices.h
+C:/Users/morin/OneDrive/Documents/EPFL/PCSC/newproject/PCSCproject/src/Operations/OperatingMatrices.h
 
-/Users/youssef/Desktop/PCSCproject/src/Data_Fitting/LeastSquares.h
+C:/Users/morin/OneDrive/Documents/EPFL/PCSC/newproject/PCSCproject/src/Data_Fitting/LeastSquares.h
 vector
 -
 string
+-
+
+C:/Users/morin/OneDrive/Documents/EPFL/PCSC/newproject/PCSCproject/src/Operations/OperatingMatrices.h
+vector
+-
+OperatingVectors.h
+C:/Users/morin/OneDrive/Documents/EPFL/PCSC/newproject/PCSCproject/src/Operations/OperatingVectors.h
+
+C:/Users/morin/OneDrive/Documents/EPFL/PCSC/newproject/PCSCproject/src/Operations/OperatingVectors.h
+vector
 -
 

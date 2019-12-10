@@ -13,7 +13,7 @@ class Input {
      */
 
 public:
-    virtual std::vector<std::vector<double>> generate() = 0;
+    virtual std::vector<std::vector<double>> generate();
 
 
 };

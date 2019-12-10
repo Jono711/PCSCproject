@@ -107,7 +107,8 @@ OperatingMatrices OperatingMatrices::operator+(const OperatingMatrices &m) const
 
 OperatingMatrices OperatingMatrices::operator*(OperatingMatrices &m) {
     if(this->operating_matrix[0].size()!=m.operating_matrix.size()){
-        cout << "Size of matrices doesn't match for matrix multiplication. Outputing square matrix of size equal to RHS's row filled with 0." << endl;
+        cout << "Size of matrices doesn't match for matrix multiplication. Outputing square matrix of size equal "
+                "to RHS's row filled with 0." << endl;
         return OperatingMatrices(m.operating_matrix.size());
     }
     vector<OperatingVectors> new_matrix;
@@ -127,7 +128,8 @@ OperatingMatrices OperatingMatrices::operator*(OperatingMatrices &m) {
 
 OperatingVectors OperatingMatrices::operator*(OperatingVectors &m){
     if(this->operating_matrix[0].size()!=m.size()){
-        cout << "Size of matrices doesn't match for matrix multiplication. Outputing vector of size equal to RHS filled with 0." << endl;
+        cout << "Size of matrix and vector doesn't match for matrix-vector multiplication. "
+                "Outputing vector of size equal to RHS filled with 0." << endl;
         return OperatingVectors(m.size());
     }
     vector<double> new_vector;

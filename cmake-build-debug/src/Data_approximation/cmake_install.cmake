@@ -1,8 +1,8 @@
-# Install script for directory: /Users/youssef/Desktop/PCSCproject/src/Data_approximation
+# Install script for directory: C:/Users/morin/OneDrive/Documents/EPFL/PCSC/newproject/PCSCproject/src/Data_approximation
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/usr/local")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/projet")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

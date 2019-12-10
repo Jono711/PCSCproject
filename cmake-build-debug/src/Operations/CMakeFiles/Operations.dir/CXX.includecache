@@ -6,21 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/Users/youssef/Desktop/PCSCproject/src/Operations/OperatingMatrices.cpp
-OperatingMatrices.h
-/Users/youssef/Desktop/PCSCproject/src/Operations/OperatingMatrices.h
+C:/Users/morin/OneDrive/Documents/EPFL/PCSC/newproject/PCSCproject/src/Operations/OperatingVectors.cpp
+OperatingVectors.h
+C:/Users/morin/OneDrive/Documents/EPFL/PCSC/newproject/PCSCproject/src/Operations/OperatingVectors.h
 utility
 -
 iostream
 -
-
-/Users/youssef/Desktop/PCSCproject/src/Operations/OperatingMatrices.h
-vector
+math.h
 -
-OperatingVectors.h
-/Users/youssef/Desktop/PCSCproject/src/Operations/OperatingVectors.h
 
-/Users/youssef/Desktop/PCSCproject/src/Operations/OperatingVectors.h
+C:/Users/morin/OneDrive/Documents/EPFL/PCSC/newproject/PCSCproject/src/Operations/OperatingVectors.h
 vector
 -
 

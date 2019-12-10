@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Data_Fitting.dir/LeastSquares.cpp.o"
-  "libData_Fitting.a"
-  "libData_Fitting.pdb"
+  "CMakeFiles/Data_Fitting.dir/LeastSquares.cpp.obj"
+  "Data_Fitting.lib"
+  "Data_Fitting.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

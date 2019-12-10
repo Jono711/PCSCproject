@@ -82,12 +82,6 @@ double OperatingVectors::operator*(const OperatingVectors &m) const {
 OperatingVectors OperatingVectors::operator^(unsigned int d) const {
     vector<double> new_vector;
 
-    for( int i = 0; i < this->operating_vector.size(); i++) {
-        double element = this->operating_vector[i];
-        new_vector.emplace_back(pow(element, d));
-    }
-
-
     for (auto & element : this->operating_vector){
         new_vector.emplace_back(pow(element, d));
     }

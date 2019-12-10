@@ -1,3 +1,3 @@
 file(REMOVE_RECURSE
-  "libInputCreator.a"
+  "InputCreator.lib"
 )

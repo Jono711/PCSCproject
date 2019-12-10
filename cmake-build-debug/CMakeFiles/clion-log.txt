@@ -1,4 +1,4 @@
-/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -DCMAKE_CXX_COMPILER=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -G "CodeBlocks - Unix Makefiles" /Users/youssef/Desktop/PCSCproject
+"C:\Program Files\JetBrains\CLion 2019.2.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - NMake Makefiles" C:\Users\morin\OneDrive\Documents\EPFL\PCSC\newproject\PCSCproject
 -- Configuring done
 -- Generating done
--- Build files have been written to: /Users/youssef/Desktop/PCSCproject/cmake-build-debug
+-- Build files have been written to: C:/Users/morin/OneDrive/Documents/EPFL/PCSC/newproject/PCSCproject/cmake-build-debug

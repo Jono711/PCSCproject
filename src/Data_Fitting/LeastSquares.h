@@ -14,7 +14,7 @@ class LeastSquares {
 public:
     explicit LeastSquares(const vector<vector<double>>& xy_coords);
     vector<double> dataFitting(int degree);
-    string displayEquation(vector<double> const& coefficients);
+    double leastSquareLoss(const vector<double>& coefficients);
 private:
     vector<double> x_coords;
     vector<double> y_coords;

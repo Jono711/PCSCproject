@@ -1,3 +1,3 @@
 file(REMOVE_RECURSE
-  "libData_Fitting.a"
+  "Data_Fitting.lib"
 )

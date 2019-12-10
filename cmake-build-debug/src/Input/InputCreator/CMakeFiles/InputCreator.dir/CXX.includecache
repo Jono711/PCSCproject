@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/Users/youssef/Desktop/PCSCproject/src/Input/Input.h
+C:/Users/morin/OneDrive/Documents/EPFL/PCSC/newproject/PCSCproject/src/Input/Input.h
 vector
 -
 
-/Users/youssef/Desktop/PCSCproject/src/Input/InputCreator/InputCreator.cpp
+C:/Users/morin/OneDrive/Documents/EPFL/PCSC/newproject/PCSCproject/src/Input/InputCreator/InputCreator.cpp
 InputCreator.h
-/Users/youssef/Desktop/PCSCproject/src/Input/InputCreator/InputCreator.h
+C:/Users/morin/OneDrive/Documents/EPFL/PCSC/newproject/PCSCproject/src/Input/InputCreator/InputCreator.h
 utility
 -
 vector
@@ -28,9 +28,9 @@ chrono
 exception
 -
 
-/Users/youssef/Desktop/PCSCproject/src/Input/InputCreator/InputCreator.h
+C:/Users/morin/OneDrive/Documents/EPFL/PCSC/newproject/PCSCproject/src/Input/InputCreator/InputCreator.h
 ../Input.h
-/Users/youssef/Desktop/PCSCproject/src/Input/Input.h
+C:/Users/morin/OneDrive/Documents/EPFL/PCSC/newproject/PCSCproject/src/Input/Input.h
 string
 -
 vector

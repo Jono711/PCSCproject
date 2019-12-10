@@ -1,3 +1,3 @@
 file(REMOVE_RECURSE
-  "libOperations.a"
+  "Operations.lib"
 )

@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /Users/youssef/Desktop/PCSCproject/Google_tests/lib/googlemock
-# Build directory: /Users/youssef/Desktop/PCSCproject/cmake-build-debug/Google_tests/lib/googlemock
+# Source directory: C:/Users/morin/OneDrive/Documents/EPFL/PCSC/newproject/PCSCproject/Google_tests/lib/googlemock
+# Build directory: C:/Users/morin/OneDrive/Documents/EPFL/PCSC/newproject/PCSCproject/cmake-build-debug/Google_tests/lib/googlemock
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

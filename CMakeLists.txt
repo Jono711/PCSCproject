@@ -14,5 +14,7 @@ target_link_libraries(projet Data_approximation)
 target_link_libraries(projet Input)
 target_link_libraries(projet InputCreator)
 target_link_libraries(projet InputReader)
+target_link_libraries(projet Run)
+target_link_libraries(projet Output)
 
 add_subdirectory(Google_tests)

@@ -1,8 +1,8 @@
-# Install script for directory: /Users/youssef/Desktop/PCSCproject/src
+# Install script for directory: C:/Users/morin/OneDrive/Documents/EPFL/PCSC/newproject/PCSCproject/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/usr/local")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/projet")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -34,21 +34,31 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/youssef/Desktop/PCSCproject/cmake-build-debug/src/Data_approximation/cmake_install.cmake")
+  include("C:/Users/morin/OneDrive/Documents/EPFL/PCSC/newproject/PCSCproject/cmake-build-debug/src/Data_approximation/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/youssef/Desktop/PCSCproject/cmake-build-debug/src/Data_Fitting/cmake_install.cmake")
+  include("C:/Users/morin/OneDrive/Documents/EPFL/PCSC/newproject/PCSCproject/cmake-build-debug/src/Data_Fitting/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/youssef/Desktop/PCSCproject/cmake-build-debug/src/Input/cmake_install.cmake")
+  include("C:/Users/morin/OneDrive/Documents/EPFL/PCSC/newproject/PCSCproject/cmake-build-debug/src/Input/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/youssef/Desktop/PCSCproject/cmake-build-debug/src/Operations/cmake_install.cmake")
+  include("C:/Users/morin/OneDrive/Documents/EPFL/PCSC/newproject/PCSCproject/cmake-build-debug/src/Operations/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("C:/Users/morin/OneDrive/Documents/EPFL/PCSC/newproject/PCSCproject/cmake-build-debug/src/Output/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("C:/Users/morin/OneDrive/Documents/EPFL/PCSC/newproject/PCSCproject/cmake-build-debug/src/Run/cmake_install.cmake")
 endif()
 

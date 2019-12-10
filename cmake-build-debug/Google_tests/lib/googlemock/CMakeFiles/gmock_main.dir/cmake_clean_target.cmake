@@ -1,3 +1,3 @@
 file(REMOVE_RECURSE
-  "../../../lib/libgmock_maind.a"
+  "../../../lib/gmock_maind.lib"
 )

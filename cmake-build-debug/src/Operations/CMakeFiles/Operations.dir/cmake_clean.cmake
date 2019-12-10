@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Operations.dir/OperatingMatrices.cpp.o"
-  "CMakeFiles/Operations.dir/OperatingVectors.cpp.o"
-  "libOperations.a"
-  "libOperations.pdb"
+  "CMakeFiles/Operations.dir/OperatingMatrices.cpp.obj"
+  "CMakeFiles/Operations.dir/OperatingVectors.cpp.obj"
+  "Operations.lib"
+  "Operations.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

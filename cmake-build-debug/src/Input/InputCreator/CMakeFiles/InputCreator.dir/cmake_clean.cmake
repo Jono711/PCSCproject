@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/InputCreator.dir/InputCreator.cpp.o"
-  "libInputCreator.a"
-  "libInputCreator.pdb"
+  "CMakeFiles/InputCreator.dir/InputCreator.cpp.obj"
+  "InputCreator.lib"
+  "InputCreator.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

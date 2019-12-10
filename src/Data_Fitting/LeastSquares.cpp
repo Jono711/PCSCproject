@@ -4,7 +4,7 @@
 
 #include <iostream>
 #include "LeastSquares.h"
-#include "Operations/OperatingMatrices.h"
+#include "../Operations/OperatingMatrices.h"
 using namespace std;
 
 LeastSquares::LeastSquares(const vector<vector<double>> &xy_coords) {
@@ -29,13 +29,10 @@ vector<double> LeastSquares::dataFitting(int degree) {
     for(int i = 0; i < degree + 1; i++){
         augmented_x.push_back(OperatingVectors(x_coords)^i);
     }
-
-
-    // Linearly solve (XtX)w=(Xty)
+    // Linarly solve (XtX)w=(Xty)
     OperatingMatrices transposed_x(augmented_x);
     OperatingMatrices normal_x(transposed_x.transpose());
     OperatingMatrices LHS = transposed_x*normal_x;
-
     OperatingVectors normal_y(y_coords);
     OperatingVectors RHS = transposed_x * normal_y;
 
@@ -45,22 +42,14 @@ vector<double> LeastSquares::dataFitting(int degree) {
     return coefficients.get();
 }
 
-string LeastSquares::displayEquation(const vector<double>& coefficients) {
-    string to_return("y=");
-    for(unsigned int i = coefficients.size()-1; i > 0; --i){
-        if (coefficients[i] > 0 && to_return.size() > 2)
-            to_return += "+";
-        to_return += to_string(coefficients[i]);
-        if (i==1) {
-            to_return += "x";
-        }else{
-            to_return += "x^(" + to_string(i) + ")";
+double LeastSquares::leastSquareLoss(const vector<double> &coefficients) {
+    double loss(0.);
+    for(size_t i (0); i < this->y_coords.size(); i++){
+        double f_y(0.);
+        for(size_t j(0); j<coefficients.size(); j++){
+            f_y+=coefficients[j]*pow(x_coords[i],j);
         }
+        loss+=pow(y_coords[i]-f_y,2);
     }
-
-    if (coefficients[0] > 0 && to_return.size() > 2)
-        to_return += "+";
-    to_return += to_string(coefficients[0]);
-
-    return to_return;
+    return loss;
 }

@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/morin/OneDrive/Documents/EPFL/PCSC/newproject/PCSCproject/src/Output/Output.cpp
+Output.h
+C:/Users/morin/OneDrive/Documents/EPFL/PCSC/newproject/PCSCproject/src/Output/Output.h
+utility
+-
+iostream
+-
+fstream
+-
+algorithm
+-
+
+C:/Users/morin/OneDrive/Documents/EPFL/PCSC/newproject/PCSCproject/src/Output/Output.h
+vector
+-
+string
+-
+

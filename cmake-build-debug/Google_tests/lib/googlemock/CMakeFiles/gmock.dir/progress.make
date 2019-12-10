@@ -1,9 +1,0 @@
-<<<<<<< HEAD
-CMAKE_PROGRESS_1 = 20
-CMAKE_PROGRESS_2 = 21
-CMAKE_PROGRESS_3 = 22
-=======
-CMAKE_PROGRESS_1 = 17
-CMAKE_PROGRESS_2 = 18
->>>>>>> Add test cases
-

@@ -7,12 +7,19 @@
 
 #include <vector>
 #include <string>
+#include "Operations/OperatingMatrices.h"
+#include "Operations/OperatingVectors.h"
 using namespace std;
 
 class Output {
 public:
     explicit Output(vector<double> coefficient, vector<vector<double>> x_y_coords, string method, string output_type);
     void display();
+
+    static void displayNaturalSpline(OperatingMatrices natural_spline_matrix, OperatingVectors natural_spline_vector, OperatingMatrices coefficients,
+            vector<double> x_coords);
+    static void displayMatrix(OperatingMatrices m);
+    static void displayVector(OperatingVectors m);
 private:
     virtual string displayEquation();
     virtual void terminal_display();
@@ -23,7 +30,6 @@ private:
     vector<vector<double>> x_y_coords;
     string method;
     string output_type;
-
 };
 
 

@@ -10,7 +10,7 @@
 #include <iostream>
 #include <vector>
 
-
+const double DBL_MAX = 5;
 Run::Run(const string& param, const string& filename, const string& function_name, const bool& default_parameters,
                 const vector<double>& x_coords, const bool& randomize, const string& operation,
                 const int& degree, const string& output_type) {

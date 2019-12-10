@@ -165,6 +165,7 @@ OperatingMatrices PolynomialApproximationTest:: natural_spline_coefficients(Oper
     return result ;
 }
 
+
 OperatingMatrices PolynomialApproximationTest:: clamped_spline_coefficients(OperatingVectors derivatives, OperatingVectors x_coordinate, OperatingVectors y_coordinate){
     size_t  size = derivatives.size();
 

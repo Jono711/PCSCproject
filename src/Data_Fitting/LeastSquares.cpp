@@ -3,6 +3,7 @@
 //
 
 #include <iostream>
+#include "math.h"
 #include "LeastSquares.h"
 #include "../Operations/OperatingMatrices.h"
 using namespace std;

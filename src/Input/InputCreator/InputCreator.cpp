@@ -36,7 +36,7 @@ vector<vector<double>> InputCreator::generate() {
     * Format of function name: "y=" + "module1" + "module2"
     * Module = Ax^(B) | Acos(Bx+C) | Asin(Bx+C) | Aexp(Bx)
     * /!\ if a constant is to be added, add it at the end /!\
-    * ex: y=2.5x^(2.5)+cos(x+3.14)-2.5sin(x-3.14)-0.5exp(-3x+6)+1
+    * ex: y= 2.5x^(2.5)+cos(x+3.14)-2.5sin(x-3.14)-0.5exp(-3x+6)+1
     */
     vector<module> modules;
     // Create coefficients from the string

@@ -30,6 +30,8 @@ vector<vector<double>> InputReader::generate() {
             string temp;
             std::stringstream lineStream(line);
             lineStream >> temp;
+            //format1: "x1","y1"
+            //format2: x1,y1
             if(!temp.empty()){
                 replace(temp.begin(), temp.end(), ',', '.');
                 int pos = 0;
@@ -63,6 +65,8 @@ vector<vector<double>> InputReader::generate() {
             std::cout << "Error opening file. Continuing program with an empty input file." << std::endl;
             return vector<vector<double>>();
         }
+
+        //format: x1 x2
         while (!read_file.eof() && !read_file.fail()) {
             double x_coord, y_coord;
             read_file >> x_coord >> y_coord;

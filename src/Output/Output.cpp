@@ -7,6 +7,7 @@
 #include <iostream>
 #include <fstream>
 #include <algorithm>
+#include "math.h"
 
 using namespace std;
 
@@ -160,4 +161,70 @@ string Output::displayEquation() {
     to_return += to_string(coefficients[0][0]);
 
     return to_return;
+}
+
+
+
+void Output::displayNaturalSpline(OperatingMatrices natural_spline_matrix, OperatingVectors natural_spline_vector, OperatingMatrices coefficients,
+                                  vector<double> x_coords) {
+    cout << "Natural spline matrix = [" << endl;
+    Output::displayMatrix(natural_spline_matrix);
+    cout << "]" << endl;
+    cout << "" << endl ;
+
+    cout << "Natural spline vector = [ " ;
+    Output::displayVector(natural_spline_vector);
+    cout << "]" << endl;
+    cout << "" << endl ;
+
+    cout << "Natural spline coefficients = [" << endl;
+    Output::displayMatrix(coefficients);
+    cout << "]" << endl;
+    cout << "" << endl ;
+
+    for( int i = 0 ; i < coefficients.size(); i++){
+        char buffer[100];
+        sprintf(buffer, "Equation pour le polynome interpolant entre x[%d] et x[%d]",i,i+1);
+        cout << buffer;
+        cout << "" << endl;
+
+        sprintf(buffer, "Y%d =", i);
+        cout << buffer;
+
+        if(x_coords[i] >= 0) {
+            float abs_coord_i = abs(x_coords[i]);
+            sprintf(buffer, " %.2f(x-%.2f)^3 + %.2f(x-%.2f)^2 + %.2f(x-%.2f)",
+                    coefficients[i][0],abs_coord_i, coefficients[i][1], abs_coord_i, coefficients[i][2], abs_coord_i);
+        } else {
+            float abs_coord_i = abs(x_coords[i]);
+            sprintf(buffer, " %.2f(x+%.2f)^3 + %.2f(x+%.2f)^2 + %.2f(x+%.2f)",
+                    coefficients[i][0],abs_coord_i, coefficients[i][1], abs_coord_i, coefficients[i][2], abs_coord_i);
+        }
+        cout << buffer;
+
+        if (coefficients[i][3] >=0) {
+            float abs_const = abs(coefficients[i][3]);
+            sprintf(buffer, " + %.2f", abs_const);
+        } else {
+            float abs_const = abs(coefficients[i][3]);
+            sprintf(buffer, " - %.2f", abs_const);
+        }
+        cout << buffer;
+
+        cout << "" << endl ;
+        cout << "" << endl ;
+    }
+}
+
+void Output::displayMatrix(OperatingMatrices m) {
+    for (int i = 0; i < m.size(); i ++) {
+        Output::displayVector( m[i] );
+        cout << endl;
+    }
+}
+
+void Output::displayVector(OperatingVectors m) {
+    for (int i = 0; i < m.size(); i++ ) {
+        cout << m[i] << " ";
+    }
 }

@@ -5,19 +5,16 @@
 #ifndef PROJET_RUN_H
 #define PROJET_RUN_H
 
-#include "../Input/Input.h"
-#include "../Output/Output.h"
+#include "Input/Input.h"
+#include "Output/Output.h"
 #include <string>
 using namespace std;
 
 class Run {
 public:
-    Run();
-
-    Run(const string &param, const string &filename, const string &function_name, const bool &default_parameters,
-        const vector<double> &x_coords, const bool &randomize, const string &operation, const int &degree,
-        const string& output_type);
+    explicit Run();
     ~Run();
+
     void launch();
 
 private:
@@ -25,13 +22,14 @@ private:
     string operation;
     int degree;
     string output_type;
+    double A;
+    double B;
 
-    void launchDataFitting();
-    void launchDataFittingFind();
-    void launchInterpolation();
-    void launchPolyInterpolation();
-
-
+    void launchDataFitting(vector<vector<double>> x_y_coords, int degree);
+    void launchDataFittingFind(vector<vector<double>> x_y_coords, int degree);
+    void launchInterpolationClamped(vector<vector<double>> x_y_coords, double A, double B);
+    void launchInterpolationNatural(vector<vector<double>> x_y_coords);
+    void launchPolyInterpolation(vector<vector<double>> x_y_coords, int degree);
 };
 
 

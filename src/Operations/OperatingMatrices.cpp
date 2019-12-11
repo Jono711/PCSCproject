@@ -24,6 +24,7 @@ OperatingMatrices::OperatingMatrices(vector<OperatingVectors> operating_matrix) 
     }
 }
 
+
 OperatingMatrices::OperatingMatrices(vector<vector<double>> operating_matrix) {
     size_t i = operating_matrix.size();
     bool is_authorized_matrix = true;

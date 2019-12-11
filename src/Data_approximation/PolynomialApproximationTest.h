@@ -32,10 +32,7 @@ public:
 
     OperatingMatrices poly_cubic_hermite_interpolation_data_coefficients(OperatingVectors x_coordinate, float x  );
 
-  //  OperatingVectors  Polynomial_interpolation_coefficients(OperatingMatrices data_matrix,OperatingVectors data_vector);
-
-
-
+   OperatingVectors  Polynomial_interpolation_coefficients(OperatingMatrices data_matrix,OperatingVectors data_vector);
 private:
     vector<double> x_coords;
     vector<double> y_coords;

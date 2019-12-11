@@ -195,7 +195,7 @@ TEST(PolynomialApproximation , Difference) {
     ASSERT_VECTOR_EQUAL2(result,m_real);
 }
 
-/*
+
 TEST(PolynomialApproximation, invert_Polynomial_interpolation){
     vector<double> b = {3,2,-5,1,-3,8};
     OperatingVectors transformed_b(b);
@@ -203,7 +203,7 @@ TEST(PolynomialApproximation, invert_Polynomial_interpolation){
     vector<double> x_coordinate = {3,2,-5,1,-3,8};
     OperatingVectors transformed_x(x_coordinate);
 
-    int degree = 3 ;
+    int degree = 5 ;
 
     PolynomialApproximationTest m;
     OperatingMatrices matrix  = m.polynomial_interpolation_data_matrix(transformed_x, degree) ;
@@ -217,7 +217,7 @@ TEST(PolynomialApproximation, invert_Polynomial_interpolation){
 }
 
 
-*/
+
 
 
 

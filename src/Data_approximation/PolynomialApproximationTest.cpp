@@ -182,7 +182,8 @@ OperatingMatrices PolynomialApproximationTest:: clamped_spline_coefficients(Oper
     return result ;
 }
 
-/*
+// Only works if Vandermonde Matrix is a square matrix in the sense that the degree+1 of the polynome
+// is equal to the number of data points
 OperatingVectors PolynomialApproximationTest:: Polynomial_interpolation_coefficients(OperatingMatrices Vandermonde_matrix,
         OperatingVectors y_coordinate){
 
@@ -199,4 +200,3 @@ OperatingVectors PolynomialApproximationTest:: Polynomial_interpolation_coeffici
 
 }
 
-*/

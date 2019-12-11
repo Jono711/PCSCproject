@@ -11,6 +11,9 @@ using namespace std;
 
 class RunParamReader {
 public:
+    static bool isValidOutputType(string s);
+    static bool isValidOperation(string s);
+
     string retrieveInput(string question, vector<string> possible_values);
     string retrieveFreeTextInput(string question);
     int retrieveInt(string question);

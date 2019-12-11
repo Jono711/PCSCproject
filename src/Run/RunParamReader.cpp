@@ -6,6 +6,21 @@
 #include <iostream>
 #include <vector>
 
+bool RunParamReader::isValidOutputType(string s) {
+    if (s == "terminal" || s == "python" || s == "both") {
+        return true;
+    }
+    return false;
+}
+
+bool RunParamReader::isValidOperation(string s) {
+    if(s == "DataFitting" || s == "DataFittingFind"
+       || s == "InterpolationClamped" || s == "InterpolationNatural" || s == "PolyInterpolation" ) {
+        return true;
+    }
+    return false;
+}
+
 bool RunParamReader::not_in(vector<string> possible_values, string choice) {
     bool found = false;
     for(int i=0; i<possible_values.size(); i++){

@@ -53,22 +53,22 @@ Run::Run() {
     operation = a.retrieveInput(
             "Choose the type of data analysis you want to do:",
             {
-                "Data_Fitting",
-                 "Data_Fitting_Find",
-                 "Interpolation-Clamped",
-                 "Interpolation-Natural",
-                 "Poly-Interpolation"
+                "DataFitting",
+                 "DataFittingFind",
+                 "InterpolationClamped",
+                 "InterpolationNatural",
+                 "PolyInterpolation"
             }
     );
 
 
-    if(operation == "Data_Fitting" || operation == "Poly-Interpolation"){
+    if(operation == "DataFitting" || operation == "PolyInterpolation"){
         degree = a.retrieveInt("Enter the degree of the polynome to be computed");
     }
-    if(operation == "Data_Fitting_Find"){
+    if(operation == "DataFittingFind"){
         degree = a.retrieveInt("Enter the maximum degree of the polynome to be considered: ");
     }
-    if(operation == "Interpolation-Clamped") {
+    if(operation == "InterpolationClamped") {
         A = a.retrieveDouble("Specify first derivative at the first point");
         B = a.retrieveDouble("Specify first derivative at the end point");
     }
@@ -86,15 +86,15 @@ Run::~Run() {
 void Run::launch() {
     vector<vector<double>> x_y_coords = input->generate();
 
-    if(operation=="Data_Fitting"){
+    if(operation=="DataFitting"){
         launchDataFitting(x_y_coords, degree);
-    }else if(operation == "Data_Fitting_Find"){
+    }else if(operation == "DataFittingFind"){
         launchDataFittingFind(x_y_coords, degree);
-    }else if(operation == "Interpolation-Clamped"){
+    }else if(operation == "InterpolationClamped"){
         launchInterpolationClamped(x_y_coords, A, B);
-    }else if(operation == "Interpolation-Natural"){
+    }else if(operation == "InterpolationNatural"){
         launchInterpolationNatural(x_y_coords);
-    }else if(operation == "Poly-Interpolation"){
+    }else if(operation == "PolyInterpolation"){
         launchPolyInterpolation(x_y_coords, degree);
     }
 }
@@ -104,8 +104,14 @@ void Run::launchDataFitting(vector<vector<double>> x_y_coords, int degree) {
     vector<double> coefficients = solver.dataFitting(degree);
 
     vector<vector<double>> coeffs_final = {coefficients};
-    Output output(coeffs_final, x_y_coords,operation+" with degree " + to_string(degree), output_type, true);
-    output.display();
+    Output output(coeffs_final,
+            x_y_coords,
+            operation,
+            operation +"_degree_" + to_string(degree),
+            output_type,
+            true);
+    output.terminal_display();
+    output.python_display();
 }
 
 void Run::launchDataFittingFind(vector<vector<double>> x_y_coords, int degree) {
@@ -127,10 +133,12 @@ void Run::launchDataFittingFind(vector<vector<double>> x_y_coords, int degree) {
     vector<vector<double>> best_coeffs_final = { best_coefficients };
     Output output(best_coeffs_final,
             x_y_coords,
-            operation+" is the equation of degree " + to_string(best_degree) + " with loss " + to_string(best_loss),
+            operation,
+            operation + "_best_degree_" + to_string(best_degree) + "_with_loss_" + to_string(best_loss),
             output_type,
             true);
-    output.display();
+    output.terminal_display();
+    output.python_display();
 }
 
 void Run::launchInterpolationClamped(vector<vector<double>> x_y_coords, double A, double B) {
@@ -157,11 +165,12 @@ void Run::launchInterpolationClamped(vector<vector<double>> x_y_coords, double A
 
     Output o(final,
              x_y_coords,
-             "NaturalClamped",
-             "python",
+             operation,
+             operation + "_" + to_string(A) + "_" + to_string(B),
+             output_type,
              false);
     o.python_display();
-    Output::displayClampedSpline(clamped_spline_matrix, clamped_spline_vector, coefficients, x_coords);
+    o.displayClampedSpline(clamped_spline_matrix, clamped_spline_vector, coefficients, x_coords);
 }
 
 void Run::launchInterpolationNatural(vector<vector<double>> x_y_coords) {
@@ -189,11 +198,12 @@ void Run::launchInterpolationNatural(vector<vector<double>> x_y_coords) {
 
     Output o(final,
                x_y_coords,
-               "NaturalApproximation",
-               "python",
+               operation,
+               operation,
+               output_type,
                false);
     o.python_display();
-    Output::displayNaturalSpline(natural_spline_matrix, natural_spline_vector, coefficients, x_coords );
+    o.displayNaturalSpline(natural_spline_matrix, natural_spline_vector, coefficients, x_coords );
 }
 
 void Run::launchPolyInterpolation(vector<vector<double>> x_y_coords, int degree) {
@@ -219,10 +229,11 @@ void Run::launchPolyInterpolation(vector<vector<double>> x_y_coords, int degree)
     vector<vector<double>> final = {inverted_coefficients};
     Output o(final,
             x_y_coords,
-            "PolynomialApproximation",
-            "python",
+            operation,
+            operation,
+            output_type,
             true);
 
     o.python_display();
-    Output::displayPolynomeInterpolation(Vandermonde_matrix,transformed_y,result);
+    o.displayPolynomeInterpolation(Vandermonde_matrix,transformed_y,result);
 }

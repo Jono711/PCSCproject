@@ -20,8 +20,8 @@ public:
 private:
     Input* input;
     string operation;
-    int degree;
     string output_type;
+    int degree;
     double A;
     double B;
 

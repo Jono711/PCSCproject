@@ -8,10 +8,10 @@
 #include <fstream>
 #include <algorithm>
 #include "math.h"
-
+#include "Run/RunParamReader.h"
 using namespace std;
 
-Output::Output(vector<vector<double>> coefficients, vector<vector<double>> x_y_coords, string method, string output_type, bool regular_polynome) {
+Output::Output(vector<vector<double>> coefficients, vector<vector<double>> x_y_coords, string operation, string python_file_name, string output_type, bool regular_polynome) {
     this->coefficients = move(coefficients);
     if(x_y_coords.size()!=2){
         cout << x_y_coords.size() << endl;
@@ -23,26 +23,31 @@ Output::Output(vector<vector<double>> coefficients, vector<vector<double>> x_y_c
     } else {
         this->x_y_coords=move(x_y_coords);
     }
-    this->method = move(method);
-    if(output_type!="terminal" && output_type!="python" && output_type!="both"){
-        cout << "Unknown output type. Switching to default type: terminal." << endl;
-        this->output_type="terminal";
+
+    if ( RunParamReader::isValidOperation(operation) ) {
+        this->operation = move(operation);
     } else {
-        this->output_type=move(output_type);
+        cout << "Unknown operation. Switching to default type: DataFitting." << endl;
+        this->operation="DataFitting";
     }
 
+    if ( RunParamReader::isValidOutputType( output_type) ) {
+        this->output_type=move(output_type);
+    } else {
+        cout << "Unknown output type. Switching to default type: terminal." << endl;
+        this->output_type="terminal";
+    }
+
+    this->python_file_name = python_file_name;
     this->regular_polynome = regular_polynome;
 }
 
-void Output::display(){
-    if(output_type=="terminal" || output_type=="both")
-        terminal_display();
-    if(output_type=="python" || output_type=="both")
-        python_display();
-}
-
 void Output::terminal_display() {
-    cout << "The solution to " << method << endl
+    if (output_type == "python") {
+        return;
+    }
+
+    cout << "The solution to " << operation << endl
     << "with x and y data such as :" << endl;
     for(int i = 0; i <2 ; i++){
         if(i==0){
@@ -136,8 +141,13 @@ void Output::python_display_polynome(ofstream &outputFile, vector<vector<double>
 
 }
 void Output::python_display() {
+    if (output_type == "terminal") {
+        return;
+    }
+
+    string method =  python_file_name + ".py";
     replace(method.begin(), method.end(), ' ', '_');
-    method =  method + ".py";
+
     ofstream outputFile;
     outputFile.open (method, std::ofstream::out | std::ofstream::trunc);
     if(!outputFile.is_open()){
@@ -194,11 +204,6 @@ void Output::python_display() {
     }
 }
 
-void Output::full_display() {
-    terminal_display();
-    python_display();
-}
-
 string Output::displayEquation() {
     string to_return("y=");
     for(unsigned int i = coefficients.size()-1; i > 0; --i){
@@ -223,6 +228,10 @@ string Output::displayEquation() {
 
 void Output::displayNaturalSpline(OperatingMatrices natural_spline_matrix, OperatingVectors natural_spline_vector, OperatingMatrices coefficients,
                                   vector<double> x_coords) {
+    if (output_type == "python") {
+        return;
+    }
+
     cout << "Natural spline matrix = [" << endl;
     Output::displayMatrix(natural_spline_matrix);
     cout << "]" << endl;
@@ -275,6 +284,9 @@ void Output::displayNaturalSpline(OperatingMatrices natural_spline_matrix, Opera
 
 void Output::displayClampedSpline(OperatingMatrices natural_spline_matrix, OperatingVectors natural_spline_vector, OperatingMatrices coefficients,
                                   vector<double> x_coords) {
+    if (output_type == "python") {
+        return;
+    }
 
     cout << "Clamped spline matrix = [" << endl;
     Output::displayMatrix(natural_spline_matrix);
@@ -327,6 +339,10 @@ void Output::displayClampedSpline(OperatingMatrices natural_spline_matrix, Opera
 }
 
  void  Output::displayPolynomeInterpolation(OperatingMatrices VandermondeMatrix, OperatingVectors y_coords,OperatingVectors coefficients){
+     if (output_type == "python") {
+         return;
+     }
+
      cout << "Vandermonde matrix = [" << endl;
      Output::displayMatrix(VandermondeMatrix);
      cout << "]" << endl;

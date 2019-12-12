@@ -150,7 +150,7 @@ First, it seems important to precise that the code structure is easily available
 ## Authors
 
 * **Youssef Kitane**
-* **Jonas Morin**.
+* **Jonas Morin**
 
 ## Acknowledgments
 

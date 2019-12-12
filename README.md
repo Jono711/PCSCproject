@@ -54,27 +54,27 @@ The program is pretty simple to use: a 'Run' class contains everything the user 
 
 A first call the 'Run' default constructor will ask the user the different parameters to be used. Let's go through them all in order:
 
- 1) Choose the type of input between "reader" and "creator";
+* 1) Choose the type of input between "reader" and "creator";
 
- |-> 2) (1-Optionnal) If "reader" is chosen in (1), precise the file name;
+* |-> 2) (1-Optionnal) If "reader" is chosen in (1), precise the file name;
 
- --> 3) (1-Optionnal) If "creator" is chosen in (1), precise the function name*;
+* --> 3) (1-Optionnal) If "creator" is chosen in (1), precise the function name*;
 
-  --> 4) (1-Optionnal) If "creator" is chosen in (1), precise if you want to use the default parameters for the function**;
+*  --> 4) (1-Optionnal) If "creator" is chosen in (1), precise if you want to use the default parameters for the function**;
 
-   --> 5) (4-Optionnal) If "false" is chosen in (4), precise your coordinate in x (enter any non-double to stop);
+*   --> 5) (4-Optionnal) If "false" is chosen in (4), precise your coordinate in x (enter any non-double to stop);
 
-    --> 6) (4-Optionnal) If "false" is chosen in (4), precise if you want to add a randomness to the y data;
+*    --> 6) (4-Optionnal) If "false" is chosen in (4), precise if you want to add a randomness to the y data;
 
- 7) Precise the type of data analysis you want to do between "DataFitting", "DataFittingFind", "InterpolationClamped", "InterpolationNatural" and "PolyInterpolation";
+* 7) Precise the type of data analysis you want to do between "DataFitting", "DataFittingFind", "InterpolationClamped", "InterpolationNatural" and "PolyInterpolation";
 
- |-> 8) (7-Optionnal) If "DataFitting" is chosen in (7), precise the degree of the polynome to be computed;
+* |-> 8) (7-Optionnal) If "DataFitting" is chosen in (7), precise the degree of the polynome to be computed;
 
- |-> 9) (7-Optionnal) If "DataFittingFind" is chosen in (7), precise the maximum degree of polynome to be considered;
+* |-> 9) (7-Optionnal) If "DataFittingFind" is chosen in (7), precise the maximum degree of polynome to be considered;
 
- --> 10 & 11) (7-Optionnal) If "InterpolationClamped" is chosen in (7), precise the value of the first derivative at the first point and at the last point;
+* --> 10 & 11) (7-Optionnal) If "InterpolationClamped" is chosen in (7), precise the value of the first derivative at the first point and at the last point;
 
- 12) Finally choose the type of output between "terminal", "python" or "both".
+* 12) Finally choose the type of output between "terminal", "python" or "both".
 
 
 Then simply call the function 'launch' of your new run object, and voilà! If you chose the "terminal" output type, the program should output you the chosen x and y data. If you chose the 'python' output type, a 'Successfully created the python file.' should appear. The new file will be located in the main folder unless precised otherwise.
@@ -110,11 +110,13 @@ Process finished with exit code 0
 
 
 (*) The syntax for the function name is the following: start with "y=" and add any number of modules following it. The modules are of the following form:
- a)'power': Ax^(B) or Ax, with A and B double;
- b)'cosinus': Acos(Bx+C) or Acos(Bx), with A, B and C double;
- c)'sinus': Asin(Bx+C) or Asin(Bx), with A, B and C double;
- b)'exponential': Aexp(Bx+C) or Aexp(Bx), with A, B and C double;
- e)'constant': A, with A double, be careful! If added, this module must be the last one;
+
+* a)'power': Ax^(B) or Ax, with A and B double;
+* b)'cosinus': Acos(Bx+C) or Acos(Bx), with A, B and C double;
+* c)'sinus': Asin(Bx+C) or Asin(Bx), with A, B and C double;
+* b)'exponential': Aexp(Bx+C) or Aexp(Bx), with A, B and C double;
+* e)'constant': A, with A double, be careful! If added, this module must be the last one;
+
 Example: "y=2x^(2)+3x-3.5cos(9x)+sin(4.5x-2)+exp(x)+2.34".
 Another example: "y=-x^(-1/2)-3cos(x-2)+2.33exp(6.3x-6)";
 Be careful not to add any space inside the equation.

@@ -54,27 +54,27 @@ The program is pretty simple to use: a 'Run' class contains everything the user 
 
 A first call the 'Run' default constructor will ask the user the different parameters to be used. Let's go through them all in order:
 
-* 1) Choose the type of input between "reader" and "creator";
+*&nbsp;1) Choose the type of input between "reader" and "creator";
 
-* |-> 2) (1-Optionnal) If "reader" is chosen in (1), precise the file name;
+*&nbsp;|-> 2) (1-Optionnal) If "reader" is chosen in (1), precise the file name;
 
-* --> 3) (1-Optionnal) If "creator" is chosen in (1), precise the function name*;
+*&nbsp;--> 3) (1-Optionnal) If "creator" is chosen in (1), precise the function name*;
 
-*  --> 4) (1-Optionnal) If "creator" is chosen in (1), precise if you want to use the default parameters for the function**;
+*&nbsp;&nbsp;--> 4) (1-Optionnal) If "creator" is chosen in (1), precise if you want to use the default parameters for the function**;
 
-*   --> 5) (4-Optionnal) If "false" is chosen in (4), precise your coordinate in x (enter any non-double to stop);
+*&nbsp;&nbsp;&nbsp;--> 5) (4-Optionnal) If "false" is chosen in (4), precise your coordinate in x (enter any non-double to stop);
 
-*    --> 6) (4-Optionnal) If "false" is chosen in (4), precise if you want to add a randomness to the y data;
+*&nbsp;&nbsp;&nbsp;&nbsp;--> 6) (4-Optionnal) If "false" is chosen in (4), precise if you want to add a randomness to the y data;
 
-* 7) Precise the type of data analysis you want to do between "DataFitting", "DataFittingFind", "InterpolationClamped", "InterpolationNatural" and "PolyInterpolation";
+*&nbsp;7) Precise the type of data analysis you want to do between "DataFitting", "DataFittingFind", "InterpolationClamped", "InterpolationNatural" and "PolyInterpolation";
 
-* |-> 8) (7-Optionnal) If "DataFitting" is chosen in (7), precise the degree of the polynome to be computed;
+*&nbsp;|-> 8) (7-Optionnal) If "DataFitting" is chosen in (7), precise the degree of the polynome to be computed;
 
-* |-> 9) (7-Optionnal) If "DataFittingFind" is chosen in (7), precise the maximum degree of polynome to be considered;
+*&nbsp;|-> 9) (7-Optionnal) If "DataFittingFind" is chosen in (7), precise the maximum degree of polynome to be considered;
 
-* --> 10 & 11) (7-Optionnal) If "InterpolationClamped" is chosen in (7), precise the value of the first derivative at the first point and at the last point;
+*&nbsp;--> 10 & 11) (7-Optionnal) If "InterpolationClamped" is chosen in (7), precise the value of the first derivative at the first point and at the last point;
 
-* 12) Finally choose the type of output between "terminal", "python" or "both".
+*&nbsp;12) Finally choose the type of output between "terminal", "python" or "both".
 
 
 Then simply call the function 'launch' of your new run object, and voilà! If you chose the "terminal" output type, the program should output you the chosen x and y data. If you chose the 'python' output type, a 'Successfully created the python file.' should appear. The new file will be located in the main folder unless precised otherwise.

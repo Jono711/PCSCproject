@@ -35,10 +35,15 @@ until finished
 The program starts with the 'Input' super class. Here the choice is given between two 'Input' subclasses: 'InputReader' and 'InputCreator' in order to generate our (x,y) couples of data points. The former reads data from a given file and the latter generate the (x,y(x)) points of a given y(x) function and from a given data set of x. You can even add a random displacement to those y(x) points.
 
 Once the (x,y) data points are generated, you can choose one from a variety of action to be done:
+
 	1) Do some data fitting of the data points, given a certain degree of polynome to be found;
+
 	2) Find the best polynome to approximate our data, up to a certain degree of polynome;
+
 	3) Find the piece-wise interpolation of degree three with given derivative at the first point and at the end point;
+
 	4) Find the piece-wise interpolation of degree three with the same derivative at the first point and at the end point;  
+
 	5) Find the polynomial interpolation of the data.
 
 Finally 'Output' class allows for to display the results in three different fashions. A terminal message that will display the original data as well as the found function, a python file that will display both the (x,y) data points with the computed function, or both.
@@ -48,17 +53,29 @@ Finally 'Output' class allows for to display the results in three different fash
 The program is pretty simple to use: a 'Run' class contains everything the user should have to use.
 
 A first call the 'Run' default constructor will ask the user the different parameters to be used. Let's go through them all in order:
+
  1) Choose the type of input between "reader" and "creator";
+
  |-> 2) (1-Optionnal) If "reader" is chosen in (1), precise the file name;
+
  --> 3) (1-Optionnal) If "creator" is chosen in (1), precise the function name*;
+
   --> 4) (1-Optionnal) If "creator" is chosen in (1), precise if you want to use the default parameters for the function**;
+
    --> 5) (4-Optionnal) If "false" is chosen in (4), precise your coordinate in x (enter any non-double to stop);
+
     --> 6) (4-Optionnal) If "false" is chosen in (4), precise if you want to add a randomness to the y data;
+
  7) Precise the type of data analysis you want to do between "DataFitting", "DataFittingFind", "InterpolationClamped", "InterpolationNatural" and "PolyInterpolation";
+
  |-> 8) (7-Optionnal) If "DataFitting" is chosen in (7), precise the degree of the polynome to be computed;
+
  |-> 9) (7-Optionnal) If "DataFittingFind" is chosen in (7), precise the maximum degree of polynome to be considered;
+
  --> 10 & 11) (7-Optionnal) If "InterpolationClamped" is chosen in (7), precise the value of the first derivative at the first point and at the last point;
+
  12) Finally choose the type of output between "terminal", "python" or "both".
+
 
 Then simply call the function 'launch' of your new run object, and voilà! If you chose the "terminal" output type, the program should output you the chosen x and y data. If you chose the 'python' output type, a 'Successfully created the python file.' should appear. The new file will be located in the main folder unless precised otherwise.
 

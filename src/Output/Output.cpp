@@ -206,7 +206,7 @@ void Output::python_display() {
 
 string Output::displayEquation() {
     string to_return("y=");
-    for(unsigned int i = coefficients.size()-1; i > 0; --i){
+    for(unsigned int i = coefficients[0].size()-1; i > 0; --i){
         if (coefficients[0][i] >= 0 && to_return.size() > 2)
             to_return += "+";
         to_return += to_string(coefficients[0][i]);

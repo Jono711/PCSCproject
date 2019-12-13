@@ -13,7 +13,7 @@
 #include <iostream>
 #include <vector>
 
-const double DBL_MAX = 5;
+//const double DBL_MAX = 5;
 
 Run::Run() {
     RunParamReader a;
@@ -107,7 +107,7 @@ void Run::launchDataFitting(vector<vector<double>> x_y_coords, int degree) {
     Output output(coeffs_final,
             x_y_coords,
             operation,
-            operation +"_degree_" + to_string(degree),
+            operation + "_degree_" + to_string(degree),
             output_type,
             true);
     output.terminal_display();
@@ -116,7 +116,7 @@ void Run::launchDataFitting(vector<vector<double>> x_y_coords, int degree) {
 
 void Run::launchDataFittingFind(vector<vector<double>> x_y_coords, int degree) {
     // Variables to store the best lost and the best coefficients.
-    double best_loss(DBL_MAX);
+    double best_loss(1.7e+308);
     unsigned int best_degree;
     vector<double> best_coefficients;
 

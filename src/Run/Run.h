@@ -76,10 +76,10 @@ private:
     */
     void launchDataFitting(vector<vector<double>> x_y_coords, int degree);
 
-    //! Launch the data Fitting Find analysis
+    //! Launch the data Fitting Find analysis,
     /*!
       \param x_y_coords  it represents a list of the x coordinates and y coordinates.
-      \param degree  Degree of the polynome.
+      \param degree  Maximum degree of the polynome.
       \return.
     */
     void launchDataFittingFind(vector<vector<double>> x_y_coords, int degree);

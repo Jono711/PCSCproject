@@ -21,7 +21,8 @@ public:
     */
     explicit LeastSquares(const vector<vector<double>>& xy_coords);
 
-    //! This method calculates the coefficients of the estimated polynome.
+    //! This method calculates the coefficients of the polynome that approximate the best the data, using least-square
+    //! loss.
     /*!
       \param degree The degree of the estimated polynome.
       \return The coefficients of the data Fitting method.
@@ -31,7 +32,7 @@ public:
 
 
     //! The LeastSquareLoss method calculate the difference
-    //      between the real function and the estimated function based on coefficients.
+    //!      between the real function and the estimated function based on coefficients.
     /*!
       \param coefficients an Operating Vector argument.
       \return The leastSquare Loss.

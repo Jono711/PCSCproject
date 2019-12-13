@@ -8,27 +8,13 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-There are no real prerequisite to the installation of this program, except of course having a C++ compiler. If you use a program such as CLion, you can open a project in your installation folder.
+There are no real prerequisite to the installation of this program, except having a C++ compiler and knowing how to build a cmake project. For the latter, the following page explains well [how to build a CMAKE-Base project](https://preshing.com/20170511/how-to-build-a-cmake-based-project/#building-with-unix-makefiles).
 
 A Python compiler is strongly recommended as this program can generate a python file as an output. It is however not required to make the program work.
 
 ### Installing
 
-/!\ TO DO
-
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
+The first step is pretty simple, simply clone this repository in any of your local repository. Once done simply build the cmake project! If you are using CLion, you can choose "Open" in the "File" menu and open at the location where you have cloned the repository.
 
 ## Program flow
 
@@ -52,7 +38,7 @@ Finally 'Output' class allows for to display the results in three different fash
 
 The program is pretty simple to use: a 'Run' class contains everything the user should have to use.
 
-A first call the 'Run' default constructor will ask the user the different parameters to be used. Let's go through them all in order:
+A first call the 'Run' default constructor in "main()" will ask the user the different parameters to be used. Let's go through them all in order:
 
 &nbsp;1) Choose the type of input between "reader" and "creator";  
 &nbsp;--> 2) (1-Optionnal) If "reader" is chosen in (1), precise the file name;  
@@ -66,7 +52,7 @@ A first call the 'Run' default constructor will ask the user the different param
 &nbsp;--> 10 & 11) (7-Optionnal) If "InterpolationClamped" is chosen in (7), precise the value of the first derivative at the first point and at the last point;  
 &nbsp;12) Finally choose the type of output between "terminal", "python" or "both".  
 
-Then simply call the function 'launch' of your new run object, and voilà! If you chose the "terminal" output type, the program should output you the chosen x and y data. If you chose the 'python' output type, a 'Successfully created the python file.' should appear. The new file will be located in the main folder unless precised otherwise.
+Then simply call the function 'launch' in "main()" of your new run object, and build and execute! If you chose the "terminal" output type, the program should output you the chosen x and y data. If you chose the 'python' output type, a 'Successfully created the python file.' should appear. The new file will be located in the main folder unless precised otherwise.
 
 
 ```
@@ -107,7 +93,7 @@ Process finished with exit code 0
 
 Example: "y=2x^(2)+3x-3.5cos(9x)+sin(4.5x-2)+exp(x)+2.34".
 Another example: "y=-x^(-1/2)-3cos(x-2)+2.33exp(6.3x-6)";
-Adding spaces should work fine but be careful not to write any "\*"
+Adding spaces should work fine but be careful not to write any "\*".
 
 (\*\*) The default parameters are x = {0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0} and no random displacement;
 

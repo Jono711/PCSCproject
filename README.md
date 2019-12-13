@@ -24,15 +24,15 @@ The program starts with the 'Input' super class. Here the choice is given betwee
 
 Once the (x,y) data points are generated, you can choose one from a variety of action to be done:
 
-1) Do some data fitting of the data points, given a certain degree of polynome to be found;
+1) Do some data fitting of the data points, given a certain degree of polynome to be found (name = "DataFitting");
 
-2) Find the best polynome to approximate our data, up to a certain degree of polynome;
+2) Find the best polynome to approximate our data, up to a certain degree of polynome (name = "DataFittingFind");
 
-3) Find the piece-wise third-degree interpolation  with given derivative at the first point and at the end point;
+3) Find the piece-wise third-degree interpolation  with given derivative at the first point and at the end point (name = "InterpolationClamped");
 
-4) Find the piece-wise third-degree interpolation  with the same derivative at the first point and at the end point;  
+4) Find the piece-wise third-degree interpolation  with the same derivative at the first point and at the end point (name = "InterpolationNatural");  
 
-5) Find the polynomial interpolation of the data.
+5) Find the polynomial interpolation of the data (name = "PolyInterpolation").
 
 Finally 'Output' class displays the results in three different fashions. A terminal message that will display the original data as well as the found function. A python file that will display both the (x,y) data points and the computed function, or both.
 
@@ -103,7 +103,7 @@ Adding spaces should work fine but be careful not to write any "\*".
 
 First, it seems important to precise that the code structure is easily available via [Doxygen](http://www.doxygen.nl/), it uses [Google_test](https://github.com/google/googletest) and is implemented with a wide range of error handling. Then let's see the special features implemented through each class.
 
-* Input: A parent class that souldn't be used directly. It is not purely virtual since it is an attributes in the "Run" class, which allows to elegantly switch it one of its daughter class during construction. Contains the "generate()" method that returns the x and y coordinates.
+* Input: A parent class that shouldn't be used directly. It is not purely virtual since it is an attributes in the "Run" class, which allows to elegantly switch it into one of its daughter classes during construction. Contains the "generate()" method that returns the x and y coordinates.
 
 * InputCreator: One of the two daughter class of "Input". The "generate()" method allows to translate a function given as a string (following a certain syntax) to double values for y(x).
 
@@ -127,21 +127,21 @@ In order to insure the code was working well, lots of tests were implemented, us
 
 * InputTest.cpp tests the "InputReader" and "InputCreator" class by making them respectively read data from pre-created files and create file from simple and more complex functions. Two important matters to discuss are that for the "InputReader" file, the access to these files sometimes depends on the infrastructure of the program used or even the computer. In case an error message with "Error opening file. Continuing program with an empty input file." appears, try to put the total path to the files in the first two test of "InputTest.cpp". These files are located in the folder "Test_Files" that is located in the same folder as all the tests. The second matter to discuss is that, considering rounding errors, the "InputCreator" part of the test checks for really close double and not exact ones (1e-12 near).
 
-* OperatingMatricesTest.cpp and OperatingVectorsTest.cpp both implement a variety of test for the function of our Operation classes to check if all of them work accordingly. They are compared with analytical results found by hand or using [Wolfram-Alpha](https://www.wolframalpha.com/).
+* OperatingMatricesTest.cpp and OperatingVectorsTest.cpp both implement a variety of test for the function of our Operation classes to check if all of them work accordingly. They are compared with analytical results calculated by hand or using [Wolfram-Alpha](https://www.wolframalpha.com/).
 
-* Finally DataFittingTest.cpp and PolynomialApproximationTest.cpp test the different method of the "LeastSquares" and the "PolynomialApproximation" class. As before, they are compared with analytical results found by hand or using [Wolfram-Alpha](https://www.wolframalpha.com/).
+* Finally DataFittingTest.cpp and PolynomialApproximationTest.cpp test the different method of the "LeastSquares" and the "PolynomialApproximation" class. As before, they are compared with analytical results calculated by hand or using [Wolfram-Alpha](https://www.wolframalpha.com/).
 
-It was chosen not to do Google tests for the Ouput, the Run and RunParamReader since these are essentially classes that display the previously computed elements. They have been tested thoroughly by using them.
+We chose not to do Google tests for the Ouput, the Run and RunParamReader since these are essentially classes that display the previously computed elements. They have been tested thoroughly.
 
 ## Issues
 
-* The will to let the user have the least code possible to write to use this program makes the implementation of the "Run" and the "Output" classes very complicated. If another developer wants to add new features to this program, he will not only have to write his new data approximation script but he will also probably need to add his unique implementation to the "Run" and "Output" classes, which will make them heavier and heavier incrementally as new implementations are added. A way to solve this problem would be to increase the level of abstraction these class use and fragmentize the code even more.
+* The will to let the user have the least code possible to write to use this program makes the implementation of the "Run" and the "Output" classes very complicated. If another developer wants to add new features to this program, he will not only have to write his new data approximation script but he will also need to add his unique implementation to the "Run" and "Output" classes, which will make them heavier and heavier incrementally as new implementations are added. A way to solve this problem would be to increase the level of abstraction these class use and fragmentize the code even more.
 
 * Sometimes the program tends to be very slow when manipulating big matrices (if you try a DataFittingFind of degree >= 6 for a pretty complex data set for example). Since the matrices are mostly used to solve linear algebra, an implementation of LU factorisation and its variants would be a good idea.
 
 ## Perspectives
 
-* Other than those explained above, the perspective of upgrade for this program are humongous. New data approximation techniques, new inputs methods, new output methods and so forth. With the current setup of the program, the implementation of new input methods would probably be the most easy to achieve since, as said before, implementing new approximation techniques and outputs would prove a bit more difficult in the Run part (although is it totally faisible).
+* Other than those explained above, the perspective of upgrade for this program are humongous. New data approximation techniques, new inputs methods, new output methods and so forth. With the current setup of the program, the implementation of new input methods would probably be the easiest to achieve since, as said before, implementing new approximation techniques and outputs would prove a bit more difficult in the Run part (although is it totally faisible).
 
 * Another point that could be implemented would be adding more "Run" constructors so that the code is can be automated by the user.
 

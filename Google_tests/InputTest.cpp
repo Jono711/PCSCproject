@@ -31,7 +31,7 @@ void ASSERT_MATRIX_NEARLY_EQUAL(vector<vector<double>> a, vector<vector<double>>
 
 TEST(InputReader, generatetxt){
     vector<vector<double>> original_file = {{0,-2,2,3.6666, 4},{0,3.4,1,1.5,-2.0}};
-    InputReader testinput("Test_Files/testinputtxt.txt");
+    InputReader testinput("../../Google_tests/Test_Files/testinputtxt.txt");
 
     ASSERT_MATRIX_EQUAL(testinput.generate(), original_file);
 }
@@ -40,7 +40,7 @@ TEST(InputReader, generatetxt){
 
 TEST(InputReader, generatecsv){
     vector<vector<double>> original_file = {{0,0.5,1,1.5,2,2.5,3,3.5,4,4.5},{1,-0.5,-1,-1.5,-2,-15.3,-3.5,-3.5,-4,-4.5}};
-    InputReader testinput("Test_Files/testinputcsv.csv");
+    InputReader testinput("../../Google_tests/Test_Files/testinputcsv.csv");
 
     ASSERT_MATRIX_EQUAL(testinput.generate(), original_file);
 }

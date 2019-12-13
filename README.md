@@ -36,15 +36,15 @@ The program starts with the 'Input' super class. Here the choice is given betwee
 
 Once the (x,y) data points are generated, you can choose one from a variety of action to be done:
 
-	1) Do some data fitting of the data points, given a certain degree of polynome to be found;
+1) Do some data fitting of the data points, given a certain degree of polynome to be found;
 
-	2) Find the best polynome to approximate our data, up to a certain degree of polynome;
+2) Find the best polynome to approximate our data, up to a certain degree of polynome;
 
-	3) Find the piece-wise interpolation of degree three with given derivative at the first point and at the end point;
+3) Find the piece-wise interpolation of degree three with given derivative at the first point and at the end point;
 
-	4) Find the piece-wise interpolation of degree three with the same derivative at the first point and at the end point;  
+4) Find the piece-wise interpolation of degree three with the same derivative at the first point and at the end point;  
 
-	5) Find the polynomial interpolation of the data.
+5) Find the polynomial interpolation of the data.
 
 Finally 'Output' class allows for to display the results in three different fashions. A terminal message that will display the original data as well as the found function, a python file that will display both the (x,y) data points with the computed function, or both.
 
@@ -68,7 +68,6 @@ A first call the 'Run' default constructor will ask the user the different param
 
 Then simply call the function 'launch' of your new run object, and voilà! If you chose the "terminal" output type, the program should output you the chosen x and y data. If you chose the 'python' output type, a 'Successfully created the python file.' should appear. The new file will be located in the main folder unless precised otherwise.
 
-/!\ Other Run constructors?
 
 ```
 Example:
@@ -108,7 +107,7 @@ Process finished with exit code 0
 
 Example: "y=2x^(2)+3x-3.5cos(9x)+sin(4.5x-2)+exp(x)+2.34".
 Another example: "y=-x^(-1/2)-3cos(x-2)+2.33exp(6.3x-6)";
-Be careful not to add any space inside the equation.
+Adding spaces should work fine but be careful not to write any "\*"
 
 (\*\*) The default parameters are x = {0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0} and no random displacement;
 
@@ -130,12 +129,21 @@ First, it seems important to precise that the code structure is easily available
 
 * Run: The class that holds the whole project together, so that the user has the least code to write. Includes a big selection of private "launch" methods that use the right method from the right classes at the right time to produce the desired user output. It can be noted that both a method that finds the polynomial for data approximation and two different methods specifying different boundary conditions for the piece-wise interpolation were implemented.
 
+* RunParamReader: Helper class for the constructor of the "Run" class.
+
 * OperatingVectors and OperatingMatrices: These two classes allows for easy matrix and vector operation, including addition and multiplication with double, vector and matrices. It also includes several construction of operating matrices and vectors as well as the computation of the determinant, the transpose, the adjoint and the inverse of a matrix.
 
 ## List of tests
 
-/!\ TO DO
+In order to insure the code was working well, lots of tests were implemented, using the [Google_test](https://github.com/google/googletest) library. These are located in the Google_tests folder and are distributed in 5 .cpp files:
 
+* InputTest.cpp tests the "InputReader" and "InputCreator" class by making them respectively read data from pre-created files and create file from simple and more complex functions. Two important matters to discuss are that for the "InputReader" file, the access to these files sometimes depends on the infrastructure of the program used or even the computer. In case an error message with "Error opening file. Continuing program with an empty input file." appears, try to put the total path to the files in the first two test of "InputTest.cpp". These files are located in the folder "Test_Files" that is located in the same folder as all the tests. The second matter to discuss is that, considering rounding errors, the "InputCreator" part of the test checks for really close double and not exact ones (1e-12 near).
+
+* OperatingMatricesTest.cpp and OperatingVectorsTest.cpp both implement a variety of test for the function of our Operation classes to check if all of them work accordingly. They are compared with analytical results found by hand or using [Wolfram-Alpha](https://www.wolframalpha.com/).
+
+* Finally DataFittingTest.cpp and PolynomialApproximationTest.cpp test the different method of the "LeastSquares" and the "PolynomialApproximation" class. As before, they are compared with analytical results found by hand or using [Wolfram-Alpha](https://www.wolframalpha.com/).
+
+It was chosen not to do Google tests for the Ouput, the Run and RunParamReader since these are essentially classes that display the previously computed elements. They have been tested thoroughly by using them.
 
 ## Issues
 
@@ -146,6 +154,8 @@ First, it seems important to precise that the code structure is easily available
 ## Perspectives
 
 * Other than those explained above, the perspective of upgrade for this program are humongous. New data approximation techniques, new inputs methods, new output methods and so forth. With the current setup of the program, the implementation of new input methods would probably be the most easy to achieve since, as said before, implementing new approximation techniques and outputs would prove a bit more difficult in the Run part (although is it totally faisible).
+
+* Another point that could be implemented would be adding more "Run" constructors so that the code is can be automated by the user.
 
 ## Authors
 

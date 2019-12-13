@@ -79,7 +79,7 @@ OperatingMatrices PolynomialApproximation:: clamped_spline_data_matrix(Operating
             if (i == j) {
                 if(i == 0) {
                     result[i][j] = 2 * (difference_x[i]);
-                }else if(i==5){
+                }else if(i==size-1){
                     result[i][j] = 2 * (difference_x[i-1]);
                 }else{
                     result[i][j]= 2*(difference_x[i-1]+difference_x[i]);

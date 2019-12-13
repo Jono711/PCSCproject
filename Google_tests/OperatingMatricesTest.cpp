@@ -12,12 +12,41 @@ void ASSERT_VECTOR_EQUAL(OperatingVectors a, OperatingVectors b) {
         ASSERT_DOUBLE_EQ( a[i], b[i]);
     }
 }
+
 void ASSERT_MATRIX_EQUAL(OperatingMatrices a, OperatingMatrices b) {
     ASSERT_EQ( a.size(), b.size());
     for (int i = 0; i < a.size(); i++) {
         ASSERT_VECTOR_EQUAL(a[i], b[i]);
     }
 }
+
+
+TEST(OperatingMatrices, addition){
+    OperatingMatrices m1(vector<vector<double>> {{1,0,0,0},{1,1,0,0},{1,1,1,0},{1,1,1,1}});
+    OperatingMatrices m2(vector<vector<double>> {{1,1,1,1},{0,1,1,1},{0,0,1,1},{0,0,0,1}});
+    OperatingMatrices m3(vector<vector<double>> {{2,1,1,1},{1,2,1,1},{1,1,2,1},{1,1,1,2}});
+
+    ASSERT_MATRIX_EQUAL(m1+m2, m3);
+}
+
+
+TEST(OperatingMatrices, multiplication){
+    OperatingMatrices m1(vector<vector<double>> {{1,0,0,0},{1,1,0,0},{1,1,1,0},{1,1,1,1}});
+    OperatingMatrices m2(vector<vector<double>> {{1,1,1,1},{0,1,1,1},{0,0,1,1},{0,0,0,1}});
+    OperatingMatrices m3(vector<vector<double>> {{1, 1, 1, 1}, {1, 2, 2, 2}, {1, 2, 3, 3}, {1, 2, 3, 4}});
+
+    ASSERT_MATRIX_EQUAL(m1*m2, m3);
+}
+
+
+TEST(OperatingMatrices, vector_multiplication){
+    OperatingMatrices m1(vector<vector<double>> {{1,0,0,0},{1,1,0,0},{1,1,1,0},{1,1,1,1}});
+    OperatingVectors vec1(vector<double> {1,2,3,4});
+    OperatingVectors vec2(vector<double> {1, 3, 6, 10});
+
+    ASSERT_VECTOR_EQUAL(m1*vec1, vec2);
+}
+
 
 TEST(OperatingMatrices, determinant){
     vector<vector<double>> matrice = {{-16,-7,0,0},{-7,-2,6,0},{0,6,4,-4},{0,0,-4,14}};

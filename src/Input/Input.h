@@ -7,6 +7,7 @@
 
 #include <vector>
 
+//! Abstract class that is the basis for all Input classes.
 class Input {
     /**
      * Abstract class that is the basis for all Input classes.

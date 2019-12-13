@@ -1,4 +1,4 @@
-#include "Data_approximation/PolynomialApproximationTest.h"
+#include "Data_approximation/PolynomialApproximation.h"
 #include "src/Operations/OperatingVectors.h"
 #include "src/Operations/OperatingMatrices.h"
 #include "src/Run/Run.h"

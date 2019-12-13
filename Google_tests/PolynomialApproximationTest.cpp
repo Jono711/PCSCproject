@@ -3,7 +3,7 @@
 //
 
 #include "gtest/gtest.h"
-#include "Data_approximation/PolynomialApproximationTest.h"
+#include "Data_approximation/PolynomialApproximation.h"
 
 void ASSERT_VECTOR_EQUAL2(OperatingVectors a, OperatingVectors b) {
     ASSERT_EQ( a.size(), b.size());
@@ -23,7 +23,7 @@ void ASSERT_MATRIX_EQUAL2(OperatingMatrices a, OperatingMatrices b) {
 TEST(PolynomialApproximation, natural_spline_data_matrix){
     vector<double> x_coordinate = {3,2,-5,1,-3,8};
     OperatingVectors transformed(x_coordinate);
-    PolynomialApproximationTest m;
+    PolynomialApproximation m;
 
     OperatingMatrices matrix = m.natural_spline_data_matrix(transformed);
 
@@ -36,7 +36,7 @@ TEST(PolynomialApproximation, natural_spline_data_matrix){
 TEST(PolynomialApproximation, clamped_spline_data_matrix) {
     vector<double> x_coordinate = {3,2,-5,1,-3,8};
     OperatingVectors transformed(x_coordinate);
-    PolynomialApproximationTest m;
+    PolynomialApproximation m;
 
     OperatingMatrices matrix = m.clamped_spline_data_matrix(transformed);
     vector<vector<double>> real_matrix =  {{-2,-1,0,0,0,0},{-1,-16,-7,0,0,0},{0,-7,-2,6,0,0},{0,0,6,4,-4,0},{0,0,0,-4,14,11},{0,0,0,0,11,22}};
@@ -54,7 +54,7 @@ TEST(PolynomialApproximation, natural_spline_vector) {
     vector<double> y_coordinate = {4,1,-3,6,-2,-4};
     OperatingVectors transformed_y(y_coordinate);
 
-    PolynomialApproximationTest m;
+    PolynomialApproximation m;
 
     OperatingVectors result = m.natural_spline_vector(transformed_x,transformed_y);
 
@@ -76,7 +76,7 @@ OperatingVectors transformed_y(y_coordinate);
 double A = 2;
 double B = 1;
 
-PolynomialApproximationTest m;
+PolynomialApproximation m;
 
 OperatingVectors result = m.clamped_spline_vector(transformed_x,transformed_y,A,B);
 vector<double> real_vector =  {6, (24.0/7)-18 ,9-(24.0/7), 3 ,(-12.0/11)-12,6 + (12.0/11)};
@@ -91,12 +91,11 @@ TEST(PolynomialApproximation, polynomial_interpolation_data_matrix) {
 vector<double> x_coordinate = {3,2,-5,1,-3,8};
 OperatingVectors transformed(x_coordinate);
 
-int degree = 3 ;
 
-PolynomialApproximationTest m;
+PolynomialApproximation m;
 
-OperatingMatrices matrix  = m.polynomial_interpolation_data_matrix(transformed, degree) ;
-vector<vector<double>> real_matrix = {{27,9,3,1},{8,4,2,1},{-125,25,-5,1},{1,1,1,1},{-27,9,-3,1},{512,64,8,1}};
+OperatingMatrices matrix  = m.polynomial_interpolation_data_matrix(transformed) ;
+vector<vector<double>> real_matrix = {{243,81,27,9,3,1},{32,16,8,4,2,1},{-3125,625,-125,25,-5,1},{1,1,1,1,1,1},{-243,81,-27,9,-3,1},{32768,4096,512,64,8,1}};
 OperatingMatrices  m_real(real_matrix);
 
 ASSERT_MATRIX_EQUAL2(matrix,m_real);
@@ -115,7 +114,7 @@ OperatingVectors transformed_x(x_coordinate);
 vector<double> y_coordinate = {4,1,-3,6,-2,-4};
 OperatingVectors transformed_y(y_coordinate);
 
-PolynomialApproximationTest m ;
+PolynomialApproximation m ;
 OperatingMatrices  matrix = m.natural_spline_coefficients(transformed_d,transformed_x,transformed_y);
 
 vector<vector<double>> real_matrix = {{(-1.0/6),0.5,3+(1.0/6),4},{(-1.0/42),1,(4.0/7)+(28.0/6),1},
@@ -144,7 +143,7 @@ OperatingVectors transformed_x(x_coordinate);
 vector<double> y_coordinate = {4,1,-3,6,-2,-4};
 OperatingVectors transformed_y(y_coordinate);
 
-PolynomialApproximationTest m ;
+PolynomialApproximation m ;
 
 OperatingMatrices  matrix = m.clamped_spline_coefficients(transformed_d, transformed_x, transformed_y) ;
 
@@ -158,34 +157,12 @@ ASSERT_MATRIX_EQUAL2(matrix,m_real);
 
 }
 
-
-TEST(PolynomialApproximation, Coefficients_hermite) {
-
-    vector<double> x_coordinate = {3,2,-5,1,-3,8};
-    OperatingVectors transformed_x(x_coordinate);
-
-    PolynomialApproximationTest m ;
-    double x = 1 ;
-
-    OperatingMatrices matrix = m.poly_cubic_hermite_interpolation_data_coefficients(transformed_x,x);
-
-    vector<vector<double>> real_matrix = {{5,-4,-2,-4},{(324.0/343),(19.0/343),(-36.0/49),(6.0/49)},
-                                          {0,1,0,0},{1,0,0,0},
-                                          {(931.0/1331),(400.0/1331),(196.0/121),(-112.0/121)}};
-
-    OperatingMatrices  m_real(real_matrix);
-
-    ASSERT_MATRIX_EQUAL2(matrix,m_real);
-
-}
-
-
 TEST(PolynomialApproximation , Difference) {
 
     vector<double> x_coordinate = {3,2,-5,1,-3,8};
     OperatingVectors transformed_x(x_coordinate);
 
-    PolynomialApproximationTest m ;
+    PolynomialApproximation m ;
 
     OperatingVectors result = m.difference_data(transformed_x);
 
@@ -203,10 +180,9 @@ TEST(PolynomialApproximation, invert_Polynomial_interpolation){
     vector<double> x_coordinate = {3,2,-5,1,-3,8};
     OperatingVectors transformed_x(x_coordinate);
 
-    int degree = 5 ;
 
-    PolynomialApproximationTest m;
-    OperatingMatrices matrix  = m.polynomial_interpolation_data_matrix(transformed_x, degree) ;
+    PolynomialApproximation m;
+    OperatingMatrices matrix  = m.polynomial_interpolation_data_matrix(transformed_x) ;
 
 
     OperatingMatrices invert_matrix = matrix.inverse();

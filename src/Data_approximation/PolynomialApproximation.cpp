@@ -3,16 +3,16 @@
 //
 
 #include <iostream>
-#include "PolynomialApproximationTest.h"
+#include "PolynomialApproximation.h"
 #include "Operations/OperatingVectors.h"
 #include "Operations/OperatingMatrices.h"
 #include "math.h"
 using namespace std;
 
-PolynomialApproximationTest::PolynomialApproximationTest() = default;
+PolynomialApproximation::PolynomialApproximation() = default;
 
 
-OperatingVectors PolynomialApproximationTest::difference_data(OperatingVectors coords){
+OperatingVectors PolynomialApproximation::difference_data(OperatingVectors coords){
     size_t coords_size = coords.size() ;
     OperatingVectors difference_x(coords_size-1);
 
@@ -24,7 +24,7 @@ OperatingVectors PolynomialApproximationTest::difference_data(OperatingVectors c
 
 
 
-OperatingMatrices PolynomialApproximationTest::natural_spline_data_matrix(OperatingVectors x_coordinate){
+OperatingMatrices PolynomialApproximation::natural_spline_data_matrix(OperatingVectors x_coordinate){
     size_t size = x_coordinate.size();
 
     // Using the fill constructor to initialize a two-dimensional vector
@@ -52,7 +52,7 @@ OperatingMatrices PolynomialApproximationTest::natural_spline_data_matrix(Operat
 
 
 
-OperatingVectors PolynomialApproximationTest:: natural_spline_vector(OperatingVectors x_coordinate , OperatingVectors y_coordinate){
+OperatingVectors PolynomialApproximation:: natural_spline_vector(OperatingVectors x_coordinate , OperatingVectors y_coordinate){
     size_t size = x_coordinate.size();
     // Using the fill constructor to initialize a two-dimensional vector
     // with given default value
@@ -66,7 +66,7 @@ OperatingVectors PolynomialApproximationTest:: natural_spline_vector(OperatingVe
     return result;
 }
 
-OperatingMatrices PolynomialApproximationTest:: clamped_spline_data_matrix(OperatingVectors x_coordinate){
+OperatingMatrices PolynomialApproximation:: clamped_spline_data_matrix(OperatingVectors x_coordinate){
     size_t size = x_coordinate.size();
 
     // Using the fill constructor to initialize a two-dimensional vector
@@ -91,7 +91,7 @@ OperatingMatrices PolynomialApproximationTest:: clamped_spline_data_matrix(Opera
 
 }
 
-OperatingVectors PolynomialApproximationTest:: clamped_spline_vector(OperatingVectors x_coordinate, OperatingVectors y_coordinate, double A, double B){
+OperatingVectors PolynomialApproximation:: clamped_spline_vector(OperatingVectors x_coordinate, OperatingVectors y_coordinate, double A, double B){
     size_t size = x_coordinate.size();
 
     // Using the fill constructor to initialize a two-dimensional vector
@@ -114,8 +114,9 @@ OperatingVectors PolynomialApproximationTest:: clamped_spline_vector(OperatingVe
     return result;
 }
 
-OperatingMatrices PolynomialApproximationTest:: polynomial_interpolation_data_matrix(OperatingVectors x_coordinate, int degree ){
+OperatingMatrices PolynomialApproximation:: polynomial_interpolation_data_matrix(OperatingVectors x_coordinate ){
     size_t size = x_coordinate.size();
+    int degree = size - 1;
 
     OperatingMatrices result(size,degree+1);
     for(int i = 0 ; i < size ; i++){
@@ -128,26 +129,10 @@ OperatingMatrices PolynomialApproximationTest:: polynomial_interpolation_data_ma
 }
 
 
-OperatingMatrices PolynomialApproximationTest:: poly_cubic_hermite_interpolation_data_coefficients(OperatingVectors x_coordinate, float x  ){
-    size_t size = x_coordinate.size();
-
-    OperatingMatrices result(size-1,4);
-    OperatingVectors difference_x = difference_data(x_coordinate);
-
-    for (int i = 0 ; i < size - 1; i++){
-        result[i][0] = (( difference_x[i] + 2*(x-x_coordinate[i]) ) * (pow(x_coordinate[i+1]-x,2) )) / (pow(difference_x[i],3)) ;
-        result[i][1] = (( difference_x[i] + 2*(x_coordinate[i+1]-x))* (pow(x-x_coordinate[i],2)) ) / (pow(difference_x[i],3)) ;
-        result[i][2] = ( (x-x_coordinate[i]) * pow(x_coordinate[i+1]-x,2) ) / (pow(difference_x[i],2)) ;
-        result[i][3] =   -((x_coordinate[i+1]-x)*pow(x-x_coordinate[i],2) )/ (pow(difference_x[i],2)) ;
-    }
-
-    return result;
-
-}
 
 
 
-OperatingMatrices PolynomialApproximationTest:: natural_spline_coefficients(OperatingVectors derivatives, OperatingVectors x_coordinate, OperatingVectors y_coordinate){
+OperatingMatrices PolynomialApproximation:: natural_spline_coefficients(OperatingVectors derivatives, OperatingVectors x_coordinate, OperatingVectors y_coordinate){
     size_t size = derivatives.size();
     OperatingMatrices result(size+1,size);
     OperatingVectors difference_x = difference_data(x_coordinate);
@@ -166,7 +151,7 @@ OperatingMatrices PolynomialApproximationTest:: natural_spline_coefficients(Oper
 }
 
 
-OperatingMatrices PolynomialApproximationTest:: clamped_spline_coefficients(OperatingVectors derivatives, OperatingVectors x_coordinate, OperatingVectors y_coordinate){
+OperatingMatrices PolynomialApproximation:: clamped_spline_coefficients(OperatingVectors derivatives, OperatingVectors x_coordinate, OperatingVectors y_coordinate){
     size_t  size = derivatives.size();
 
     OperatingMatrices result(size-1,size-2);
@@ -184,8 +169,8 @@ OperatingMatrices PolynomialApproximationTest:: clamped_spline_coefficients(Oper
 
 // Only works if Vandermonde Matrix is a square matrix in the sense that the degree+1 of the polynome
 // is equal to the number of data points
-OperatingVectors PolynomialApproximationTest:: Polynomial_interpolation_coefficients(OperatingMatrices Vandermonde_matrix,
-        OperatingVectors y_coordinate){
+OperatingVectors PolynomialApproximation:: Polynomial_interpolation_coefficients(OperatingMatrices Vandermonde_matrix,
+                                                                                 OperatingVectors y_coordinate){
 
     size_t m = Vandermonde_matrix.size();
     size_t n = y_coordinate.size() ;

@@ -200,7 +200,7 @@ void Output::python_display() {
         outputFile.close();
 
 
-        cout << "Successfully created the python file." << endl;
+        cout << "Successfully created the python file " << python_file_name << "." << endl;
     }
 }
 

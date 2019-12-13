@@ -14,7 +14,9 @@ A Python compiler is strongly recommended as this program can generate a python 
 
 ### Installing
 
-The first step is pretty simple, simply clone this repository in any of your local repository. Once done simply build the cmake project! If you are using CLion, you can choose "Open" in the "File" menu and open at the location where you have cloned the repository.
+The first step is pretty simple, simply clone this repository in any of your local repository. Once done simply build the cmake project! 
+
+If you are using CLion, you can choose "Open" in the "File" menu and open at the location where you have cloned the repository.
 
 ## Program flow
 

@@ -77,7 +77,13 @@ OperatingMatrices PolynomialApproximation:: clamped_spline_data_matrix(Operating
     for(int i = 0 ; i < size ; i++){
         for(int j = 0 ; j < size; j++) {
             if (i == j) {
-                result[i][j]= 2*(difference_x[i-1]+difference_x[i]);
+                if(i == 0) {
+                    result[i][j] = 2 * (difference_x[i]);
+                }else if(i==5){
+                    result[i][j] = 2 * (difference_x[i-1]);
+                }else{
+                    result[i][j]= 2*(difference_x[i-1]+difference_x[i]);
+                }
             } else if (j == i-1 && i > 0) {
                 result[i][j]= difference_x[i-1];
             } else if(j == i+1 && i < size) {
@@ -137,14 +143,24 @@ OperatingMatrices PolynomialApproximation:: natural_spline_coefficients(Operatin
     OperatingMatrices result(size+1,size);
     OperatingVectors difference_x = difference_data(x_coordinate);
     OperatingVectors difference_y = difference_data(y_coordinate);
-    derivatives[size] = 0 ;
-    derivatives[-1] = 0 ;
 
     for (int i = 0 ; i < size+1 ; i++){
-        result[i][0] = (derivatives[i]-derivatives[i-1])/(6*difference_x[i]);
-        result[i][1] = derivatives[i]/2 ;
-        result[i][2] = (difference_y[i]/difference_x[i])-(difference_x[i]*(derivatives[i]+ 2*derivatives[i-1]))/6 ;
-        result[i][3] = y_coordinate[i];
+        if(i==0) {
+            result[i][0] = (derivatives[i]) / (6 * difference_x[i]);
+            result[i][1] = derivatives[i] / 2;
+            result[i][2] = (difference_y[i] / difference_x[i]) - (difference_x[i] * (derivatives[i])) / 6;
+            result[i][3] = y_coordinate[i];
+        }else if(i==size){
+            result[i][0] = (0-derivatives[i-1])/(6*difference_x[i]);
+            result[i][1] = 0 ;
+            result[i][2] = (difference_y[i]/difference_x[i])-(difference_x[i]*(0+ 2*derivatives[i-1]))/6 ;
+            result[i][3] = y_coordinate[i];
+        }else{
+            result[i][0] = (derivatives[i]-derivatives[i-1])/(6*difference_x[i]);
+            result[i][1] = derivatives[i]/2 ;
+            result[i][2] = (difference_y[i]/difference_x[i])-(difference_x[i]*(derivatives[i]+ 2*derivatives[i-1]))/6 ;
+            result[i][3] = y_coordinate[i];
+        }
     }
 
     return result ;

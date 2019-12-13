@@ -42,7 +42,6 @@ string RunParamReader::retrieveInput(string question, vector<string> possible_va
         cout << "]" << endl;
         cin >> param;
     } while( not_in(possible_values, param) );
-
     return param;
 }
 
@@ -52,7 +51,7 @@ string RunParamReader::retrieveFreeTextInput(string question) {
         cin.clear();
         cin.ignore(numeric_limits<streamsize>::max(), '\n');
         cout << question << endl;
-        cin >> param;
+        std::getline(std::cin, param);
     } while( cin.fail() );
 
     return param;
@@ -81,10 +80,10 @@ double RunParamReader::retrieveDouble(string question) {
     return res;
 }
 
+
 vector<double> RunParamReader::retrieveDoubleVector(string question) {
     vector<double> res;
     double input_read;
-
     cout << question << " (enter any letter to stop)" << endl;
     do {
         cin.clear();
@@ -94,7 +93,11 @@ vector<double> RunParamReader::retrieveDoubleVector(string question) {
         if(!cin.fail())
             res.push_back(input_read);
     }  while(!cin.fail());
-
     return res;
 }
+
+
+
+
+
 

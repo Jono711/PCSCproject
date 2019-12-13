@@ -14,7 +14,11 @@
 using namespace std;
 
 InputCreator::InputCreator(string function_name, const vector<double>& x_coords, bool generate_random_displacement){
-    this->function_name = std::move(function_name);
+    string s = function_name;
+    //https://www.techiedelight.com/remove-whitespaces-string-cpp/
+    s.erase(remove_if(s.begin(), s.end(), ::isspace), s.end());
+
+    this->function_name = std::move(s);
     this->generate_random_displacement = generate_random_displacement;
     if (x_coords.empty())
     {

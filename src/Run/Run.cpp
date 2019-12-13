@@ -8,12 +8,10 @@
 #include "Input/InputReader/InputReader.h"
 #include "Data_Fitting/LeastSquares.h"
 #include "RunParamReader.h"
-#include "Data_approximation/PolynomialApproximationTest.h"
+#include "Data_approximation/PolynomialApproximation.h"
 
 #include <iostream>
 #include <vector>
-
-//const double DBL_MAX = 5;
 
 Run::Run() {
     RunParamReader a;
@@ -24,7 +22,7 @@ Run::Run() {
             );
 
     if(param == "reader"){
-        string filename = a.retrieveFreeTextInput("Precise the filename for InputReader:");
+        string filename = a.retrieveFreeTextInput("Precise the absolute filepath for InputReader:");
         input = new InputReader(filename);
     } else if(param == "creator"){
         string function = a.retrieveFreeTextInput("Precise the function for InputCreator:");
@@ -36,7 +34,7 @@ Run::Run() {
         bool default_parameters = (default_parameters_str == "true");
 
         if(!default_parameters){
-            vector<double> x_coords = a.retrieveDoubleVector("Precise your coordinates in x:");
+            vector<double> x_coords = a.retrieveDoubleVector("Precise your coordinates x:");
             string randomize_str = a.retrieveInput(
                     "Do you want to randomize your coordinates?",
                     {"true", "false"}
@@ -62,7 +60,7 @@ Run::Run() {
     );
 
 
-    if(operation == "DataFitting" || operation == "PolyInterpolation"){
+    if(operation == "DataFitting"){
         degree = a.retrieveInt("Enter the degree of the polynome to be computed");
     }
     if(operation == "DataFittingFind"){
@@ -77,6 +75,7 @@ Run::Run() {
             "Choose the type of output you want:",
             { "terminal", "python", "both" }
     );
+
 }
 
 Run::~Run() {
@@ -84,6 +83,10 @@ Run::~Run() {
 }
 
 void Run::launch() {
+    cout << "Running operation"
+        << operation
+        << endl;
+
     vector<vector<double>> x_y_coords = input->generate();
 
     if(operation=="DataFitting"){
@@ -95,7 +98,7 @@ void Run::launch() {
     }else if(operation == "InterpolationNatural"){
         launchInterpolationNatural(x_y_coords);
     }else if(operation == "PolyInterpolation"){
-        launchPolyInterpolation(x_y_coords, degree);
+        launchPolyInterpolation(x_y_coords);
     }
 }
 
@@ -148,7 +151,7 @@ void Run::launchInterpolationClamped(vector<vector<double>> x_y_coords, double A
     OperatingVectors transformed_x(x_coords);
     OperatingVectors transformed_y(y_coords);
 
-    PolynomialApproximationTest solver;
+    PolynomialApproximation solver;
     OperatingMatrices clamped_spline_matrix  = solver.clamped_spline_data_matrix(transformed_x);
     OperatingVectors clamped_spline_vector = solver.clamped_spline_vector(transformed_x,transformed_y,A,B);
     OperatingVectors derivatives  = (clamped_spline_matrix.inverse())*clamped_spline_vector ;
@@ -181,7 +184,7 @@ void Run::launchInterpolationNatural(vector<vector<double>> x_y_coords) {
     OperatingVectors transformed_y(y_coords);
 
 
-    PolynomialApproximationTest solver ;
+    PolynomialApproximation solver ;
     OperatingMatrices natural_spline_matrix  = solver.natural_spline_data_matrix(transformed_x);
     OperatingVectors natural_spline_vector = solver.natural_spline_vector(transformed_x,transformed_y);
     OperatingVectors derivatives  = (natural_spline_matrix.inverse())*natural_spline_vector ;
@@ -206,7 +209,7 @@ void Run::launchInterpolationNatural(vector<vector<double>> x_y_coords) {
     o.displayNaturalSpline(natural_spline_matrix, natural_spline_vector, coefficients, x_coords );
 }
 
-void Run::launchPolyInterpolation(vector<vector<double>> x_y_coords, int degree) {
+void Run::launchPolyInterpolation(vector<vector<double>> x_y_coords) {
     vector<double> x_coords = x_y_coords[0];
     vector<double> y_coords = x_y_coords[1];
 
@@ -214,8 +217,8 @@ void Run::launchPolyInterpolation(vector<vector<double>> x_y_coords, int degree)
     OperatingVectors transformed_y(y_coords);
 
 
-    PolynomialApproximationTest solver;
-    OperatingMatrices Vandermonde_matrix = solver.polynomial_interpolation_data_matrix(transformed_x,degree);
+    PolynomialApproximation solver;
+    OperatingMatrices Vandermonde_matrix = solver.polynomial_interpolation_data_matrix(transformed_x);
     OperatingMatrices inverse_data_matrix = Vandermonde_matrix.inverse() ;
     OperatingVectors result = inverse_data_matrix*transformed_y ;
 

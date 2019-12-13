@@ -88,16 +88,6 @@ OperatingVectors OperatingVectors::operator^(unsigned int d) const {
     return OperatingVectors(new_vector);
 }
 
-void OperatingVectors:: afficher_Operating_vector() {
-    {
-        size_t  size_x_coords = this->operating_vector.size();
-        cout << "x: ";
-        for(int i = 0 ; i < size_x_coords ; i++){
-            cout << this->operating_vector[i] << ", ";
-        }
-        cout << endl << endl;
-    }
-}
 
 
 

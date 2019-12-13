@@ -51,7 +51,7 @@ string RunParamReader::retrieveFreeTextInput(string question) {
         cin.clear();
         cin.ignore(numeric_limits<streamsize>::max(), '\n');
         cout << question << endl;
-        cin >> param;
+        std::getline(std::cin, param);
     } while( cin.fail() );
 
     return param;

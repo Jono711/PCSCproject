@@ -4,23 +4,23 @@ This data approximation project aims to implement a fully functionnal program fo
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+These instructions will allow you to get a copy of the project up and running on your local machine for development and testing purposes.
 
 ### Prerequisites
 
-There are no real prerequisite to the installation of this program, except having a C++ compiler and knowing how to build a cmake project. For the latter, the following page explains well [how to build a CMAKE-Base project](https://preshing.com/20170511/how-to-build-a-cmake-based-project/#building-with-unix-makefiles).
+There are no real prerequisite to the installation of this program, except having a C++ compiler and knowing how to build a cmake project. For the latter, the following page explains [how to build a CMAKE-Base project](https://preshing.com/20170511/how-to-build-a-cmake-based-project/#building-with-unix-makefiles).
 
 A Python compiler is strongly recommended as this program can generate a python file as an output. It is however not required to make the program work.
 
 ### Installing
 
-The first step is pretty simple, simply clone this repository in any of your local repository. Once done simply build the cmake project! 
+The first step is pretty simple, simply clone this repository in any of your local repositories. Once done simply build the cmake project! 
 
 If you are using CLion, you can choose "Open" in the "File" menu and open at the location where you have cloned the repository.
 
 ## Program flow
 
-The program starts with the 'Input' super class. Here the choice is given between two 'Input' subclasses: 'InputReader' and 'InputCreator' in order to generate our (x,y) couples of data points. The former reads data from a given file and the latter generate the (x,y(x)) points of a given y(x) function and from a given data set of x. You can even add a random displacement to those y(x) points.
+The program starts with the 'Input' super class. Here the choice is given between two 'Input' subclasses: 'InputReader' and 'InputCreator' in order to generate (x,y) data points. The former reads data from a given file and the latter generate the (x,y(x)) points of a given y(x) function from a given data set of x. You can even add a random displacement to those y(x) points.
 
 Once the (x,y) data points are generated, you can choose one from a variety of action to be done:
 
@@ -28,26 +28,26 @@ Once the (x,y) data points are generated, you can choose one from a variety of a
 
 2) Find the best polynome to approximate our data, up to a certain degree of polynome;
 
-3) Find the piece-wise interpolation of degree three with given derivative at the first point and at the end point;
+3) Find the piece-wise third-degree interpolation  with given derivative at the first point and at the end point;
 
-4) Find the piece-wise interpolation of degree three with the same derivative at the first point and at the end point;  
+4) Find the piece-wise third-degree interpolation  with the same derivative at the first point and at the end point;  
 
 5) Find the polynomial interpolation of the data.
 
-Finally 'Output' class allows for to display the results in three different fashions. A terminal message that will display the original data as well as the found function, a python file that will display both the (x,y) data points with the computed function, or both.
+Finally 'Output' class displays the results in three different fashions. A terminal message that will display the original data as well as the found function. A python file that will display both the (x,y) data points and the computed function, or both.
 
 ## Usage of the program
 
-The program is pretty simple to use: a 'Run' class contains everything the user should have to use.
+The program is pretty simple to use: a 'Run' class contains everything the user needs.
 
-A first call the 'Run' default constructor in "main()" will ask the user the different parameters to be used. Let's go through them all in order:
+When first called, the 'Run' default constructor in "main()" will ask the user the different parameters to be used. Let's go through them all in order:
 
 &nbsp;1) Choose the type of input between "reader" and "creator";  
 &nbsp;--> 2) (1-Optionnal) If "reader" is chosen in (1), precise the file name;  
 &nbsp;--> 3) (1-Optionnal) If "creator" is chosen in (1), precise the function name\*;  
-&nbsp;&nbsp;--> 4) (1-Optionnal) If "creator" is chosen in (1), precise if you want to use the default parameters for the function\*\*;  
-&nbsp;&nbsp;&nbsp;--> 5) (4-Optionnal) If "false" is chosen in (4), precise your coordinate in x (enter any non-double to stop);  
-&nbsp;&nbsp;&nbsp;&nbsp;--> 6) (4-Optionnal) If "false" is chosen in (4), precise if you want to add a randomness to the y data;  
+&nbsp;&nbsp;&nbsp;--> 4) (1-Optionnal) If "creator" is chosen in (1), precise if you want to use the default parameters for the function\*\*;  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--> 5) (4-Optionnal) If "false" is chosen in (4), precise your coordinate in x (enter any non-double to stop);  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--> 6) (4-Optionnal) If "false" is chosen in (4), precise if you want to add a randomness to the y data;  
 &nbsp;7) Precise the type of data analysis you want to do between "DataFitting", "DataFittingFind", "InterpolationClamped", "InterpolationNatural" and "PolyInterpolation";  
 &nbsp;--> 8) (7-Optionnal) If "DataFitting" is chosen in (7), precise the degree of the polynome to be computed;  
 &nbsp;--> 9) (7-Optionnal) If "DataFittingFind" is chosen in (7), precise the maximum degree of polynome to be considered;  
